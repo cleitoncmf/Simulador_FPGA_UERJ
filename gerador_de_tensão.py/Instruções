@@ -1,0 +1,9 @@
+1. Executar o arquivo numa IDE python que contenha as bibliotecas usadas;
+2. Copiar o texto do arquivo gerado em .txt;
+3. Criar um arquivo .mem no vivado;
+4. Colar o texto gerado pelo arquivo.py no arquivo criado .mem, no vivado;
+5. Utilizar a função "replace" neste arquivo .mem, e retirar todos os "0x" da lista em hexadecimal presente no arquivo;
+6. Certificar-se de que o nome do arquivo .mem esteja de acordo com a leitura feita pelo arquivo .v;
+7. Certificar-se de que está rodando a simulação correta no VIVADO, acessando Simulation Settings, ao clicar com o botão direito;
+8. Reiniciar a simulação gerada e atribuir clock de 100ms e tempo de simulação 100us;
+9. Atribuir às variáveis que se deseja observar: Radix: Unsigned e waveform style: Analog;
