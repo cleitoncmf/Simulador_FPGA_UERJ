@@ -2,3 +2,6 @@ Running: xsim.dir/sinus_gen_behav/xsimk.exe -simmode gui -wdb sinus_gen_behav.wd
 Design successfully loaded
 Design Loading Memory Usage: 7252 KB (Peak: 7252 KB)
 Design Loading CPU Usage: 46 ms
+Simulation completed
+Simulation Memory Usage: 18764 KB (Peak: 18764 KB)
+Simulation CPU Usage: 1046 ms

@@ -1,0 +1,7 @@
+Running: xsim.dir/ckt_resistivo_CC_behav/xsimk.exe -simmode gui -wdb ckt_resistivo_CC_behav.wdb -simrunnum 0 -socket 53558
+Design successfully loaded
+Design Loading Memory Usage: 5256 KB (Peak: 5256 KB)
+Design Loading CPU Usage: 46 ms
+Simulation completed
+Simulation Memory Usage: 6096 KB (Peak: 6096 KB)
+Simulation CPU Usage: 46 ms

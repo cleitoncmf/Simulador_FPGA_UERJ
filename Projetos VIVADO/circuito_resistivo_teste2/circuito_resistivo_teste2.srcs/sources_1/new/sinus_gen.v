@@ -6,13 +6,17 @@ module sinus_gen(
     );
     
 //reg c = 1'b1; 
+
 reg c = 1'b1;   
 reg fixo = 1'b1;
 parameter SIZE = 262144;    
 reg [31:0] rom_memory [SIZE-1:0];
+
 //trocar variáveis para integer caso queira sintetizar para placa
+
 integer i;
 integer counter;
+
 //reg c =1b'1;
 
 integer tensao;
@@ -22,6 +26,7 @@ initial begin
     $readmemh("sine.mem", rom_memory); //File with the signal
     i = 0;
 end    
+
 //At every positive edge of the clock, output a sine wave sample.
 always@(posedge clk)
 begin
