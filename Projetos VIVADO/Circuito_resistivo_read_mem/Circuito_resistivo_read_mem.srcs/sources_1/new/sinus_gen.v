@@ -7,14 +7,14 @@ module sinus_gen(
     );
     
  
-parameter SIZE = 10;    
+parameter SIZE = 65536;    
 reg [31:0] rom_memory [SIZE-1:0];
 //trocar variáveis para integer caso queira sintetizar para placa
 integer i;
 
-real tensao;
-real corrente;
-real R=8.65;
+integer tensao;
+integer corrente;
+integer R=2;
 initial begin
     $readmemh("sine.mem", rom_memory); //File with the signal
     i = 0;
@@ -24,7 +24,7 @@ always@(posedge clk)
 begin
     sinus = rom_memory[i];
     tensao = sinus;
-    corrente = tensao*0.3;
+    corrente = tensao*0.5;
     i = i+ 1;
     if(i == SIZE)
         i = 0;
