@@ -14,7 +14,6 @@ import scipy.interpolate
 import numpy as np
 f=60
 vp=5
-
 t=0
 #------
 w=2*np.pi*f
@@ -25,11 +24,11 @@ tempo=[]
 n=1
 dt=(n/bits)
 
-phi=-w*t
+#phi=-w*t
 
 fonte_tensao=[]
 
-v=vp*np.sin(w*t+phi)
+#v=vp*np.sin(w*t+phi)
 tempo = np.linspace(0,bits-1,bits)
 
 
@@ -41,9 +40,10 @@ teste=[]
 teste_tensao=[]
 for i in range (0,bits,1):
     t=t+dt
-    teste.append(t)
+    #teste.append(t)
     teste_tensao.append(vp*np.sin((w*t)))
-    fonte_tensao.append(vp*np.sin((w*t))+5)
+    fonte_tensao.append(vp*np.sin((w*t))+5) #offset = +5V
+    
     '''
     if i==0:
         fonte_tensao.append(0)
@@ -70,7 +70,7 @@ for i in range (0,2**(exp-6),1):
     
 
 
-
+#--------------CONFIGURAÇÃO DE GRÁFICO PYTHON----------------------
     
 fig3 = plt.gcf() #cria a figura    
 plt.rcParams['figure.figsize'] = (60,40) #tamanho do gráfico
@@ -93,9 +93,10 @@ plt.grid(True, which='both')
 plt.tick_params(labelsize=50); 
 
 
+#--------------FIM DE CONFIGURAÇÃO DE GRÁFICO PYTHON---------------
 
 
-
+#------------------CRIAÇÃO DE ARQUIVO DE TEXTO---------------------
 resultado = "{}\n"
 arquivo = open("fonte_tensao_CA.txt","w")
 #mudar para sine.mem caso queira integrar direto para o vivado
@@ -104,7 +105,9 @@ arquivo = open("fonte_tensao_CA.txt","w")
 
 for i in range(0,len(fonte_tensao),1):
     arquivo.write(resultado.format(hex(int((fonte_tensao[i])*100))))
-
-
+    '''
+    multiplicado por 100 para garantir duas casas decimais
+    na leitura da simulação
+    '''
 arquivo.close
 
