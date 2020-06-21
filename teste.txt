@@ -1,5 +1,1 @@
-from rocketcea.cea_obj import CEA_Obj
-
-pau no cu do iguin
-
-dowijfpwefkmepoiferfwegre
+teste
