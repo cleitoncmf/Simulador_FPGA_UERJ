@@ -1,0 +1,58 @@
+==============================================================
+File generated on Wed Aug 12 18:55:22 -0300 2020
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2018.3 (64-bit)
+SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xa7a12tcsg325-1q'
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [SCHED 204-61] Option 'relax_ii_for_timing' is enabled, will increase II to preserve clock frequency constraints.
+INFO: [HLS 200-10] Analyzing design file 'CMF_duas_saidas.c' ... 
+INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:00:01 ; elapsed = 00:00:34 . Memory (MB): peak = 101.148 ; gain = 18.594
+INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:00:01 ; elapsed = 00:00:34 . Memory (MB): peak = 101.148 ; gain = 18.594
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:00:01 ; elapsed = 00:00:36 . Memory (MB): peak = 102.039 ; gain = 19.484
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability Time (s): cpu = 00:00:01 ; elapsed = 00:00:37 . Memory (MB): peak = 102.293 ; gain = 19.738
+INFO: [HLS 200-111] Finished Pre-synthesis Time (s): cpu = 00:00:01 ; elapsed = 00:00:38 . Memory (MB): peak = 122.535 ; gain = 39.980
+INFO: [HLS 200-111] Finished Architecture Synthesis Time (s): cpu = 00:00:01 ; elapsed = 00:00:38 . Memory (MB): peak = 122.535 ; gain = 39.980
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'CMF_duas_saidas' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'CMF_duas_saidas' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 39.063 seconds; current allocated memory: 73.988 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 1.615 seconds; current allocated memory: 74.041 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'CMF_duas_saidas' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-500] Setting interface mode on port 'CMF_duas_saidas/Saida1' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'CMF_duas_saidas/Saida2' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'CMF_duas_saidas/Entrada' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'CMF_duas_saidas' to 'ap_ctrl_hs'.
+INFO: [RTGEN 206-100] Finished creating RTL model for 'CMF_duas_saidas'.
+INFO: [HLS 200-111]  Elapsed time: 0.95 seconds; current allocated memory: 74.129 MB.
+INFO: [HLS 200-111] Finished generating all RTL models Time (s): cpu = 00:00:02 ; elapsed = 00:00:47 . Memory (MB): peak = 122.535 ; gain = 39.980
+INFO: [SYSC 207-301] Generating SystemC RTL for CMF_duas_saidas.
+INFO: [VHDL 208-304] Generating VHDL RTL for CMF_duas_saidas.
+INFO: [VLOG 209-307] Generating Verilog RTL for CMF_duas_saidas.
+INFO: [HLS 200-112] Total elapsed time: 47.163 seconds; peak allocated memory: 74.129 MB.
+==============================================================
+File generated on Wed Aug 12 18:56:55 -0300 2020
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2018.3 (64-bit)
+SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xa7a12tcsg325-1q'
+INFO: [IMPL 213-8] Exporting RTL as a Vivado IP.
