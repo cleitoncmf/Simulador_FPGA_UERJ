@@ -40,17 +40,17 @@
 			</item>
 		</ports>
 		<nodes class_id="8" tracking_level="0" version="0">
-			<count>1</count>
+			<count>3</count>
 			<item_version>0</item_version>
 			<item class_id="9" tracking_level="1" version="0" object_id="_2">
 				<Value>
 					<Obj>
 						<type>0</type>
 						<id>5</id>
-						<name></name>
+						<name>Entrada_read</name>
 						<fileName>CMFtestePrecision.c</fileName>
 						<fileDirectory>C:\Users\cleit\Documents\GitHub\Simulador_FPGA_UERJ\CMF-1308\HLS-precision</fileDirectory>
-						<lineNumber>16</lineNumber>
+						<lineNumber>7</lineNumber>
 						<contextFuncName>CMFtestePrecision</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -62,6 +62,104 @@
 									<item_version>0</item_version>
 									<item class_id="12" tracking_level="0" version="0">
 										<first class_id="13" tracking_level="0" version="0">
+											<first>CMFtestePrecision.c</first>
+											<second>CMFtestePrecision</second>
+										</first>
+										<second>7</second>
+									</item>
+								</second>
+							</item>
+						</inlineStackInfo>
+						<originalName>Entrada</originalName>
+						<rtlName></rtlName>
+						<coreName></coreName>
+					</Obj>
+					<bitwidth>1</bitwidth>
+				</Value>
+				<oprand_edges>
+					<count>2</count>
+					<item_version>0</item_version>
+					<item>10</item>
+					<item>11</item>
+				</oprand_edges>
+				<opcode>read</opcode>
+				<m_Display>0</m_Display>
+				<m_isOnCriticalPath>0</m_isOnCriticalPath>
+				<m_isLCDNode>0</m_isLCDNode>
+				<m_isStartOfPath>0</m_isStartOfPath>
+				<m_delay>0.00</m_delay>
+				<m_topoIndex>1</m_topoIndex>
+				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
+			</item>
+			<item class_id_reference="9" object_id="_3">
+				<Value>
+					<Obj>
+						<type>0</type>
+						<id>6</id>
+						<name>not_Entrada</name>
+						<fileName>CMFtestePrecision.c</fileName>
+						<fileDirectory>C:\Users\cleit\Documents\GitHub\Simulador_FPGA_UERJ\CMF-1308\HLS-precision</fileDirectory>
+						<lineNumber>9</lineNumber>
+						<contextFuncName>CMFtestePrecision</contextFuncName>
+						<inlineStackInfo>
+							<count>1</count>
+							<item_version>0</item_version>
+							<item>
+								<first>C:\Users\cleit\Documents\GitHub\Simulador_FPGA_UERJ\CMF-1308\HLS-precision</first>
+								<second>
+									<count>1</count>
+									<item_version>0</item_version>
+									<item>
+										<first>
+											<first>CMFtestePrecision.c</first>
+											<second>CMFtestePrecision</second>
+										</first>
+										<second>9</second>
+									</item>
+								</second>
+							</item>
+						</inlineStackInfo>
+						<originalName></originalName>
+						<rtlName></rtlName>
+						<coreName></coreName>
+					</Obj>
+					<bitwidth>1</bitwidth>
+				</Value>
+				<oprand_edges>
+					<count>2</count>
+					<item_version>0</item_version>
+					<item>12</item>
+					<item>14</item>
+				</oprand_edges>
+				<opcode>xor</opcode>
+				<m_Display>0</m_Display>
+				<m_isOnCriticalPath>0</m_isOnCriticalPath>
+				<m_isLCDNode>0</m_isLCDNode>
+				<m_isStartOfPath>0</m_isStartOfPath>
+				<m_delay>0.94</m_delay>
+				<m_topoIndex>2</m_topoIndex>
+				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
+			</item>
+			<item class_id_reference="9" object_id="_4">
+				<Value>
+					<Obj>
+						<type>0</type>
+						<id>7</id>
+						<name></name>
+						<fileName>CMFtestePrecision.c</fileName>
+						<fileDirectory>C:\Users\cleit\Documents\GitHub\Simulador_FPGA_UERJ\CMF-1308\HLS-precision</fileDirectory>
+						<lineNumber>16</lineNumber>
+						<contextFuncName>CMFtestePrecision</contextFuncName>
+						<inlineStackInfo>
+							<count>1</count>
+							<item_version>0</item_version>
+							<item>
+								<first>C:\Users\cleit\Documents\GitHub\Simulador_FPGA_UERJ\CMF-1308\HLS-precision</first>
+								<second>
+									<count>1</count>
+									<item_version>0</item_version>
+									<item>
+										<first>
 											<first>CMFtestePrecision.c</first>
 											<second>CMFtestePrecision</second>
 										</first>
@@ -79,7 +177,7 @@
 				<oprand_edges>
 					<count>1</count>
 					<item_version>0</item_version>
-					<item>8</item>
+					<item>15</item>
 				</oprand_edges>
 				<opcode>ret</opcode>
 				<m_Display>0</m_Display>
@@ -87,18 +185,18 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>1</m_topoIndex>
+				<m_topoIndex>3</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 		</nodes>
 		<consts class_id="15" tracking_level="0" version="0">
 			<count>1</count>
 			<item_version>0</item_version>
-			<item class_id="16" tracking_level="1" version="0" object_id="_3">
+			<item class_id="16" tracking_level="1" version="0" object_id="_5">
 				<Value>
 					<Obj>
 						<type>2</type>
-						<id>7</id>
+						<id>13</id>
 						<name>empty</name>
 						<fileName></fileName>
 						<fileDirectory></fileDirectory>
@@ -121,10 +219,10 @@
 		<blocks class_id="17" tracking_level="0" version="0">
 			<count>1</count>
 			<item_version>0</item_version>
-			<item class_id="18" tracking_level="1" version="0" object_id="_4">
+			<item class_id="18" tracking_level="1" version="0" object_id="_6">
 				<Obj>
 					<type>3</type>
-					<id>6</id>
+					<id>8</id>
 					<name>CMFtestePrecision</name>
 					<fileName></fileName>
 					<fileDirectory></fileDirectory>
@@ -139,20 +237,43 @@
 					<coreName></coreName>
 				</Obj>
 				<node_objs>
-					<count>1</count>
+					<count>3</count>
 					<item_version>0</item_version>
 					<item>5</item>
+					<item>6</item>
+					<item>7</item>
 				</node_objs>
 			</item>
 		</blocks>
 		<edges class_id="19" tracking_level="0" version="0">
-			<count>1</count>
+			<count>4</count>
 			<item_version>0</item_version>
-			<item class_id="20" tracking_level="1" version="0" object_id="_5">
-				<id>8</id>
+			<item class_id="20" tracking_level="1" version="0" object_id="_7">
+				<id>11</id>
 				<edge_type>1</edge_type>
-				<source_obj>7</source_obj>
+				<source_obj>1</source_obj>
 				<sink_obj>5</sink_obj>
+				<is_back_edge>0</is_back_edge>
+			</item>
+			<item class_id_reference="20" object_id="_8">
+				<id>12</id>
+				<edge_type>1</edge_type>
+				<source_obj>5</source_obj>
+				<sink_obj>6</sink_obj>
+				<is_back_edge>0</is_back_edge>
+			</item>
+			<item class_id_reference="20" object_id="_9">
+				<id>14</id>
+				<edge_type>1</edge_type>
+				<source_obj>13</source_obj>
+				<sink_obj>6</sink_obj>
+				<is_back_edge>0</is_back_edge>
+			</item>
+			<item class_id_reference="20" object_id="_10">
+				<id>15</id>
+				<edge_type>1</edge_type>
+				<source_obj>6</source_obj>
+				<sink_obj>7</sink_obj>
 				<is_back_edge>0</is_back_edge>
 			</item>
 		</edges>
@@ -160,7 +281,7 @@
 	<cdfg_regions class_id="21" tracking_level="0" version="0">
 		<count>1</count>
 		<item_version>0</item_version>
-		<item class_id="22" tracking_level="1" version="0" object_id="_6">
+		<item class_id="22" tracking_level="1" version="0" object_id="_11">
 			<mId>1</mId>
 			<mTag>CMFtestePrecision</mTag>
 			<mType>0</mType>
@@ -171,7 +292,7 @@
 			<basic_blocks>
 				<count>1</count>
 				<item_version>0</item_version>
-				<item>6</item>
+				<item>8</item>
 			</basic_blocks>
 			<mII>-1</mII>
 			<mDepth>-1</mDepth>
@@ -186,11 +307,25 @@
 	<fsm class_id="-1"></fsm>
 	<res class_id="-1"></res>
 	<node_label_latency class_id="26" tracking_level="0" version="0">
-		<count>1</count>
+		<count>3</count>
 		<item_version>0</item_version>
 		<item class_id="27" tracking_level="0" version="0">
 			<first>5</first>
 			<second class_id="28" tracking_level="0" version="0">
+				<first>0</first>
+				<second>0</second>
+			</second>
+		</item>
+		<item>
+			<first>6</first>
+			<second>
+				<first>0</first>
+				<second>0</second>
+			</second>
+		</item>
+		<item>
+			<first>7</first>
+			<second>
 				<first>0</first>
 				<second>0</second>
 			</second>
@@ -200,7 +335,7 @@
 		<count>1</count>
 		<item_version>0</item_version>
 		<item class_id="30" tracking_level="0" version="0">
-			<first>6</first>
+			<first>8</first>
 			<second class_id="31" tracking_level="0" version="0">
 				<first>0</first>
 				<second>0</second>

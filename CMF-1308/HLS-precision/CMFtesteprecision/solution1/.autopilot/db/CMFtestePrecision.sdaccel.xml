@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vivado HLS Report for 'CMFtestePrecision'" level="0">
-<item name = "Date">Thu Aug 13 10:02:03 2020
+<item name = "Date">Thu Aug 13 10:23:36 2020
 </item>
 <item name = "Version">2018.3 (Build 2405991 on Thu Dec 06 23:56:15 MST 2018)</item>
 <item name = "Project">CMFtesteprecision</item>
@@ -15,7 +15,7 @@
 <section name = "" level="1">
 <item name = "Target clock period (ns)">10.00</item>
 <item name = "Clock uncertainty (ns)">1.25</item>
-<item name = "Estimated clock period (ns)">0.000</item>
+<item name = "Estimated clock period (ns)">0.942</item>
 </section>
 </item>
 <item name = "Latency (clock cycles)">
@@ -45,14 +45,14 @@
 <item name = "Summary"><table name="" hasTotal="1">
 <keys size="5">Name, BRAM_18K, DSP48E, FF, LUT</keys>
 <column name="DSP">-, -, -, -</column>
-<column name="Expression">-, -, -, -</column>
+<column name="Expression">-, -, 0, 8</column>
 <column name="FIFO">-, -, -, -</column>
 <column name="Instance">-, -, -, -</column>
 <column name="Memory">-, -, -, -</column>
 <column name="Multiplexer">-, -, -, -</column>
 <column name="Register">-, -, -, -</column>
 <specialColumn name="Available">40, 40, 16000, 8000</specialColumn>
-<specialColumn name="Utilization (%)">0, 0, 0, 0</specialColumn>
+<specialColumn name="Utilization (%)">0, 0, 0, ~0</specialColumn>
 </table>
 </item>
 <item name = "Detail">
@@ -75,6 +75,7 @@
 </item>
 <item name = "Expression"><table name="" hasTotal="1">
 <keys size="7">Variable Name, Operation, DSP48E, FF, LUT, Bitwidth P0, Bitwidth P1</keys>
+<column name="ap_return">xor, 0, 0, 8, 2, 1</column>
 </table>
 </item>
 <item name = "Multiplexer"><table name="" hasTotal="1">
@@ -103,9 +104,11 @@
 </section>
 
 <section name = "Critical Path" level="0">
-<item name = "Max Delay">0.00</item>
+<item name = "Max Delay">0.94</item>
 <item name = "Critical Path Table"><table name="Critical Path Table" hasTotal="0">
 <keys size="15">Name, Operator, Delay, Accumulated Delay, Store Source, Resource, Core, Interface, Type, Port, Array, Scope, Pointer, Callee, Phi Node</keys>
+<column name="'Entrada', CMFtestePrecision.c:7">read, 0.00, 0.00, -, -, -, wire, read, &apos;Entrada&apos;, -, -, -, -, -</column>
+<column name="'not_Entrada', CMFtestePrecision.c:9">xor, 0.94, 0.94, -, -, -, -, -, -, -, -, -, -, -</column>
 </table>
 </item>
 </section>

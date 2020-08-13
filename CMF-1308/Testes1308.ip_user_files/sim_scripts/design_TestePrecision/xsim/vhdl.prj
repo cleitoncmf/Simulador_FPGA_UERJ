@@ -1,0 +1,5 @@
+vhdl xil_defaultlib  \
+"../../../bd/design_TestePrecision/ipshared/ce9f/CMFtesteprecision/solution1/syn/vhdl/CMFtestePrecision.vhd" \
+"../../../bd/design_TestePrecision/ip/design_TestePrecision_CMFtestePrecision_0_0/sim/design_TestePrecision_CMFtestePrecision_0_0.vhd" \
+
+nosort

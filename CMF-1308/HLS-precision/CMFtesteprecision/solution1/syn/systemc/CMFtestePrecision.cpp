@@ -29,6 +29,7 @@ CMFtestePrecision::CMFtestePrecision(sc_module_name name) : sc_module(name), mVc
 
     SC_METHOD(thread_ap_return);
     sensitive << ( ap_start );
+    sensitive << ( Entrada );
 
     SC_THREAD(thread_hdltv_gen);
     sensitive << ( ap_virtual_clock.pos() );
@@ -77,7 +78,7 @@ void CMFtestePrecision::thread_ap_ready() {
 }
 
 void CMFtestePrecision::thread_ap_return() {
-    ap_return = ap_const_lv1_1;
+    ap_return = (Entrada.read() ^ ap_const_lv1_1);
 }
 
 void CMFtestePrecision::thread_hdltv_gen() {

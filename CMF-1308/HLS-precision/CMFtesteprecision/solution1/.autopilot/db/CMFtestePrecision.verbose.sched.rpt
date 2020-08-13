@@ -3,7 +3,7 @@
 ================================================================
 == Vivado HLS Report for 'CMFtestePrecision'
 ================================================================
-* Date:           Thu Aug 13 10:02:00 2020
+* Date:           Thu Aug 13 10:23:36 2020
 
 * Version:        2018.3 (Build 2405991 on Thu Dec 06 23:56:15 MST 2018)
 * Project:        CMFtesteprecision
@@ -20,7 +20,7 @@
     +--------+-------+----------+------------+
     |  Clock | Target| Estimated| Uncertainty|
     +--------+-------+----------+------------+
-    |ap_clk  |  10.00|     0.000|        1.25|
+    |ap_clk  |  10.00|     0.942|        1.25|
     +--------+-------+----------+------------+
 
 + Latency (clock cycles): 
@@ -74,11 +74,13 @@ IsGatedGlobalClock: 0
 
 * FSM state operations: 
 
-State 1 <SV = 0> <Delay = 0.00>
+State 1 <SV = 0> <Delay = 0.94>
 ST_1 : Operation 2 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i1 %Entrada) nounwind, !map !7"   --->   Operation 2 'specbitsmap' <Predicate = true> <Delay = 0.00>
 ST_1 : Operation 3 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i1 false) nounwind, !map !13"   --->   Operation 3 'specbitsmap' <Predicate = true> <Delay = 0.00>
 ST_1 : Operation 4 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecTopModule([18 x i8]* @CMFtestePrecision_st) nounwind"   --->   Operation 4 'spectopmodule' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 5 [1/1] (0.00ns)   --->   "ret i1 true" [CMFtestePrecision.c:16]   --->   Operation 5 'ret' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 5 [1/1] (0.00ns)   --->   "%Entrada_read = call i1 @_ssdm_op_Read.ap_auto.i1(i1 %Entrada) nounwind" [CMFtestePrecision.c:7]   --->   Operation 5 'read' 'Entrada_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 6 [1/1] (0.94ns)   --->   "%not_Entrada = xor i1 %Entrada_read, true" [CMFtestePrecision.c:9]   --->   Operation 6 'xor' 'not_Entrada' <Predicate = true> <Delay = 0.94> <Core = "LogicGate">   --->   Core 27 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.94> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 7 [1/1] (0.00ns)   --->   "ret i1 %not_Entrada" [CMFtestePrecision.c:16]   --->   Operation 7 'ret' <Predicate = true> <Delay = 0.00>
 
 
 ============================================================
@@ -86,8 +88,10 @@ ST_1 : Operation 5 [1/1] (0.00ns)   --->   "ret i1 true" [CMFtestePrecision.c:16
 ============================================================
 Target clock period: 10ns, clock uncertainty: 1.25ns.
 
- <State 1>: 0ns
+ <State 1>: 0.942ns
 The critical path consists of the following:
+	wire read on port 'Entrada' (CMFtestePrecision.c:7) [5]  (0 ns)
+	'xor' operation ('not_Entrada', CMFtestePrecision.c:9) [6]  (0.942 ns)
 
 
 ============================================================

@@ -1,0 +1,12 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../Testes1308.ip_user_files/bd/design_TestePrecision/ip/design_TestePrecision_sim_clk_gen_0_0/sim/design_TestePrecision_sim_clk_gen_0_0.v" \
+"../../../../Testes1308.ip_user_files/bd/design_TestePrecision/sim/design_TestePrecision.v" \
+"../../../../Testes1308.ip_user_files/bd/design_TestePrecision/ipshared/ce9f/CMFtesteprecision/solution1/impl/verilog/CMFtestePrecision.v" \
+"../../../../Testes1308.srcs/sources_1/imports/hdl/design_TestePrecision_wrapper.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

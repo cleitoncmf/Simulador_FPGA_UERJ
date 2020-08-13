@@ -12,7 +12,7 @@ set isEnableWaveformDebug 1
 set C_modelName {CMFtestePrecision}
 set C_modelType { int 1 }
 set C_modelArgList {
-	{ Entrada int 1 unused  }
+	{ Entrada int 1 regular  }
 }
 set C_modelArgMapList {[ 
 	{ "Name" : "Entrada", "interface" : "wire", "bitwidth" : 1, "direction" : "READONLY", "bitSlice":[{"low":0,"up":0,"cElement": [{"cName": "Entrada","cData": "int1","bit_use": { "low": 0,"up": 0},"cArray": [{"low" : 0,"up" : 0,"step" : 0}]}]}]} , 
@@ -55,7 +55,7 @@ set RtlHierarchyInfo {[
 
 set ArgLastReadFirstWriteLatency {
 	CMFtestePrecision {
-		Entrada {Type I LastRead -1 FirstWrite -1}}}
+		Entrada {Type I LastRead 0 FirstWrite -1}}}
 
 set hasDtUnsupportedChannel 0
 

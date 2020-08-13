@@ -62,9 +62,39 @@
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="5" bw="0" op_0_bw="1">
+<Node id="5" bw="1" op_0_bw="1" op_1_bw="1">
 <![CDATA[
-:3  ret i1 true
+:3  %Entrada_read = call i1 @_ssdm_op_Read.ap_auto.i1(i1 %Entrada) nounwind
+
+]]></Node>
+<StgValue><ssdm name="Entrada_read"/></StgValue>
+</operation>
+
+<operation id="6" st_id="1" stage="1" lat="1">
+<core>LogicGate</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="6" bw="1" op_0_bw="1" op_1_bw="1">
+<![CDATA[
+:4  %not_Entrada = xor i1 %Entrada_read, true
+
+]]></Node>
+<StgValue><ssdm name="not_Entrada"/></StgValue>
+</operation>
+
+<operation id="7" st_id="1" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="7" bw="0" op_0_bw="1">
+<![CDATA[
+:5  ret i1 %not_Entrada
 
 ]]></Node>
 <StgValue><ssdm name=""/></StgValue>

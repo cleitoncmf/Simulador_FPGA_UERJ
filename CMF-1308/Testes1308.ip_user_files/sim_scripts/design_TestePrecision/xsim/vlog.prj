@@ -1,0 +1,8 @@
+verilog xil_defaultlib  \
+"../../../bd/design_TestePrecision/ip/design_TestePrecision_sim_clk_gen_0_0/sim/design_TestePrecision_sim_clk_gen_0_0.v" \
+"../../../bd/design_TestePrecision/sim/design_TestePrecision.v" \
+"../../../bd/design_TestePrecision/ipshared/ce9f/CMFtesteprecision/solution1/impl/verilog/CMFtestePrecision.v" \
+
+verilog xil_defaultlib "glbl.v"
+
+nosort

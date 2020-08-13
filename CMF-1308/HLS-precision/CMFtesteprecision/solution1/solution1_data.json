@@ -138,13 +138,13 @@
         "Timing": {
           "Target": "10.00",
           "Uncertainty": "1.25",
-          "Estimate": "0.000"
+          "Estimate": "0.942"
         },
         "Area": {
-          "BRAM_18K": "0",
-          "DSP48E": "0",
           "FF": "0",
-          "LUT": "0"
+          "LUT": "8",
+          "BRAM_18K": "0",
+          "DSP48E": "0"
         }
       }}
   },
@@ -158,7 +158,7 @@
   },
   "GenData": {
     "DataVersion": "0.1",
-    "Time": "2020-08-13 10:02:07 -0300",
+    "Time": "2020-08-13 10:23:37 -0300",
     "ToolName": "vivado_hls",
     "ToolVersion": "2018.3"
   }

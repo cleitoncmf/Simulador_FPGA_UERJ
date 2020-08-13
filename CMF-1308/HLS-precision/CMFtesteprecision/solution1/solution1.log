@@ -46,3 +46,93 @@ INFO: [SYSC 207-301] Generating SystemC RTL for CMFtestePrecision.
 INFO: [VHDL 208-304] Generating VHDL RTL for CMFtestePrecision.
 INFO: [VLOG 209-307] Generating Verilog RTL for CMFtestePrecision.
 INFO: [HLS 200-112] Total elapsed time: 49.958 seconds; peak allocated memory: 74.006 MB.
+==============================================================
+File generated on Thu Aug 13 10:18:36 -0300 2020
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2018.3 (64-bit)
+SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xa7a12tcsg325-1q'
+INFO: [SCHED 204-61] Option 'relax_ii_for_timing' is enabled, will increase II to preserve clock frequency constraints.
+INFO: [HLS 200-10] Analyzing design file 'CMFtestePrecision.c' ... 
+INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:00:00 ; elapsed = 00:00:23 . Memory (MB): peak = 101.230 ; gain = 15.770
+INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:00:00 ; elapsed = 00:00:23 . Memory (MB): peak = 101.230 ; gain = 15.770
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:00:00 ; elapsed = 00:00:26 . Memory (MB): peak = 101.867 ; gain = 16.406
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability Time (s): cpu = 00:00:00 ; elapsed = 00:00:27 . Memory (MB): peak = 102.121 ; gain = 16.660
+INFO: [HLS 200-111] Finished Pre-synthesis Time (s): cpu = 00:00:00 ; elapsed = 00:00:28 . Memory (MB): peak = 122.086 ; gain = 36.625
+INFO: [HLS 200-111] Finished Architecture Synthesis Time (s): cpu = 00:00:00 ; elapsed = 00:00:28 . Memory (MB): peak = 122.086 ; gain = 36.625
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'CMFtestePrecision' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'CMFtestePrecision' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 29.884 seconds; current allocated memory: 73.862 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.773 seconds; current allocated memory: 73.901 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'CMFtestePrecision' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-500] Setting interface mode on port 'CMFtestePrecision/Entrada' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'CMFtestePrecision' to 'ap_ctrl_hs'.
+INFO: [RTGEN 206-100] Finished creating RTL model for 'CMFtestePrecision'.
+INFO: [HLS 200-111]  Elapsed time: 1.921 seconds; current allocated memory: 74.002 MB.
+INFO: [HLS 200-111] Finished generating all RTL models Time (s): cpu = 00:00:01 ; elapsed = 00:00:37 . Memory (MB): peak = 122.086 ; gain = 36.625
+INFO: [SYSC 207-301] Generating SystemC RTL for CMFtestePrecision.
+INFO: [VHDL 208-304] Generating VHDL RTL for CMFtestePrecision.
+INFO: [VLOG 209-307] Generating Verilog RTL for CMFtestePrecision.
+INFO: [HLS 200-112] Total elapsed time: 37.643 seconds; peak allocated memory: 74.002 MB.
+==============================================================
+File generated on Thu Aug 13 10:23:20 -0300 2020
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2018.3 (64-bit)
+SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xa7a12tcsg325-1q'
+INFO: [SCHED 204-61] Option 'relax_ii_for_timing' is enabled, will increase II to preserve clock frequency constraints.
+INFO: [HLS 200-10] Analyzing design file 'CMFtestePrecision.c' ... 
+INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:00:01 ; elapsed = 00:00:16 . Memory (MB): peak = 101.129 ; gain = 16.270
+INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:00:01 ; elapsed = 00:00:16 . Memory (MB): peak = 101.129 ; gain = 16.270
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:00:01 ; elapsed = 00:00:17 . Memory (MB): peak = 102.098 ; gain = 17.238
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability Time (s): cpu = 00:00:01 ; elapsed = 00:00:17 . Memory (MB): peak = 102.371 ; gain = 17.512
+INFO: [HLS 200-111] Finished Pre-synthesis Time (s): cpu = 00:00:01 ; elapsed = 00:00:17 . Memory (MB): peak = 122.594 ; gain = 37.734
+INFO: [HLS 200-111] Finished Architecture Synthesis Time (s): cpu = 00:00:01 ; elapsed = 00:00:17 . Memory (MB): peak = 122.594 ; gain = 37.734
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'CMFtestePrecision' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'CMFtestePrecision' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 17.107 seconds; current allocated memory: 73.941 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.105 seconds; current allocated memory: 73.983 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'CMFtestePrecision' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-500] Setting interface mode on port 'CMFtestePrecision/Entrada' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'CMFtestePrecision' to 'ap_ctrl_hs'.
+INFO: [RTGEN 206-100] Finished creating RTL model for 'CMFtestePrecision'.
+INFO: [HLS 200-111]  Elapsed time: 0.129 seconds; current allocated memory: 74.089 MB.
+INFO: [HLS 200-111] Finished generating all RTL models Time (s): cpu = 00:00:01 ; elapsed = 00:00:19 . Memory (MB): peak = 122.594 ; gain = 37.734
+INFO: [SYSC 207-301] Generating SystemC RTL for CMFtestePrecision.
+INFO: [VHDL 208-304] Generating VHDL RTL for CMFtestePrecision.
+INFO: [VLOG 209-307] Generating Verilog RTL for CMFtestePrecision.
+INFO: [HLS 200-112] Total elapsed time: 18.955 seconds; peak allocated memory: 74.089 MB.

@@ -5,11 +5,12 @@
 
 ## Lista de IPs desenvolvidos
 
-
+1. **CMFtesteprecision**: Lê um bit e retorna a versão barrada dele
 
 
 ## Lista de Designs no VIVADO
 
+1. **design_TestePrecision**: testa o IP **CMFtesteprecision**
 
 
 ## Alguns Comentários

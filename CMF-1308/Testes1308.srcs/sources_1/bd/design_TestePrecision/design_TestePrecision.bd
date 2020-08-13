@@ -1,0 +1,42 @@
+{
+  "design": {
+    "design_info": {
+      "boundary_crc": "0x0",
+      "device": "xc7z020clg484-1",
+      "name": "design_TestePrecision",
+      "synth_flow_mode": "Hierarchical",
+      "tool_version": "2018.3",
+      "validated": "true"
+    },
+    "design_tree": {
+      "sim_clk_gen_0": "",
+      "CMFtestePrecision_0": ""
+    },
+    "components": {
+      "sim_clk_gen_0": {
+        "vlnv": "xilinx.com:ip:sim_clk_gen:1.0",
+        "xci_name": "design_TestePrecision_sim_clk_gen_0_0",
+        "parameters": {
+          "FREQ_HZ": {
+            "value": "10000000"
+          },
+          "RESET_POLARITY": {
+            "value": "ACTIVE_HIGH"
+          }
+        }
+      },
+      "CMFtestePrecision_0": {
+        "vlnv": "xilinx.com:user:CMFtestePrecision:1.0",
+        "xci_name": "design_TestePrecision_CMFtestePrecision_0_0"
+      }
+    },
+    "nets": {
+      "sim_clk_gen_0_clk": {
+        "ports": [
+          "sim_clk_gen_0/clk",
+          "CMFtestePrecision_0/Entrada"
+        ]
+      }
+    }
+  }
+}

@@ -1,4 +1,5 @@
 <annotationInfo>
 <annotationInfo>
+<item  id="6" filename="CMFtestePrecision.c" linenumber="9" name="not_Entrada" contextFuncName="CMFtestePrecision" moduleName="CMFtestePrecision" rtlName="ap_return" latency="0" BRAM="-1" DSP="-1" FF="0" LUT="8" fileDirectory="C:\Users\cleit\Documents\GitHub\Simulador_FPGA_UERJ\CMF-1308\HLS-precision"><\/item>
 <\/annotationInfo>
 </annotationInfo>
