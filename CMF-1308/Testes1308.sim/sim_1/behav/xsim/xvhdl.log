@@ -1,4 +1,7 @@
-INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/cleit/Documents/GitHub/Simulador_FPGA_UERJ/CMF-1308/Testes1308.ip_user_files/bd/design_Tcmffixed/ipshared/e3e1/CMFfixed/solution1/syn/vhdl/CMFtestefixed.vhd" into library xil_defaultlib
-INFO: [VRFC 10-3107] analyzing entity 'CMFtestefixed'
-INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/cleit/Documents/GitHub/Simulador_FPGA_UERJ/CMF-1308/Testes1308.ip_user_files/bd/design_Tcmffixed/ip/design_Tcmffixed_CMFtestefixed_0_0/sim/design_Tcmffixed_CMFtestefixed_0_0.vhd" into library xil_defaultlib
-INFO: [VRFC 10-3107] analyzing entity 'design_Tcmffixed_CMFtestefixed_0_0'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/cleit/Documents/GitHub/Simulador_FPGA_UERJ/CMF-1308/Testes1308.ip_user_files/bd/design_T_fixedop/ipshared/bb4f/CMFfixedop/solution1/syn/vhdl/CMFfixedop_mul_mubkb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'CMFfixedop_mul_mubkb_DSP48_0'
+INFO: [VRFC 10-3107] analyzing entity 'CMFfixedop_mul_mubkb'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/cleit/Documents/GitHub/Simulador_FPGA_UERJ/CMF-1308/Testes1308.ip_user_files/bd/design_T_fixedop/ipshared/bb4f/CMFfixedop/solution1/syn/vhdl/CMFfixedop.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'CMFfixedop'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/cleit/Documents/GitHub/Simulador_FPGA_UERJ/CMF-1308/Testes1308.ip_user_files/bd/design_T_fixedop/ip/design_T_fixedop_CMFfixedop_0_1/sim/design_T_fixedop_CMFfixedop_0_1.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'design_T_fixedop_CMFfixedop_0_1'

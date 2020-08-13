@@ -1,0 +1,545 @@
+
+
+================================================================
+== Vivado HLS Report for 'CMFfixedop'
+================================================================
+* Date:           Thu Aug 13 17:51:39 2020
+
+* Version:        2018.3 (Build 2405991 on Thu Dec 06 23:56:15 MST 2018)
+* Project:        CMFfixedop
+* Solution:       solution1
+* Product family: aartix7
+* Target device:  xa7a12tcsg325-1q
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing (ns): 
+    * Summary: 
+    +--------+-------+----------+------------+
+    |  Clock | Target| Estimated| Uncertainty|
+    +--------+-------+----------+------------+
+    |ap_clk  |  10.00|     7.180|        1.25|
+    +--------+-------+----------+------------+
+
++ Latency (clock cycles): 
+    * Summary: 
+    +-----+-----+-----+-----+---------+
+    |  Latency  |  Interval | Pipeline|
+    | min | max | min | max |   Type  |
+    +-----+-----+-----+-----+---------+
+    |    0|    0|    0|    0|   none  |
+    +-----+-----+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        N/A
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++-----------------+---------+-------+-------+------+
+|       Name      | BRAM_18K| DSP48E|   FF  |  LUT |
++-----------------+---------+-------+-------+------+
+|DSP              |        -|      1|      -|     -|
+|Expression       |        -|      -|      0|    25|
+|FIFO             |        -|      -|      -|     -|
+|Instance         |        -|      -|      -|     -|
+|Memory           |        -|      -|      -|     -|
+|Multiplexer      |        -|      -|      -|     -|
+|Register         |        -|      -|      -|     -|
++-----------------+---------+-------+-------+------+
+|Total            |        0|      1|      0|    25|
++-----------------+---------+-------+-------+------+
+|Available        |       40|     40|  16000|  8000|
++-----------------+---------+-------+-------+------+
+|Utilization (%)  |        0|      2|      0|  ~0  |
++-----------------+---------+-------+-------+------+
+
++ Detail: 
+    * Instance: 
+    N/A
+
+    * DSP48: 
+    +-------------------------+----------------------+-----------+
+    |         Instance        |        Module        | Expression|
+    +-------------------------+----------------------+-----------+
+    |CMFfixedop_mul_mubkb_U1  |CMFfixedop_mul_mubkb  |  i0 * i1  |
+    +-------------------------+----------------------+-----------+
+
+    * Memory: 
+    N/A
+
+    * FIFO: 
+    N/A
+
+    * Expression: 
+    +--------------+----------+-------+---+----+------------+------------+
+    | Variable Name| Operation| DSP48E| FF| LUT| Bitwidth P0| Bitwidth P1|
+    +--------------+----------+-------+---+----+------------+------------+
+    |Saida1_V      |     +    |      0|  0|  25|          18|          18|
+    +--------------+----------+-------+---+----+------------+------------+
+    |Total         |          |      0|  0|  25|          18|          18|
+    +--------------+----------+-------+---+----+------------+------------+
+
+    * Multiplexer: 
+    N/A
+
+    * Register: 
+    N/A
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
++-----------------+-----+-----+------------+--------------+--------------+
+|    RTL Ports    | Dir | Bits|  Protocol  | Source Object|    C Type    |
++-----------------+-----+-----+------------+--------------+--------------+
+|ap_start         |  in |    1| ap_ctrl_hs |  CMFfixedop  | return value |
+|ap_done          | out |    1| ap_ctrl_hs |  CMFfixedop  | return value |
+|ap_idle          | out |    1| ap_ctrl_hs |  CMFfixedop  | return value |
+|ap_ready         | out |    1| ap_ctrl_hs |  CMFfixedop  | return value |
+|Entrada1_V       |  in |   18|   ap_none  |  Entrada1_V  |    scalar    |
+|Entrada2_V       |  in |   18|   ap_none  |  Entrada2_V  |    scalar    |
+|Saida1_V         | out |   18|   ap_vld   |   Saida1_V   |    pointer   |
+|Saida1_V_ap_vld  | out |    1|   ap_vld   |   Saida1_V   |    pointer   |
+|Saida2_V         | out |   18|   ap_vld   |   Saida2_V   |    pointer   |
+|Saida2_V_ap_vld  | out |    1|   ap_vld   |   Saida2_V   |    pointer   |
++-----------------+-----+-----+------------+--------------+--------------+
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 1
+ResetActiveHigh: 1
+IsCombinational: 1
+IsDatapathOnly: 2
+HasWiredReturn: 1
+HasMFsm: 0
+HasVarLatency: 0
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 1
+* Pipeline : 0
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 7.18>
+ST_1 : Operation 2 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i18 %Entrada1_V), !map !27"   --->   Operation 2 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 3 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i18 %Entrada2_V), !map !33"   --->   Operation 3 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 4 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i18* %Saida1_V), !map !37"   --->   Operation 4 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 5 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i18* %Saida2_V), !map !43"   --->   Operation 5 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 6 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecTopModule([11 x i8]* @CMFfixedop_str) nounwind"   --->   Operation 6 'spectopmodule' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 7 [1/1] (0.00ns)   --->   "%Entrada2_V_read = call i18 @_ssdm_op_Read.ap_auto.i18(i18 %Entrada2_V)" [CMFfixedop.cpp:5]   --->   Operation 7 'read' 'Entrada2_V_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 8 [1/1] (0.00ns)   --->   "%Entrada1_V_read = call i18 @_ssdm_op_Read.ap_auto.i18(i18 %Entrada1_V)" [CMFfixedop.cpp:5]   --->   Operation 8 'read' 'Entrada1_V_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 9 [1/1] (2.21ns)   --->   "%addconv = add i18 %Entrada2_V_read, %Entrada1_V_read" [CMFfixedop.cpp:8]   --->   Operation 9 'add' 'addconv' <Predicate = true> <Delay = 2.21> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 2.21> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 10 [1/1] (0.00ns)   --->   "call void @_ssdm_op_Write.ap_auto.i18P(i18* %Saida1_V, i18 %addconv)" [CMFfixedop.cpp:8]   --->   Operation 10 'write' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 11 [1/1] (0.00ns)   --->   "%r_V_cast = sext i18 %Entrada1_V_read to i30" [CMFfixedop.cpp:10]   --->   Operation 11 'sext' 'r_V_cast' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 12 [1/1] (0.00ns)   --->   "%tmp_cast = sext i18 %Entrada2_V_read to i30" [CMFfixedop.cpp:10]   --->   Operation 12 'sext' 'tmp_cast' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 13 [1/1] (7.18ns) (root node of the DSP)   --->   "%r_V = mul i30 %tmp_cast, %r_V_cast" [CMFfixedop.cpp:10]   --->   Operation 13 'mul' 'r_V' <Predicate = true> <Delay = 7.18> <Core = "DSP48">   --->   Core 65 'DSP48' <Latency = 0> <II = 1> <Delay = 7.18> <IPBlock> <Opcode : 'mul' 'add' 'sub' 'select'> <InPorts = 0> <OutPorts = 1> <Sync> <CReg>
+ST_1 : Operation 14 [1/1] (0.00ns)   --->   "%tmp_3 = call i18 @_ssdm_op_PartSelect.i18.i30.i32.i32(i30 %r_V, i32 12, i32 29)" [CMFfixedop.cpp:10]   --->   Operation 14 'partselect' 'tmp_3' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 15 [1/1] (0.00ns)   --->   "call void @_ssdm_op_Write.ap_auto.i18P(i18* %Saida2_V, i18 %tmp_3)" [CMFfixedop.cpp:10]   --->   Operation 15 'write' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 16 [1/1] (0.00ns)   --->   "ret void" [CMFfixedop.cpp:13]   --->   Operation 16 'ret' <Predicate = true> <Delay = 0.00>
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+STG Binding: 
+---------------- STG Properties BEGIN ----------------
+- Is combinational: 1
+- Is one-state seq: 0
+- Is datapath-only: 0
+- Is pipelined: 0
+- Is top level: 1
+Port [ Return ] is wired: 1; IO mode=ap_ctrl_hs:ce=0
+Port [ Entrada1_V]:  wired=1; compound=0; hidden=0; nouse=0; global=0; static=0; extern=0; dir=0; type=0; pingpong=0; private_global=0; IO mode=ap_none:ce=0
+Port [ Entrada2_V]:  wired=1; compound=0; hidden=0; nouse=0; global=0; static=0; extern=0; dir=0; type=0; pingpong=0; private_global=0; IO mode=ap_none:ce=0
+Port [ Saida1_V]:  wired=1; compound=0; hidden=0; nouse=0; global=0; static=0; extern=0; dir=1; type=0; pingpong=0; private_global=0; IO mode=ap_vld:ce=0
+Port [ Saida2_V]:  wired=1; compound=0; hidden=0; nouse=0; global=0; static=0; extern=0; dir=1; type=0; pingpong=0; private_global=0; IO mode=ap_vld:ce=0
+---------------- STG Properties END ------------------
+
+---------------- Datapath Model BEGIN ----------------
+
+<LifeTime>
+<method=bitvector/>
+StgValue_2      (specbitsmap  ) [ 00]
+StgValue_3      (specbitsmap  ) [ 00]
+StgValue_4      (specbitsmap  ) [ 00]
+StgValue_5      (specbitsmap  ) [ 00]
+StgValue_6      (spectopmodule) [ 00]
+Entrada2_V_read (read         ) [ 00]
+Entrada1_V_read (read         ) [ 00]
+addconv         (add          ) [ 00]
+StgValue_10     (write        ) [ 00]
+r_V_cast        (sext         ) [ 00]
+tmp_cast        (sext         ) [ 00]
+r_V             (mul          ) [ 00]
+tmp_3           (partselect   ) [ 00]
+StgValue_15     (write        ) [ 00]
+StgValue_16     (ret          ) [ 00]
+</LifeTime>
+
+<model>
+
+<comp_list>
+<comp id="0" class="1000" name="Entrada1_V">
+<pin_list>
+<pin id="1" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="Entrada1_V"/></StgValue>
+</bind>
+</comp>
+
+<comp id="2" class="1000" name="Entrada2_V">
+<pin_list>
+<pin id="3" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="Entrada2_V"/></StgValue>
+</bind>
+</comp>
+
+<comp id="4" class="1000" name="Saida1_V">
+<pin_list>
+<pin id="5" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="Saida1_V"/></StgValue>
+</bind>
+</comp>
+
+<comp id="6" class="1000" name="Saida2_V">
+<pin_list>
+<pin id="7" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="Saida2_V"/></StgValue>
+</bind>
+</comp>
+
+<comp id="8" class="1001" name="const_8">
+<pin_list>
+<pin id="9" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="_ssdm_op_SpecBitsMap"/></StgValue>
+</bind>
+</comp>
+
+<comp id="10" class="1001" name="const_10">
+<pin_list>
+<pin id="11" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="_ssdm_op_SpecTopModule"/></StgValue>
+</bind>
+</comp>
+
+<comp id="12" class="1001" name="const_12">
+<pin_list>
+<pin id="13" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="CMFfixedop_str"/></StgValue>
+</bind>
+</comp>
+
+<comp id="14" class="1001" name="const_14">
+<pin_list>
+<pin id="15" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="_ssdm_op_Read.ap_auto.i18"/></StgValue>
+</bind>
+</comp>
+
+<comp id="16" class="1001" name="const_16">
+<pin_list>
+<pin id="17" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="_ssdm_op_Write.ap_auto.i18P"/></StgValue>
+</bind>
+</comp>
+
+<comp id="18" class="1001" name="const_18">
+<pin_list>
+<pin id="19" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="_ssdm_op_PartSelect.i18.i30.i32.i32"/></StgValue>
+</bind>
+</comp>
+
+<comp id="20" class="1001" name="const_20">
+<pin_list>
+<pin id="21" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name=""/></StgValue>
+</bind>
+</comp>
+
+<comp id="22" class="1001" name="const_22">
+<pin_list>
+<pin id="23" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name=""/></StgValue>
+</bind>
+</comp>
+
+<comp id="24" class="1004" name="Entrada2_V_read_read_fu_24">
+<pin_list>
+<pin id="25" dir="0" index="0" bw="18" slack="0"/>
+<pin id="26" dir="0" index="1" bw="18" slack="0"/>
+<pin id="27" dir="1" index="2" bw="18" slack="0"/>
+</pin_list>
+<bind>
+<opcode="read(1150) " fcode="read"/>
+<opset="Entrada2_V_read/1 "/>
+</bind>
+</comp>
+
+<comp id="30" class="1004" name="Entrada1_V_read_read_fu_30">
+<pin_list>
+<pin id="31" dir="0" index="0" bw="18" slack="0"/>
+<pin id="32" dir="0" index="1" bw="18" slack="0"/>
+<pin id="33" dir="1" index="2" bw="18" slack="0"/>
+</pin_list>
+<bind>
+<opcode="read(1150) " fcode="read"/>
+<opset="Entrada1_V_read/1 "/>
+</bind>
+</comp>
+
+<comp id="36" class="1004" name="StgValue_10_write_fu_36">
+<pin_list>
+<pin id="37" dir="0" index="0" bw="0" slack="0"/>
+<pin id="38" dir="0" index="1" bw="18" slack="0"/>
+<pin id="39" dir="0" index="2" bw="18" slack="0"/>
+<pin id="40" dir="1" index="3" bw="0" slack="2147483647"/>
+</pin_list>
+<bind>
+<opcode="write(1151) " fcode="write"/>
+<opset="StgValue_10/1 "/>
+</bind>
+</comp>
+
+<comp id="43" class="1004" name="StgValue_15_write_fu_43">
+<pin_list>
+<pin id="44" dir="0" index="0" bw="0" slack="0"/>
+<pin id="45" dir="0" index="1" bw="18" slack="0"/>
+<pin id="46" dir="0" index="2" bw="18" slack="0"/>
+<pin id="47" dir="1" index="3" bw="0" slack="2147483647"/>
+</pin_list>
+<bind>
+<opcode="write(1151) " fcode="write"/>
+<opset="StgValue_15/1 "/>
+</bind>
+</comp>
+
+<comp id="50" class="1004" name="addconv_fu_50">
+<pin_list>
+<pin id="51" dir="0" index="0" bw="18" slack="0"/>
+<pin id="52" dir="0" index="1" bw="18" slack="0"/>
+<pin id="53" dir="1" index="2" bw="18" slack="0"/>
+</pin_list>
+<bind>
+<opcode="add(8) " fcode="add"/>
+<opset="addconv/1 "/>
+</bind>
+</comp>
+
+<comp id="57" class="1004" name="r_V_cast_fu_57">
+<pin_list>
+<pin id="58" dir="0" index="0" bw="18" slack="0"/>
+<pin id="59" dir="1" index="1" bw="30" slack="0"/>
+</pin_list>
+<bind>
+<opcode="sext(35) " fcode="sext"/>
+<opset="r_V_cast/1 "/>
+</bind>
+</comp>
+
+<comp id="61" class="1004" name="tmp_cast_fu_61">
+<pin_list>
+<pin id="62" dir="0" index="0" bw="18" slack="0"/>
+<pin id="63" dir="1" index="1" bw="30" slack="0"/>
+</pin_list>
+<bind>
+<opcode="sext(35) " fcode="sext"/>
+<opset="tmp_cast/1 "/>
+</bind>
+</comp>
+
+<comp id="65" class="1004" name="tmp_3_fu_65">
+<pin_list>
+<pin id="66" dir="0" index="0" bw="18" slack="0"/>
+<pin id="67" dir="0" index="1" bw="30" slack="0"/>
+<pin id="68" dir="0" index="2" bw="5" slack="0"/>
+<pin id="69" dir="0" index="3" bw="6" slack="0"/>
+<pin id="70" dir="1" index="4" bw="18" slack="0"/>
+</pin_list>
+<bind>
+<opcode="partselect(1002) " fcode="partselect"/>
+<opset="tmp_3/1 "/>
+</bind>
+</comp>
+
+<comp id="75" class="1007" name="r_V_fu_75">
+<pin_list>
+<pin id="76" dir="0" index="0" bw="18" slack="0"/>
+<pin id="77" dir="0" index="1" bw="18" slack="0"/>
+<pin id="78" dir="1" index="2" bw="30" slack="0"/>
+</pin_list>
+<bind>
+<opcode="mul(12) " fcode="mul"/>
+<opset="r_V/1 "/>
+</bind>
+</comp>
+
+</comp_list>
+
+<net_list>
+<net id="28"><net_src comp="14" pin="0"/><net_sink comp="24" pin=0"/></net>
+
+<net id="29"><net_src comp="2" pin="0"/><net_sink comp="24" pin=1"/></net>
+
+<net id="34"><net_src comp="14" pin="0"/><net_sink comp="30" pin=0"/></net>
+
+<net id="35"><net_src comp="0" pin="0"/><net_sink comp="30" pin=1"/></net>
+
+<net id="41"><net_src comp="16" pin="0"/><net_sink comp="36" pin=0"/></net>
+
+<net id="42"><net_src comp="4" pin="0"/><net_sink comp="36" pin=1"/></net>
+
+<net id="48"><net_src comp="16" pin="0"/><net_sink comp="43" pin=0"/></net>
+
+<net id="49"><net_src comp="6" pin="0"/><net_sink comp="43" pin=1"/></net>
+
+<net id="54"><net_src comp="24" pin="2"/><net_sink comp="50" pin=0"/></net>
+
+<net id="55"><net_src comp="30" pin="2"/><net_sink comp="50" pin=1"/></net>
+
+<net id="56"><net_src comp="50" pin="2"/><net_sink comp="36" pin=2"/></net>
+
+<net id="60"><net_src comp="30" pin="2"/><net_sink comp="57" pin=0"/></net>
+
+<net id="64"><net_src comp="24" pin="2"/><net_sink comp="61" pin=0"/></net>
+
+<net id="71"><net_src comp="18" pin="0"/><net_sink comp="65" pin=0"/></net>
+
+<net id="72"><net_src comp="20" pin="0"/><net_sink comp="65" pin=2"/></net>
+
+<net id="73"><net_src comp="22" pin="0"/><net_sink comp="65" pin=3"/></net>
+
+<net id="74"><net_src comp="65" pin="4"/><net_sink comp="43" pin=2"/></net>
+
+<net id="79"><net_src comp="61" pin="1"/><net_sink comp="75" pin=0"/></net>
+
+<net id="80"><net_src comp="57" pin="1"/><net_sink comp="75" pin=1"/></net>
+
+<net id="81"><net_src comp="75" pin="2"/><net_sink comp="65" pin=1"/></net>
+
+</net_list>
+
+</model> 
+---------------- Datapath Model END ------------------
+
+* FSMD analyzer results:
+  - Output states:
+	Port: Saida1_V | {1 }
+	Port: Saida2_V | {1 }
+ - Input state : 
+	Port: CMFfixedop : Entrada1_V | {1 }
+	Port: CMFfixedop : Entrada2_V | {1 }
+  - Chain level:
+	State 1
+		StgValue_10 : 1
+		r_V : 1
+		tmp_3 : 2
+		StgValue_15 : 3
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+
+* Functional unit list:
+|----------|----------------------------|---------|---------|---------|
+| Operation|       Functional Unit      |  DSP48E |    FF   |   LUT   |
+|----------|----------------------------|---------|---------|---------|
+|    add   |        addconv_fu_50       |    0    |    0    |    25   |
+|----------|----------------------------|---------|---------|---------|
+|    mul   |          r_V_fu_75         |    1    |    0    |    0    |
+|----------|----------------------------|---------|---------|---------|
+|   read   | Entrada2_V_read_read_fu_24 |    0    |    0    |    0    |
+|          | Entrada1_V_read_read_fu_30 |    0    |    0    |    0    |
+|----------|----------------------------|---------|---------|---------|
+|   write  |   StgValue_10_write_fu_36  |    0    |    0    |    0    |
+|          |   StgValue_15_write_fu_43  |    0    |    0    |    0    |
+|----------|----------------------------|---------|---------|---------|
+|   sext   |       r_V_cast_fu_57       |    0    |    0    |    0    |
+|          |       tmp_cast_fu_61       |    0    |    0    |    0    |
+|----------|----------------------------|---------|---------|---------|
+|partselect|         tmp_3_fu_65        |    0    |    0    |    0    |
+|----------|----------------------------|---------|---------|---------|
+|   Total  |                            |    1    |    0    |    25   |
+|----------|----------------------------|---------|---------|---------|
+
+Memories:
+N/A
+
+* Register list:
+N/A
+
+* Multiplexer (MUX) list: 
+|--------|------|------|------|--------|
+|  Comp  |  Pin | Size |  BW  | S x BW |
+|--------|------|------|------|--------|
+|  Total |      |      |      |    0   |
+|--------|------|------|------|--------|
+
+
+
+* Summary:
++-----------+--------+--------+--------+
+|           | DSP48E |   FF   |   LUT  |
++-----------+--------+--------+--------+
+|  Function |    1   |    0   |   25   |
+|   Memory  |    -   |    -   |    -   |
+|Multiplexer|    -   |    -   |    -   |
+|  Register |    -   |    -   |    -   |
++-----------+--------+--------+--------+
+|   Total   |    1   |    0   |   25   |
++-----------+--------+--------+--------+

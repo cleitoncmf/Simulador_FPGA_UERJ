@@ -1,0 +1,9 @@
+{
+	"version": "1.0",
+	"modules": {
+		"CMFfixedop": {
+			"proto_instances": {
+			}
+		}
+	}
+}

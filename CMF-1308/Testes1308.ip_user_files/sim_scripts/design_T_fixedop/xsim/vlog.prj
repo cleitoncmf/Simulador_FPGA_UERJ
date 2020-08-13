@@ -1,0 +1,12 @@
+verilog xil_defaultlib  \
+"../../../bd/design_T_fixedop/ip/design_T_fixedop_sim_clk_gen_0_0/sim/design_T_fixedop_sim_clk_gen_0_0.v" \
+"../../../bd/design_T_fixedop/ip/design_T_fixedop_xlconstant_0_0/sim/design_T_fixedop_xlconstant_0_0.v" \
+"../../../bd/design_T_fixedop/ip/design_T_fixedop_xlconstant_0_1/sim/design_T_fixedop_xlconstant_0_1.v" \
+"../../../bd/design_T_fixedop/sim/design_T_fixedop.v" \
+"../../../bd/design_T_fixedop/ip/design_T_fixedop_xlconstant_1_0/sim/design_T_fixedop_xlconstant_1_0.v" \
+"../../../bd/design_T_fixedop/ipshared/bb4f/CMFfixedop/solution1/impl/verilog/CMFfixedop_mul_mubkb.v" \
+"../../../bd/design_T_fixedop/ipshared/bb4f/CMFfixedop/solution1/impl/verilog/CMFfixedop.v" \
+
+verilog xil_defaultlib "glbl.v"
+
+nosort

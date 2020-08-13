@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Root MajorVersion="0" MinorVersion="36">
+  <CompositeFile CompositeFileTopName="design_T_fixedop" CanBeSetAsTop="false" CanDisplayChildGraph="true">
+    <Description>Composite Fileset</Description>
+    <Generation Name="SYNTHESIS" State="STALE" Timestamp="1597352273"/>
+    <Generation Name="IMPLEMENTATION" State="STALE" Timestamp="1597352273"/>
+    <Generation Name="SIMULATION" State="GENERATED" Timestamp="1597352274"/>
+    <Generation Name="HW_HANDOFF" State="GENERATED" Timestamp="1597352274"/>
+    <FileCollection Name="SOURCES" Type="SOURCES">
+      <File Name="ip\design_T_fixedop_sim_clk_gen_0_0\design_T_fixedop_sim_clk_gen_0_0.xci" Type="IP">
+        <Instance HierarchyPath="sim_clk_gen_0"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip\design_T_fixedop_xlconstant_0_0\design_T_fixedop_xlconstant_0_0.xci" Type="IP">
+        <Instance HierarchyPath="xlconstant_0"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip\design_T_fixedop_xlconstant_0_1\design_T_fixedop_xlconstant_0_1.xci" Type="IP">
+        <Instance HierarchyPath="xlconstant_1"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="synth\design_T_fixedop.v" Type="Verilog">
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="false" IsStatusTracked="false"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+      </File>
+      <File Name="sim\design_T_fixedop.v" Type="Verilog">
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="false" IsStatusTracked="false"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip\design_T_fixedop_xlconstant_1_0\design_T_fixedop_xlconstant_1_0.xci" Type="IP">
+        <Instance HierarchyPath="xlconstant_2"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip\design_T_fixedop_CMFfixedop_0_1\design_T_fixedop_CMFfixedop_0_1.xci" Type="IP">
+        <Instance HierarchyPath="CMFfixedop_0"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="design_T_fixedop_ooc.xdc" Type="XDC">
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="false" IsStatusTracked="false"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="OUT_OF_CONTEXT"/>
+      </File>
+      <File Name="hw_handoff\design_T_fixedop.hwh" Type="HwHandoff">
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="false" IsStatusTracked="false"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="HW_HANDOFF"/>
+      </File>
+      <File Name="hw_handoff\design_T_fixedop_bd.tcl">
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="false" IsStatusTracked="false"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="HW_HANDOFF"/>
+      </File>
+      <File Name="synth\design_T_fixedop.hwdef">
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="false" IsStatusTracked="false"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="HW_HANDOFF"/>
+      </File>
+      <File Name="sim\design_T_fixedop.protoinst">
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="false" IsStatusTracked="false"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+    </FileCollection>
+  </CompositeFile>
+</Root>

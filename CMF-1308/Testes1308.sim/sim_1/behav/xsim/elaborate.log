@@ -1,6 +1,6 @@
 Vivado Simulator 2018.3
 Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
-Running: C:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 27e8eb4a60864fd18f6bea767eb1c015 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L xlconstant_v1_1_5 -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot design_Tcmffixed_wrapper_behav xil_defaultlib.design_Tcmffixed_wrapper xil_defaultlib.glbl -log elaborate.log 
+Running: C:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 27e8eb4a60864fd18f6bea767eb1c015 --incr --debug typical --relax --mt 2 -L sim_clk_gen_v1_0_2 -L xil_defaultlib -L xlconstant_v1_1_5 -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot design_T_fixedop_wrapper_behav xil_defaultlib.design_T_fixedop_wrapper xil_defaultlib.glbl -log elaborate.log 
 Using 2 slave threads.
 Starting static elaboration
 Completed static elaboration
@@ -11,13 +11,19 @@ Compiling package std.standard
 Compiling package std.textio
 Compiling package ieee.std_logic_1164
 Compiling package ieee.numeric_std
-Compiling architecture behav of entity xil_defaultlib.CMFtestefixed [cmftestefixed_default]
-Compiling architecture design_tcmffixed_cmftestefixed_0_0_arch of entity xil_defaultlib.design_Tcmffixed_CMFtestefixed_0_0 [design_tcmffixed_cmftestefixed_0...]
+Compiling architecture behav of entity xil_defaultlib.CMFfixedop_mul_mubkb_DSP48_0 [cmffixedop_mul_mubkb_dsp48_0_def...]
+Compiling architecture arch of entity xil_defaultlib.CMFfixedop_mul_mubkb [\CMFfixedop_mul_mubkb(id=1,num_s...]
+Compiling architecture behav of entity xil_defaultlib.CMFfixedop [cmffixedop_default]
+Compiling architecture design_t_fixedop_cmffixedop_0_1_arch of entity xil_defaultlib.design_T_fixedop_CMFfixedop_0_1 [design_t_fixedop_cmffixedop_0_1_...]
+Compiling module sim_clk_gen_v1_0_2.sim_clk_gen(CLOCK_PERIOD=10)
+Compiling module xil_defaultlib.design_T_fixedop_sim_clk_gen_0_0
 Compiling module xlconstant_v1_1_5.xlconstant_v1_1_5_xlconstant(CON...
-Compiling module xil_defaultlib.design_Tcmffixed_xlconstant_0_0
+Compiling module xil_defaultlib.design_T_fixedop_xlconstant_0_0
 Compiling module xlconstant_v1_1_5.xlconstant_v1_1_5_xlconstant(CON...
-Compiling module xil_defaultlib.design_Tcmffixed_xlconstant_0_1
-Compiling module xil_defaultlib.design_Tcmffixed
-Compiling module xil_defaultlib.design_Tcmffixed_wrapper
+Compiling module xil_defaultlib.design_T_fixedop_xlconstant_0_1
+Compiling module xlconstant_v1_1_5.xlconstant_v1_1_5_xlconstant(CON...
+Compiling module xil_defaultlib.design_T_fixedop_xlconstant_1_0
+Compiling module xil_defaultlib.design_T_fixedop
+Compiling module xil_defaultlib.design_T_fixedop_wrapper
 Compiling module xil_defaultlib.glbl
-Built simulation snapshot design_Tcmffixed_wrapper_behav
+Built simulation snapshot design_T_fixedop_wrapper_behav

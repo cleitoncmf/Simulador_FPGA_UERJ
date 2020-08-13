@@ -1,0 +1,120 @@
+
+
+================================================================
+== Vivado HLS Report for 'CMFfixedop'
+================================================================
+* Date:           Thu Aug 13 17:51:29 2020
+
+* Version:        2018.3 (Build 2405991 on Thu Dec 06 23:56:15 MST 2018)
+* Project:        CMFfixedop
+* Solution:       solution1
+* Product family: aartix7
+* Target device:  xa7a12tcsg325-1q
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing (ns): 
+    * Summary: 
+    +--------+-------+----------+------------+
+    |  Clock | Target| Estimated| Uncertainty|
+    +--------+-------+----------+------------+
+    |ap_clk  |  10.00|     7.180|        1.25|
+    +--------+-------+----------+------------+
+
++ Latency (clock cycles): 
+    * Summary: 
+    +-----+-----+-----+-----+---------+
+    |  Latency  |  Interval | Pipeline|
+    | min | max | min | max |   Type  |
+    +-----+-----+-----+-----+---------+
+    |    0|    0|    0|    0|   none  |
+    +-----+-----+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        N/A
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 1
+ResetActiveHigh: 1
+IsCombinational: 0
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 0
+HasVarLatency: 0
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 1
+* Pipeline : 0
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 7.18>
+ST_1 : Operation 2 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i18 %Entrada1_V), !map !27"   --->   Operation 2 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 3 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i18 %Entrada2_V), !map !33"   --->   Operation 3 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 4 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i18* %Saida1_V), !map !37"   --->   Operation 4 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 5 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i18* %Saida2_V), !map !43"   --->   Operation 5 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 6 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecTopModule([11 x i8]* @CMFfixedop_str) nounwind"   --->   Operation 6 'spectopmodule' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 7 [1/1] (0.00ns)   --->   "%Entrada2_V_read = call i18 @_ssdm_op_Read.ap_auto.i18(i18 %Entrada2_V)" [CMFfixedop.cpp:5]   --->   Operation 7 'read' 'Entrada2_V_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 8 [1/1] (0.00ns)   --->   "%Entrada1_V_read = call i18 @_ssdm_op_Read.ap_auto.i18(i18 %Entrada1_V)" [CMFfixedop.cpp:5]   --->   Operation 8 'read' 'Entrada1_V_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 9 [1/1] (2.21ns)   --->   "%addconv = add i18 %Entrada2_V_read, %Entrada1_V_read" [CMFfixedop.cpp:8]   --->   Operation 9 'add' 'addconv' <Predicate = true> <Delay = 2.21> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 2.21> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 10 [1/1] (0.00ns)   --->   "call void @_ssdm_op_Write.ap_auto.i18P(i18* %Saida1_V, i18 %addconv)" [CMFfixedop.cpp:8]   --->   Operation 10 'write' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 11 [1/1] (0.00ns)   --->   "%r_V_cast = sext i18 %Entrada1_V_read to i30" [CMFfixedop.cpp:10]   --->   Operation 11 'sext' 'r_V_cast' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 12 [1/1] (0.00ns)   --->   "%tmp_cast = sext i18 %Entrada2_V_read to i30" [CMFfixedop.cpp:10]   --->   Operation 12 'sext' 'tmp_cast' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 13 [1/1] (7.18ns) (root node of the DSP)   --->   "%r_V = mul i30 %tmp_cast, %r_V_cast" [CMFfixedop.cpp:10]   --->   Operation 13 'mul' 'r_V' <Predicate = true> <Delay = 7.18> <Core = "DSP48">   --->   Core 65 'DSP48' <Latency = 0> <II = 1> <Delay = 7.18> <IPBlock> <Opcode : 'mul' 'add' 'sub' 'select'> <InPorts = 0> <OutPorts = 1> <Sync> <CReg>
+ST_1 : Operation 14 [1/1] (0.00ns)   --->   "%tmp_3 = call i18 @_ssdm_op_PartSelect.i18.i30.i32.i32(i30 %r_V, i32 12, i32 29)" [CMFfixedop.cpp:10]   --->   Operation 14 'partselect' 'tmp_3' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 15 [1/1] (0.00ns)   --->   "call void @_ssdm_op_Write.ap_auto.i18P(i18* %Saida2_V, i18 %tmp_3)" [CMFfixedop.cpp:10]   --->   Operation 15 'write' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 16 [1/1] (0.00ns)   --->   "ret void" [CMFfixedop.cpp:13]   --->   Operation 16 'ret' <Predicate = true> <Delay = 0.00>
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 10ns, clock uncertainty: 1.25ns.
+
+ <State 1>: 7.18ns
+The critical path consists of the following:
+	wire read on port 'Entrada2_V' (CMFfixedop.cpp:5) [10]  (0 ns)
+	'mul' operation of DSP[16] ('r.V', CMFfixedop.cpp:10) [16]  (7.18 ns)
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A
