@@ -1,0 +1,9 @@
+{
+	"version": "1.0",
+	"modules": {
+		"CMF_teste_array_2": {
+			"proto_instances": {
+			}
+		}
+	}
+}

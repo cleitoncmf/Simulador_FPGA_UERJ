@@ -1,0 +1,132 @@
+<profile>
+
+<section name = "Vivado HLS Report for 'CMF_teste_array_2'" level="0">
+<item name = "Date">Wed Aug 12 20:30:43 2020
+</item>
+<item name = "Version">2018.3 (Build 2405991 on Thu Dec 06 23:56:15 MST 2018)</item>
+<item name = "Project">CMF_teste_array_2</item>
+<item name = "Solution">solution1</item>
+<item name = "Product family">aartix7</item>
+<item name = "Target device">xa7a12tcsg325-1q</item>
+</section>
+
+<section name = "Performance Estimates" level="0">
+<item name = "Timing (ns)">
+<section name = "" level="1">
+<item name = "Target clock period (ns)">10.00</item>
+<item name = "Clock uncertainty (ns)">1.25</item>
+<item name = "Estimated clock period (ns)">8.433</item>
+</section>
+</item>
+<item name = "Latency (clock cycles)">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="6">, min, max, min, max, Type</keys>
+<column name="">1, 1, 1, 1, none</column>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="0">
+<keys size="7">Instance, Module, min, max, min, max, Type</keys>
+</table>
+</item>
+<item name = "Loop"><table name="" hasTotal="0">
+<keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
+</table>
+</item>
+</section>
+</item>
+</section>
+</item>
+</section>
+
+<section name = "Utilization Estimates" level="0">
+<item name = "Summary"><table name="" hasTotal="1">
+<keys size="5">Name, BRAM_18K, DSP48E, FF, LUT</keys>
+<column name="DSP">-, -, -, -</column>
+<column name="Expression">-, -, 0, 58</column>
+<column name="FIFO">-, -, -, -</column>
+<column name="Instance">-, -, -, -</column>
+<column name="Memory">0, -, 6, 1</column>
+<column name="Multiplexer">-, -, -, 30</column>
+<column name="Register">-, -, 18, -</column>
+<specialColumn name="Available">40, 40, 16000, 8000</specialColumn>
+<specialColumn name="Utilization (%)">0, 0, ~0, 1</specialColumn>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="1">
+<keys size="6">Instance, Module, BRAM_18K, DSP48E, FF, LUT</keys>
+</table>
+</item>
+<item name = "DSP48"><table name="" hasTotal="0">
+<keys size="3">Instance, Module, Expression</keys>
+</table>
+</item>
+<item name = "Memory"><table name="" hasTotal="1">
+<keys size="9">Memory, Module, BRAM_18K, FF, LUT, Words, Bits, Banks, W*Bits*Banks</keys>
+<column name="dados1_U">CMF_teste_array_2bkb, 0, 6, 1, 5, 6, 1, 30</column>
+</table>
+</item>
+<item name = "FIFO"><table name="" hasTotal="1">
+<keys size="7">Name, BRAM_18K, FF, LUT, Depth, Bits, Size:D*B</keys>
+</table>
+</item>
+<item name = "Expression"><table name="" hasTotal="1">
+<keys size="7">Variable Name, Operation, DSP48E, FF, LUT, Bitwidth P0, Bitwidth P1</keys>
+<column name="tmp_3_fu_106_p2">+, 0, 0, 22, 15, 1</column>
+<column name="icmp_fu_100_p2">icmp, 0, 0, 13, 13, 1</column>
+<column name="storemerge_fu_112_p3">select, 0, 0, 15, 1, 15</column>
+<column name="tmp_fu_73_p2">xor, 0, 0, 8, 1, 1</column>
+</table>
+</item>
+<item name = "Multiplexer"><table name="" hasTotal="1">
+<keys size="5">Name, LUT, Input Size, Bits, Total Bits</keys>
+<column name="ap_NS_fsm">15, 3, 1, 3</column>
+<column name="ap_phi_mux_tmp_6_phi_fu_63_p4">15, 3, 15, 45</column>
+</table>
+</item>
+<item name = "Register"><table name="" hasTotal="1">
+<keys size="5">Name, FF, LUT, Bits, Const Bits</keys>
+<column name="SimCLK">1, 0, 1, 0</column>
+<column name="ap_CS_fsm">2, 0, 2, 0</column>
+<column name="k">15, 0, 15, 0</column>
+</table>
+</item>
+</section>
+</item>
+</section>
+
+<section name = "Interface" level="0">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="6">RTL Ports, Dir, Bits, Protocol, Source Object, C Type</keys>
+<column name="ap_clk">in, 1, ap_ctrl_hs, CMF_teste_array_2, return value</column>
+<column name="ap_rst">in, 1, ap_ctrl_hs, CMF_teste_array_2, return value</column>
+<column name="ap_start">in, 1, ap_ctrl_hs, CMF_teste_array_2, return value</column>
+<column name="ap_done">out, 1, ap_ctrl_hs, CMF_teste_array_2, return value</column>
+<column name="ap_idle">out, 1, ap_ctrl_hs, CMF_teste_array_2, return value</column>
+<column name="ap_ready">out, 1, ap_ctrl_hs, CMF_teste_array_2, return value</column>
+<column name="pulsoSinc">in, 1, ap_none, pulsoSinc, scalar</column>
+<column name="Saida">out, 15, ap_vld, Saida, pointer</column>
+<column name="Saida_ap_vld">out, 1, ap_vld, Saida, pointer</column>
+</table>
+</item>
+</section>
+
+<section name = "Critical Path" level="0">
+<item name = "Max Delay">8.43</item>
+<item name = "Critical Path Table"><table name="Critical Path Table" hasTotal="0">
+<keys size="15">Name, Operator, Delay, Accumulated Delay, Store Source, Resource, Core, Interface, Type, Port, Array, Scope, Pointer, Callee, Phi Node</keys>
+<column name="'k_load', CMF_teste_array_2.c:22">load, 0.00, 0.00, -, -, -, -, -, -, -, -, &apos;k&apos;, -, -</column>
+<column name="'tmp_3', CMF_teste_array_2.c:23">add, 2.14, 2.14, -, -, -, -, -, -, -, -, -, -, -</column>
+<column name="'storemerge', CMF_teste_array_2.c:22">select, 1.37, 3.51, -, -, -, -, -, -, -, -, -, -, -</column>
+<column name="'tmp_6', CMF_teste_array_2.c:22">phi, 0.00, 3.51, -, -, -, -, -, -, -, -, -, -, &apos;k_load&apos;, CMF_teste_array_2.c:22, &apos;storemerge&apos;, CMF_teste_array_2.c:22</column>
+<column name="'tmp_7', CMF_teste_array_2.c:35">zext, 0.00, 3.51, -, -, -, -, -, -, -, -, -, -, -</column>
+<column name="'dados1_addr', CMF_teste_array_2.c:35">getelementptr, 0.00, 3.51, -, -, -, -, -, -, -, -, -, -, -</column>
+<column name="'dados1_load', CMF_teste_array_2.c:35">load, 3.26, 6.77, -, -, -, -, -, -, &apos;dados1&apos;, -, -, -, -</column>
+</table>
+</item>
+</section>
+</profile>

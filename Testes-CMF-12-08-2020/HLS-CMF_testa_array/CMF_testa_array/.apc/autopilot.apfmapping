@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
+  <source>
+    <originFiles name="CMF_testa_array.c" path="C:\Users\cleit\Desktop\Testes-CMF-12-08-2020\HLS-CMF_testa_array\CMF_testa_array.c"/>
+    <originFiles name="CMF_testa_array.h" path="C:\Users\cleit\Desktop\Testes-CMF-12-08-2020\HLS-CMF_testa_array\CMF_testa_array.h"/>
+  </source>
+  <testbench/>
+</autopilotfilemapping:AutoPilotFileMapping>

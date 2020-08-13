@@ -1,0 +1,698 @@
+
+
+================================================================
+== Vivado HLS Report for 'CMF_teste_array_2'
+================================================================
+* Date:           Wed Aug 12 20:30:43 2020
+
+* Version:        2018.3 (Build 2405991 on Thu Dec 06 23:56:15 MST 2018)
+* Project:        CMF_teste_array_2
+* Solution:       solution1
+* Product family: aartix7
+* Target device:  xa7a12tcsg325-1q
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing (ns): 
+    * Summary: 
+    +--------+-------+----------+------------+
+    |  Clock | Target| Estimated| Uncertainty|
+    +--------+-------+----------+------------+
+    |ap_clk  |  10.00|     8.433|        1.25|
+    +--------+-------+----------+------------+
+
++ Latency (clock cycles): 
+    * Summary: 
+    +-----+-----+-----+-----+---------+
+    |  Latency  |  Interval | Pipeline|
+    | min | max | min | max |   Type  |
+    +-----+-----+-----+-----+---------+
+    |    1|    1|    1|    1|   none  |
+    +-----+-----+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        N/A
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 1
+ResetActiveHigh: 1
+IsCombinational: 0
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 0
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 2
+* Pipeline : 0
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 
+	2  / true
+2 --> 
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 8.43>
+ST_1 : Operation 3 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i1 %pulsoSinc) nounwind, !map !7"   --->   Operation 3 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 4 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i15* %Saida) nounwind, !map !13"   --->   Operation 4 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 5 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecTopModule([18 x i8]* @CMF_teste_array_2_st) nounwind"   --->   Operation 5 'spectopmodule' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 6 [1/1] (0.00ns)   --->   "%pulsoSinc_read = call i1 @_ssdm_op_Read.ap_auto.i1(i1 %pulsoSinc) nounwind" [CMF_teste_array_2.c:6]   --->   Operation 6 'read' 'pulsoSinc_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 7 [1/1] (0.00ns)   --->   "%SimCLK_load = load i1* @SimCLK, align 1" [CMF_teste_array_2.c:20]   --->   Operation 7 'load' 'SimCLK_load' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 8 [1/1] (0.94ns)   --->   "%tmp = xor i1 %SimCLK_load, %pulsoSinc_read" [CMF_teste_array_2.c:20]   --->   Operation 8 'xor' 'tmp' <Predicate = true> <Delay = 0.94> <Core = "LogicGate">   --->   Core 27 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.94> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 9 [1/1] (0.00ns)   --->   "%k_load = load i15* @k, align 2" [CMF_teste_array_2.c:22]   --->   Operation 9 'load' 'k_load' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 10 [1/1] (1.66ns)   --->   "br i1 %tmp, label %._crit_edge, label %._crit_edge4" [CMF_teste_array_2.c:20]   --->   Operation 10 'br' <Predicate = true> <Delay = 1.66>
+ST_1 : Operation 11 [1/1] (0.00ns)   --->   "store i1 %pulsoSinc_read, i1* @SimCLK, align 1" [CMF_teste_array_2.c:21]   --->   Operation 11 'store' <Predicate = (tmp)> <Delay = 0.00>
+ST_1 : Operation 12 [1/1] (0.00ns)   --->   "%tmp_1 = call i13 @_ssdm_op_PartSelect.i13.i15.i32.i32(i15 %k_load, i32 2, i32 14)" [CMF_teste_array_2.c:22]   --->   Operation 12 'partselect' 'tmp_1' <Predicate = (tmp)> <Delay = 0.00>
+ST_1 : Operation 13 [1/1] (2.04ns)   --->   "%icmp = icmp slt i13 %tmp_1, 1" [CMF_teste_array_2.c:22]   --->   Operation 13 'icmp' 'icmp' <Predicate = (tmp)> <Delay = 2.04> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 2.04> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 14 [1/1] (2.14ns)   --->   "%tmp_3 = add i15 %k_load, 1" [CMF_teste_array_2.c:23]   --->   Operation 14 'add' 'tmp_3' <Predicate = (tmp)> <Delay = 2.14> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 2.14> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 15 [1/1] (1.37ns)   --->   "%storemerge = select i1 %icmp, i15 %tmp_3, i15 0" [CMF_teste_array_2.c:22]   --->   Operation 15 'select' 'storemerge' <Predicate = (tmp)> <Delay = 1.37> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 1.37> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_1 : Operation 16 [1/1] (0.00ns)   --->   "store i15 %storemerge, i15* @k, align 2" [CMF_teste_array_2.c:23]   --->   Operation 16 'store' <Predicate = (tmp)> <Delay = 0.00>
+ST_1 : Operation 17 [1/1] (1.66ns)   --->   "br label %._crit_edge4" [CMF_teste_array_2.c:28]   --->   Operation 17 'br' <Predicate = (tmp)> <Delay = 1.66>
+ST_1 : Operation 18 [1/1] (0.00ns)   --->   "%tmp_6 = phi i15 [ %storemerge, %._crit_edge ], [ %k_load, %0 ]" [CMF_teste_array_2.c:22]   --->   Operation 18 'phi' 'tmp_6' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 19 [1/1] (0.00ns)   --->   "%tmp_7 = zext i15 %tmp_6 to i64" [CMF_teste_array_2.c:35]   --->   Operation 19 'zext' 'tmp_7' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 20 [1/1] (0.00ns)   --->   "%dados1_addr = getelementptr [5 x i6]* @dados1, i64 0, i64 %tmp_7" [CMF_teste_array_2.c:35]   --->   Operation 20 'getelementptr' 'dados1_addr' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 21 [2/2] (3.25ns)   --->   "%dados1_load = load i6* %dados1_addr, align 1" [CMF_teste_array_2.c:35]   --->   Operation 21 'load' 'dados1_load' <Predicate = true> <Delay = 3.25> <Core = "ROM_nP">   --->   Core 52 'ROM_nP' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load'> <Ports = 0> <Width = 6> <Depth = 5> <ROM>
+
+State 2 <SV = 1> <Delay = 3.25>
+ST_2 : Operation 22 [1/2] (3.25ns)   --->   "%dados1_load = load i6* %dados1_addr, align 1" [CMF_teste_array_2.c:35]   --->   Operation 22 'load' 'dados1_load' <Predicate = true> <Delay = 3.25> <Core = "ROM_nP">   --->   Core 52 'ROM_nP' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load'> <Ports = 0> <Width = 6> <Depth = 5> <ROM>
+ST_2 : Operation 23 [1/1] (0.00ns)   --->   "%dados1_load_cast = zext i6 %dados1_load to i15" [CMF_teste_array_2.c:35]   --->   Operation 23 'zext' 'dados1_load_cast' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 24 [1/1] (0.00ns)   --->   "call void @_ssdm_op_Write.ap_auto.i15P(i15* %Saida, i15 %dados1_load_cast) nounwind" [CMF_teste_array_2.c:35]   --->   Operation 24 'write' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 25 [1/1] (0.00ns)   --->   "ret void" [CMF_teste_array_2.c:39]   --->   Operation 25 'ret' <Predicate = true> <Delay = 0.00>
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+STG Binding: 
+---------------- STG Properties BEGIN ----------------
+- Is combinational: 0
+- Is one-state seq: 0
+- Is datapath-only: 0
+- Is pipelined: 0
+- Is top level: 1
+Port [ Return ] is wired: 1; IO mode=ap_ctrl_hs:ce=0
+Port [ pulsoSinc]:  wired=1; compound=0; hidden=0; nouse=0; global=0; static=0; extern=0; dir=0; type=0; pingpong=0; private_global=0; IO mode=ap_none:ce=0
+Port [ Saida]:  wired=1; compound=0; hidden=0; nouse=0; global=0; static=0; extern=0; dir=1; type=0; pingpong=0; private_global=0; IO mode=ap_vld:ce=0
+Port [ SimCLK]:  wired=0; compound=0; hidden=1; nouse=0; global=1; static=1; extern=0; dir=2; type=0; pingpong=0; private_global=1; linkage=7; visibility=0; IO mode=ap_ovld:ce=0
+Port [ k]:  wired=0; compound=0; hidden=1; nouse=0; global=1; static=1; extern=0; dir=2; type=0; pingpong=0; private_global=1; linkage=7; visibility=0; IO mode=ap_ovld:ce=0
+Port [ dados1]:  wired=0; compound=1; hidden=1; nouse=0; global=1; static=1; extern=0; dir=0; type=1; pingpong=0; private_global=1; linkage=7; visibility=0; MemPort=[1]; IO mode=ap_memory:ce=0
+---------------- STG Properties END ------------------
+
+---------------- Datapath Model BEGIN ----------------
+
+<LifeTime>
+<method=bitvector/>
+StgValue_3       (specbitsmap  ) [ 000]
+StgValue_4       (specbitsmap  ) [ 000]
+StgValue_5       (spectopmodule) [ 000]
+pulsoSinc_read   (read         ) [ 000]
+SimCLK_load      (load         ) [ 000]
+tmp              (xor          ) [ 010]
+k_load           (load         ) [ 000]
+StgValue_10      (br           ) [ 000]
+StgValue_11      (store        ) [ 000]
+tmp_1            (partselect   ) [ 000]
+icmp             (icmp         ) [ 000]
+tmp_3            (add          ) [ 000]
+storemerge       (select       ) [ 000]
+StgValue_16      (store        ) [ 000]
+StgValue_17      (br           ) [ 000]
+tmp_6            (phi          ) [ 000]
+tmp_7            (zext         ) [ 000]
+dados1_addr      (getelementptr) [ 001]
+dados1_load      (load         ) [ 000]
+dados1_load_cast (zext         ) [ 000]
+StgValue_24      (write        ) [ 000]
+StgValue_25      (ret          ) [ 000]
+</LifeTime>
+
+<model>
+
+<comp_list>
+<comp id="0" class="1000" name="pulsoSinc">
+<pin_list>
+<pin id="1" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="pulsoSinc"/></StgValue>
+</bind>
+</comp>
+
+<comp id="2" class="1000" name="Saida">
+<pin_list>
+<pin id="3" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="Saida"/></StgValue>
+</bind>
+</comp>
+
+<comp id="4" class="1000" name="SimCLK">
+<pin_list>
+<pin id="5" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="SimCLK"/></StgValue>
+</bind>
+</comp>
+
+<comp id="6" class="1000" name="k">
+<pin_list>
+<pin id="7" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="k"/></StgValue>
+</bind>
+</comp>
+
+<comp id="8" class="1000" name="dados1">
+<pin_list>
+<pin id="9" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="dados1"/><MemPortTyVec>1 </MemPortTyVec>
+</StgValue>
+</bind>
+</comp>
+
+<comp id="10" class="1001" name="const_10">
+<pin_list>
+<pin id="11" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="_ssdm_op_SpecBitsMap"/></StgValue>
+</bind>
+</comp>
+
+<comp id="12" class="1001" name="const_12">
+<pin_list>
+<pin id="13" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="_ssdm_op_SpecTopModule"/></StgValue>
+</bind>
+</comp>
+
+<comp id="14" class="1001" name="const_14">
+<pin_list>
+<pin id="15" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="CMF_teste_array_2_st"/></StgValue>
+</bind>
+</comp>
+
+<comp id="16" class="1001" name="const_16">
+<pin_list>
+<pin id="17" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="_ssdm_op_Read.ap_auto.i1"/></StgValue>
+</bind>
+</comp>
+
+<comp id="18" class="1001" name="const_18">
+<pin_list>
+<pin id="19" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="_ssdm_op_PartSelect.i13.i15.i32.i32"/></StgValue>
+</bind>
+</comp>
+
+<comp id="20" class="1001" name="const_20">
+<pin_list>
+<pin id="21" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name=""/></StgValue>
+</bind>
+</comp>
+
+<comp id="22" class="1001" name="const_22">
+<pin_list>
+<pin id="23" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name=""/></StgValue>
+</bind>
+</comp>
+
+<comp id="24" class="1001" name="const_24">
+<pin_list>
+<pin id="25" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name=""/></StgValue>
+</bind>
+</comp>
+
+<comp id="26" class="1001" name="const_26">
+<pin_list>
+<pin id="27" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name=""/></StgValue>
+</bind>
+</comp>
+
+<comp id="28" class="1001" name="const_28">
+<pin_list>
+<pin id="29" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name=""/></StgValue>
+</bind>
+</comp>
+
+<comp id="30" class="1001" name="const_30">
+<pin_list>
+<pin id="31" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name=""/></StgValue>
+</bind>
+</comp>
+
+<comp id="32" class="1001" name="const_32">
+<pin_list>
+<pin id="33" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="_ssdm_op_Write.ap_auto.i15P"/></StgValue>
+</bind>
+</comp>
+
+<comp id="34" class="1004" name="pulsoSinc_read_read_fu_34">
+<pin_list>
+<pin id="35" dir="0" index="0" bw="1" slack="0"/>
+<pin id="36" dir="0" index="1" bw="1" slack="0"/>
+<pin id="37" dir="1" index="2" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<opcode="read(1150) " fcode="read"/>
+<opset="pulsoSinc_read/1 "/>
+</bind>
+</comp>
+
+<comp id="40" class="1004" name="StgValue_24_write_fu_40">
+<pin_list>
+<pin id="41" dir="0" index="0" bw="0" slack="0"/>
+<pin id="42" dir="0" index="1" bw="15" slack="0"/>
+<pin id="43" dir="0" index="2" bw="6" slack="0"/>
+<pin id="44" dir="1" index="3" bw="0" slack="2147483647"/>
+</pin_list>
+<bind>
+<opcode="write(1151) " fcode="write"/>
+<opset="StgValue_24/2 "/>
+</bind>
+</comp>
+
+<comp id="47" class="1004" name="dados1_addr_gep_fu_47">
+<pin_list>
+<pin id="48" dir="0" index="0" bw="6" slack="0"/>
+<pin id="49" dir="0" index="1" bw="1" slack="0"/>
+<pin id="50" dir="0" index="2" bw="15" slack="0"/>
+<pin id="51" dir="1" index="3" bw="3" slack="0"/>
+</pin_list>
+<bind>
+<opcode="getelementptr(29) " fcode="getelementptr"/>
+<opset="dados1_addr/1 "/>
+</bind>
+</comp>
+
+<comp id="54" class="1004" name="grp_access_fu_54">
+<pin_list>
+<pin id="55" dir="0" index="0" bw="3" slack="0"/>
+<pin id="56" dir="0" index="1" bw="6" slack="2147483647"/>
+<pin id="57" dir="0" index="2" bw="0" slack="2147483647"/>
+<pin id="58" dir="1" index="3" bw="6" slack="0"/>
+</pin_list>
+<bind>
+<opcode="load(27) " fcode="load"/>
+<opset="dados1_load/1 "/>
+</bind>
+</comp>
+
+<comp id="60" class="1005" name="tmp_6_reg_60">
+<pin_list>
+<pin id="61" dir="0" index="0" bw="15" slack="2147483647"/>
+<pin id="62" dir="1" index="1" bw="15" slack="2147483647"/>
+</pin_list>
+<bind>
+<opset="tmp_6 (phireg) "/>
+</bind>
+</comp>
+
+<comp id="63" class="1004" name="tmp_6_phi_fu_63">
+<pin_list>
+<pin id="64" dir="0" index="0" bw="15" slack="0"/>
+<pin id="65" dir="0" index="1" bw="0" slack="2147483647"/>
+<pin id="66" dir="0" index="2" bw="15" slack="0"/>
+<pin id="67" dir="0" index="3" bw="0" slack="2147483647"/>
+<pin id="68" dir="1" index="4" bw="15" slack="0"/>
+</pin_list>
+<bind>
+<opcode="phi(47) " fcode="phi"/>
+<opset="tmp_6/1 "/>
+</bind>
+</comp>
+
+<comp id="69" class="1004" name="SimCLK_load_load_fu_69">
+<pin_list>
+<pin id="70" dir="0" index="0" bw="1" slack="0"/>
+<pin id="71" dir="1" index="1" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<opcode="load(27) " fcode="load"/>
+<opset="SimCLK_load/1 "/>
+</bind>
+</comp>
+
+<comp id="73" class="1004" name="tmp_fu_73">
+<pin_list>
+<pin id="74" dir="0" index="0" bw="1" slack="0"/>
+<pin id="75" dir="0" index="1" bw="1" slack="0"/>
+<pin id="76" dir="1" index="2" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<opcode="xor(25) " fcode="xor"/>
+<opset="tmp/1 "/>
+</bind>
+</comp>
+
+<comp id="79" class="1004" name="k_load_load_fu_79">
+<pin_list>
+<pin id="80" dir="0" index="0" bw="15" slack="0"/>
+<pin id="81" dir="1" index="1" bw="15" slack="0"/>
+</pin_list>
+<bind>
+<opcode="load(27) " fcode="load"/>
+<opset="k_load/1 "/>
+</bind>
+</comp>
+
+<comp id="84" class="1004" name="StgValue_11_store_fu_84">
+<pin_list>
+<pin id="85" dir="0" index="0" bw="1" slack="0"/>
+<pin id="86" dir="0" index="1" bw="1" slack="0"/>
+<pin id="87" dir="1" index="2" bw="0" slack="2147483647"/>
+</pin_list>
+<bind>
+<opcode="store(28) " fcode="store"/>
+<opset="StgValue_11/1 "/>
+</bind>
+</comp>
+
+<comp id="90" class="1004" name="tmp_1_fu_90">
+<pin_list>
+<pin id="91" dir="0" index="0" bw="13" slack="0"/>
+<pin id="92" dir="0" index="1" bw="15" slack="0"/>
+<pin id="93" dir="0" index="2" bw="3" slack="0"/>
+<pin id="94" dir="0" index="3" bw="5" slack="0"/>
+<pin id="95" dir="1" index="4" bw="13" slack="0"/>
+</pin_list>
+<bind>
+<opcode="partselect(1002) " fcode="partselect"/>
+<opset="tmp_1/1 "/>
+</bind>
+</comp>
+
+<comp id="100" class="1004" name="icmp_fu_100">
+<pin_list>
+<pin id="101" dir="0" index="0" bw="13" slack="0"/>
+<pin id="102" dir="0" index="1" bw="1" slack="0"/>
+<pin id="103" dir="1" index="2" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<opcode="icmp(45) " fcode="icmp"/>
+<opset="icmp/1 "/>
+</bind>
+</comp>
+
+<comp id="106" class="1004" name="tmp_3_fu_106">
+<pin_list>
+<pin id="107" dir="0" index="0" bw="15" slack="0"/>
+<pin id="108" dir="0" index="1" bw="1" slack="0"/>
+<pin id="109" dir="1" index="2" bw="15" slack="0"/>
+</pin_list>
+<bind>
+<opcode="add(8) " fcode="add"/>
+<opset="tmp_3/1 "/>
+</bind>
+</comp>
+
+<comp id="112" class="1004" name="storemerge_fu_112">
+<pin_list>
+<pin id="113" dir="0" index="0" bw="1" slack="0"/>
+<pin id="114" dir="0" index="1" bw="15" slack="0"/>
+<pin id="115" dir="0" index="2" bw="1" slack="0"/>
+<pin id="116" dir="1" index="3" bw="15" slack="0"/>
+</pin_list>
+<bind>
+<opcode="select(49) " fcode="select"/>
+<opset="storemerge/1 "/>
+</bind>
+</comp>
+
+<comp id="121" class="1004" name="StgValue_16_store_fu_121">
+<pin_list>
+<pin id="122" dir="0" index="0" bw="15" slack="0"/>
+<pin id="123" dir="0" index="1" bw="15" slack="0"/>
+<pin id="124" dir="1" index="2" bw="0" slack="2147483647"/>
+</pin_list>
+<bind>
+<opcode="store(28) " fcode="store"/>
+<opset="StgValue_16/1 "/>
+</bind>
+</comp>
+
+<comp id="127" class="1004" name="tmp_7_fu_127">
+<pin_list>
+<pin id="128" dir="0" index="0" bw="15" slack="0"/>
+<pin id="129" dir="1" index="1" bw="64" slack="0"/>
+</pin_list>
+<bind>
+<opcode="zext(34) " fcode="zext"/>
+<opset="tmp_7/1 "/>
+</bind>
+</comp>
+
+<comp id="132" class="1004" name="dados1_load_cast_fu_132">
+<pin_list>
+<pin id="133" dir="0" index="0" bw="6" slack="0"/>
+<pin id="134" dir="1" index="1" bw="15" slack="0"/>
+</pin_list>
+<bind>
+<opcode="zext(34) " fcode="zext"/>
+<opset="dados1_load_cast/2 "/>
+</bind>
+</comp>
+
+<comp id="140" class="1005" name="dados1_addr_reg_140">
+<pin_list>
+<pin id="141" dir="0" index="0" bw="3" slack="1"/>
+<pin id="142" dir="1" index="1" bw="3" slack="1"/>
+</pin_list>
+<bind>
+<opset="dados1_addr "/>
+</bind>
+</comp>
+
+</comp_list>
+
+<net_list>
+<net id="38"><net_src comp="16" pin="0"/><net_sink comp="34" pin=0"/></net>
+
+<net id="39"><net_src comp="0" pin="0"/><net_sink comp="34" pin=1"/></net>
+
+<net id="45"><net_src comp="32" pin="0"/><net_sink comp="40" pin=0"/></net>
+
+<net id="46"><net_src comp="2" pin="0"/><net_sink comp="40" pin=1"/></net>
+
+<net id="52"><net_src comp="8" pin="0"/><net_sink comp="47" pin=0"/></net>
+
+<net id="53"><net_src comp="30" pin="0"/><net_sink comp="47" pin=1"/></net>
+
+<net id="59"><net_src comp="47" pin="3"/><net_sink comp="54" pin=0"/></net>
+
+<net id="72"><net_src comp="4" pin="0"/><net_sink comp="69" pin=0"/></net>
+
+<net id="77"><net_src comp="69" pin="1"/><net_sink comp="73" pin=0"/></net>
+
+<net id="78"><net_src comp="34" pin="2"/><net_sink comp="73" pin=1"/></net>
+
+<net id="82"><net_src comp="6" pin="0"/><net_sink comp="79" pin=0"/></net>
+
+<net id="83"><net_src comp="79" pin="1"/><net_sink comp="63" pin=2"/></net>
+
+<net id="88"><net_src comp="34" pin="2"/><net_sink comp="84" pin=0"/></net>
+
+<net id="89"><net_src comp="4" pin="0"/><net_sink comp="84" pin=1"/></net>
+
+<net id="96"><net_src comp="18" pin="0"/><net_sink comp="90" pin=0"/></net>
+
+<net id="97"><net_src comp="79" pin="1"/><net_sink comp="90" pin=1"/></net>
+
+<net id="98"><net_src comp="20" pin="0"/><net_sink comp="90" pin=2"/></net>
+
+<net id="99"><net_src comp="22" pin="0"/><net_sink comp="90" pin=3"/></net>
+
+<net id="104"><net_src comp="90" pin="4"/><net_sink comp="100" pin=0"/></net>
+
+<net id="105"><net_src comp="24" pin="0"/><net_sink comp="100" pin=1"/></net>
+
+<net id="110"><net_src comp="79" pin="1"/><net_sink comp="106" pin=0"/></net>
+
+<net id="111"><net_src comp="26" pin="0"/><net_sink comp="106" pin=1"/></net>
+
+<net id="117"><net_src comp="100" pin="2"/><net_sink comp="112" pin=0"/></net>
+
+<net id="118"><net_src comp="106" pin="2"/><net_sink comp="112" pin=1"/></net>
+
+<net id="119"><net_src comp="28" pin="0"/><net_sink comp="112" pin=2"/></net>
+
+<net id="120"><net_src comp="112" pin="3"/><net_sink comp="63" pin=0"/></net>
+
+<net id="125"><net_src comp="112" pin="3"/><net_sink comp="121" pin=0"/></net>
+
+<net id="126"><net_src comp="6" pin="0"/><net_sink comp="121" pin=1"/></net>
+
+<net id="130"><net_src comp="63" pin="4"/><net_sink comp="127" pin=0"/></net>
+
+<net id="131"><net_src comp="127" pin="1"/><net_sink comp="47" pin=2"/></net>
+
+<net id="135"><net_src comp="54" pin="3"/><net_sink comp="132" pin=0"/></net>
+
+<net id="136"><net_src comp="132" pin="1"/><net_sink comp="40" pin=2"/></net>
+
+<net id="143"><net_src comp="47" pin="3"/><net_sink comp="140" pin=0"/></net>
+
+<net id="144"><net_src comp="140" pin="1"/><net_sink comp="54" pin=0"/></net>
+
+</net_list>
+
+</model> 
+---------------- Datapath Model END ------------------
+
+* FSMD analyzer results:
+  - Output states:
+	Port: Saida | {2 }
+	Port: SimCLK | {1 }
+	Port: k | {1 }
+ - Input state : 
+	Port: CMF_teste_array_2 : pulsoSinc | {1 }
+	Port: CMF_teste_array_2 : SimCLK | {1 }
+	Port: CMF_teste_array_2 : k | {1 }
+	Port: CMF_teste_array_2 : dados1 | {1 2 }
+  - Chain level:
+	State 1
+		tmp : 1
+		StgValue_10 : 1
+		tmp_1 : 1
+		icmp : 2
+		tmp_3 : 1
+		storemerge : 3
+		StgValue_16 : 4
+		tmp_6 : 4
+		tmp_7 : 5
+		dados1_addr : 6
+		dados1_load : 7
+	State 2
+		dados1_load_cast : 1
+		StgValue_24 : 2
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+
+* Functional unit list:
+|----------|---------------------------|---------|---------|
+| Operation|      Functional Unit      |    FF   |   LUT   |
+|----------|---------------------------|---------|---------|
+|    add   |        tmp_3_fu_106       |    0    |    22   |
+|----------|---------------------------|---------|---------|
+|  select  |     storemerge_fu_112     |    0    |    15   |
+|----------|---------------------------|---------|---------|
+|   icmp   |        icmp_fu_100        |    0    |    13   |
+|----------|---------------------------|---------|---------|
+|    xor   |         tmp_fu_73         |    0    |    8    |
+|----------|---------------------------|---------|---------|
+|   read   | pulsoSinc_read_read_fu_34 |    0    |    0    |
+|----------|---------------------------|---------|---------|
+|   write  |  StgValue_24_write_fu_40  |    0    |    0    |
+|----------|---------------------------|---------|---------|
+|partselect|        tmp_1_fu_90        |    0    |    0    |
+|----------|---------------------------|---------|---------|
+|   zext   |        tmp_7_fu_127       |    0    |    0    |
+|          |  dados1_load_cast_fu_132  |    0    |    0    |
+|----------|---------------------------|---------|---------|
+|   Total  |                           |    0    |    58   |
+|----------|---------------------------|---------|---------|
+
+Memories:
++------+--------+--------+--------+
+|      |  BRAM  |   FF   |   LUT  |
++------+--------+--------+--------+
+|dados1|    0   |    6   |    1   |
++------+--------+--------+--------+
+| Total|    0   |    6   |    1   |
++------+--------+--------+--------+
+
+* Register list:
++-------------------+--------+
+|                   |   FF   |
++-------------------+--------+
+|dados1_addr_reg_140|    3   |
+|    tmp_6_reg_60   |   15   |
++-------------------+--------+
+|       Total       |   18   |
++-------------------+--------+
+
+* Multiplexer (MUX) list: 
+|------------------|------|------|------|--------||---------||---------|
+|       Comp       |  Pin | Size |  BW  | S x BW ||  Delay  ||   LUT   |
+|------------------|------|------|------|--------||---------||---------|
+| grp_access_fu_54 |  p0  |   2  |   3  |    6   ||    9    |
+|------------------|------|------|------|--------||---------||---------|
+|       Total      |      |      |      |    6   ||  1.664  ||    9    |
+|------------------|------|------|------|--------||---------||---------|
+
+
+
+* Summary:
++-----------+--------+--------+--------+--------+
+|           |  BRAM  |  Delay |   FF   |   LUT  |
++-----------+--------+--------+--------+--------+
+|  Function |    -   |    -   |    0   |   58   |
+|   Memory  |    0   |    -   |    6   |    1   |
+|Multiplexer|    -   |    1   |    -   |    9   |
+|  Register |    -   |    -   |   18   |    -   |
++-----------+--------+--------+--------+--------+
+|   Total   |    0   |    1   |   24   |   68   |
++-----------+--------+--------+--------+--------+

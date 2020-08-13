@@ -1,0 +1,9 @@
+<annotationInfo>
+<annotationInfo>
+<item  id="5" filename="CMF_testa_array.c" linenumber="11" name="tmp" contextFuncName="CMF_testa_array" moduleName="CMF_testa_array" rtlName="tmp_fu_28_p4" latency="0" BRAM="-1" DSP="-1" FF="-1" LUT="-1" fileDirectory="C:\Users\cleit\Desktop\Testes-CMF-12-08-2020\HLS-CMF_testa_array"><\/item>
+<item  id="6" filename="CMF_testa_array.c" linenumber="11" name="icmp" contextFuncName="CMF_testa_array" moduleName="CMF_testa_array" rtlName="icmp_fu_38_p2" latency="0" BRAM="-1" DSP="-1" FF="0" LUT="18" fileDirectory="C:\Users\cleit\Desktop\Testes-CMF-12-08-2020\HLS-CMF_testa_array"><\/item>
+<item  id="7" filename="CMF_testa_array.c" linenumber="12" name="tmp_2" contextFuncName="CMF_testa_array" moduleName="CMF_testa_array" rtlName="tmp_2_fu_44_p2" latency="0" BRAM="-1" DSP="-1" FF="0" LUT="39" fileDirectory="C:\Users\cleit\Desktop\Testes-CMF-12-08-2020\HLS-CMF_testa_array"><\/item>
+<item  id="8" filename="CMF_testa_array.c" linenumber="11" name="storemerge" contextFuncName="CMF_testa_array" moduleName="CMF_testa_array" rtlName="storemerge_fu_50_p3" latency="0" BRAM="-1" DSP="-1" FF="0" LUT="32" fileDirectory="C:\Users\cleit\Desktop\Testes-CMF-12-08-2020\HLS-CMF_testa_array"><\/item>
+<item  id="9" filename="CMF_testa_array.c" linenumber="11" name="p_0_cast_cast" contextFuncName="CMF_testa_array" moduleName="CMF_testa_array" rtlName="ap_return" latency="0" BRAM="-1" DSP="-1" FF="0" LUT="6" fileDirectory="C:\Users\cleit\Desktop\Testes-CMF-12-08-2020\HLS-CMF_testa_array"><\/item>
+<\/annotationInfo>
+</annotationInfo>

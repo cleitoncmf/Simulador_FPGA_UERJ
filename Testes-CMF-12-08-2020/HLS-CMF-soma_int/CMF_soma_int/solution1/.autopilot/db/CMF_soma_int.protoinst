@@ -1,0 +1,9 @@
+{
+	"version": "1.0",
+	"modules": {
+		"CMF_soma_int": {
+			"proto_instances": {
+			}
+		}
+	}
+}

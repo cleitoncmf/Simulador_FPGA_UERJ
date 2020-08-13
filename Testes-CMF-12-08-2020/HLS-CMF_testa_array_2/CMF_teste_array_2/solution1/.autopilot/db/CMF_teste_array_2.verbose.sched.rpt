@@ -1,0 +1,142 @@
+
+
+================================================================
+== Vivado HLS Report for 'CMF_teste_array_2'
+================================================================
+* Date:           Wed Aug 12 20:30:43 2020
+
+* Version:        2018.3 (Build 2405991 on Thu Dec 06 23:56:15 MST 2018)
+* Project:        CMF_teste_array_2
+* Solution:       solution1
+* Product family: aartix7
+* Target device:  xa7a12tcsg325-1q
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing (ns): 
+    * Summary: 
+    +--------+-------+----------+------------+
+    |  Clock | Target| Estimated| Uncertainty|
+    +--------+-------+----------+------------+
+    |ap_clk  |  10.00|     8.433|        1.25|
+    +--------+-------+----------+------------+
+
++ Latency (clock cycles): 
+    * Summary: 
+    +-----+-----+-----+-----+---------+
+    |  Latency  |  Interval | Pipeline|
+    | min | max | min | max |   Type  |
+    +-----+-----+-----+-----+---------+
+    |    1|    1|    1|    1|   none  |
+    +-----+-----+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        N/A
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 1
+ResetActiveHigh: 1
+IsCombinational: 0
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 0
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 2
+* Pipeline : 0
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 
+	2  / true
+2 --> 
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 8.43>
+ST_1 : Operation 3 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i1 %pulsoSinc) nounwind, !map !7"   --->   Operation 3 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 4 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i15* %Saida) nounwind, !map !13"   --->   Operation 4 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 5 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecTopModule([18 x i8]* @CMF_teste_array_2_st) nounwind"   --->   Operation 5 'spectopmodule' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 6 [1/1] (0.00ns)   --->   "%pulsoSinc_read = call i1 @_ssdm_op_Read.ap_auto.i1(i1 %pulsoSinc) nounwind" [CMF_teste_array_2.c:6]   --->   Operation 6 'read' 'pulsoSinc_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 7 [1/1] (0.00ns)   --->   "%SimCLK_load = load i1* @SimCLK, align 1" [CMF_teste_array_2.c:20]   --->   Operation 7 'load' 'SimCLK_load' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 8 [1/1] (0.94ns)   --->   "%tmp = xor i1 %SimCLK_load, %pulsoSinc_read" [CMF_teste_array_2.c:20]   --->   Operation 8 'xor' 'tmp' <Predicate = true> <Delay = 0.94> <Core = "LogicGate">   --->   Core 27 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.94> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 9 [1/1] (0.00ns)   --->   "%k_load = load i15* @k, align 2" [CMF_teste_array_2.c:22]   --->   Operation 9 'load' 'k_load' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 10 [1/1] (1.66ns)   --->   "br i1 %tmp, label %._crit_edge, label %._crit_edge4" [CMF_teste_array_2.c:20]   --->   Operation 10 'br' <Predicate = true> <Delay = 1.66>
+ST_1 : Operation 11 [1/1] (0.00ns)   --->   "store i1 %pulsoSinc_read, i1* @SimCLK, align 1" [CMF_teste_array_2.c:21]   --->   Operation 11 'store' <Predicate = (tmp)> <Delay = 0.00>
+ST_1 : Operation 12 [1/1] (0.00ns)   --->   "%tmp_1 = call i13 @_ssdm_op_PartSelect.i13.i15.i32.i32(i15 %k_load, i32 2, i32 14)" [CMF_teste_array_2.c:22]   --->   Operation 12 'partselect' 'tmp_1' <Predicate = (tmp)> <Delay = 0.00>
+ST_1 : Operation 13 [1/1] (2.04ns)   --->   "%icmp = icmp slt i13 %tmp_1, 1" [CMF_teste_array_2.c:22]   --->   Operation 13 'icmp' 'icmp' <Predicate = (tmp)> <Delay = 2.04> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 2.04> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 14 [1/1] (2.14ns)   --->   "%tmp_3 = add i15 %k_load, 1" [CMF_teste_array_2.c:23]   --->   Operation 14 'add' 'tmp_3' <Predicate = (tmp)> <Delay = 2.14> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 2.14> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 15 [1/1] (1.37ns)   --->   "%storemerge = select i1 %icmp, i15 %tmp_3, i15 0" [CMF_teste_array_2.c:22]   --->   Operation 15 'select' 'storemerge' <Predicate = (tmp)> <Delay = 1.37> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 1.37> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_1 : Operation 16 [1/1] (0.00ns)   --->   "store i15 %storemerge, i15* @k, align 2" [CMF_teste_array_2.c:23]   --->   Operation 16 'store' <Predicate = (tmp)> <Delay = 0.00>
+ST_1 : Operation 17 [1/1] (1.66ns)   --->   "br label %._crit_edge4" [CMF_teste_array_2.c:28]   --->   Operation 17 'br' <Predicate = (tmp)> <Delay = 1.66>
+ST_1 : Operation 18 [1/1] (0.00ns)   --->   "%tmp_6 = phi i15 [ %storemerge, %._crit_edge ], [ %k_load, %0 ]" [CMF_teste_array_2.c:22]   --->   Operation 18 'phi' 'tmp_6' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 19 [1/1] (0.00ns)   --->   "%tmp_7 = zext i15 %tmp_6 to i64" [CMF_teste_array_2.c:35]   --->   Operation 19 'zext' 'tmp_7' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 20 [1/1] (0.00ns)   --->   "%dados1_addr = getelementptr [5 x i6]* @dados1, i64 0, i64 %tmp_7" [CMF_teste_array_2.c:35]   --->   Operation 20 'getelementptr' 'dados1_addr' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 21 [2/2] (3.25ns)   --->   "%dados1_load = load i6* %dados1_addr, align 1" [CMF_teste_array_2.c:35]   --->   Operation 21 'load' 'dados1_load' <Predicate = true> <Delay = 3.25> <Core = "ROM_nP">   --->   Core 52 'ROM_nP' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load'> <Ports = 0> <Width = 6> <Depth = 5> <ROM>
+
+State 2 <SV = 1> <Delay = 3.25>
+ST_2 : Operation 22 [1/2] (3.25ns)   --->   "%dados1_load = load i6* %dados1_addr, align 1" [CMF_teste_array_2.c:35]   --->   Operation 22 'load' 'dados1_load' <Predicate = true> <Delay = 3.25> <Core = "ROM_nP">   --->   Core 52 'ROM_nP' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load'> <Ports = 0> <Width = 6> <Depth = 5> <ROM>
+ST_2 : Operation 23 [1/1] (0.00ns)   --->   "%dados1_load_cast = zext i6 %dados1_load to i15" [CMF_teste_array_2.c:35]   --->   Operation 23 'zext' 'dados1_load_cast' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 24 [1/1] (0.00ns)   --->   "call void @_ssdm_op_Write.ap_auto.i15P(i15* %Saida, i15 %dados1_load_cast) nounwind" [CMF_teste_array_2.c:35]   --->   Operation 24 'write' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 25 [1/1] (0.00ns)   --->   "ret void" [CMF_teste_array_2.c:39]   --->   Operation 25 'ret' <Predicate = true> <Delay = 0.00>
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 10ns, clock uncertainty: 1.25ns.
+
+ <State 1>: 8.43ns
+The critical path consists of the following:
+	'load' operation ('k_load', CMF_teste_array_2.c:22) on static variable 'k' [12]  (0 ns)
+	'add' operation ('tmp_3', CMF_teste_array_2.c:23) [18]  (2.14 ns)
+	'select' operation ('storemerge', CMF_teste_array_2.c:22) [19]  (1.37 ns)
+	multiplexor before 'phi' operation ('tmp_6', CMF_teste_array_2.c:22) with incoming values : ('k_load', CMF_teste_array_2.c:22) ('storemerge', CMF_teste_array_2.c:22) [23]  (1.66 ns)
+	'phi' operation ('tmp_6', CMF_teste_array_2.c:22) with incoming values : ('k_load', CMF_teste_array_2.c:22) ('storemerge', CMF_teste_array_2.c:22) [23]  (0 ns)
+	'getelementptr' operation ('dados1_addr', CMF_teste_array_2.c:35) [25]  (0 ns)
+	'load' operation ('dados1_load', CMF_teste_array_2.c:35) on array 'dados1' [26]  (3.26 ns)
+
+ <State 2>: 3.26ns
+The critical path consists of the following:
+	'load' operation ('dados1_load', CMF_teste_array_2.c:35) on array 'dados1' [26]  (3.26 ns)
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+	State 2
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A
