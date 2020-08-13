@@ -1,0 +1,13 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../Testes1308.ip_user_files/bd/design_Tcmffixed/ipshared/e3e1/CMFfixed/solution1/impl/verilog/CMFtestefixed.v" \
+"../../../../Testes1308.ip_user_files/bd/design_Tcmffixed/ip/design_Tcmffixed_xlconstant_0_0/sim/design_Tcmffixed_xlconstant_0_0.v" \
+"../../../../Testes1308.ip_user_files/bd/design_Tcmffixed/ip/design_Tcmffixed_xlconstant_0_1/sim/design_Tcmffixed_xlconstant_0_1.v" \
+"../../../../Testes1308.ip_user_files/bd/design_Tcmffixed/sim/design_Tcmffixed.v" \
+"../../../../Testes1308.srcs/sources_1/imports/hdl/design_Tcmffixed_wrapper.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

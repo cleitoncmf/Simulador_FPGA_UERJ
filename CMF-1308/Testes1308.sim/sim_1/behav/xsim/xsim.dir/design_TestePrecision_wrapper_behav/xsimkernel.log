@@ -2,3 +2,6 @@ Running: xsim.dir/design_TestePrecision_wrapper_behav/xsimk.exe -simmode gui -wd
 Design successfully loaded
 Design Loading Memory Usage: 5256 KB (Peak: 5256 KB)
 Design Loading CPU Usage: 30 ms
+Simulation completed
+Simulation Memory Usage: 5904 KB (Peak: 5904 KB)
+Simulation CPU Usage: 46 ms

@@ -1,0 +1,5 @@
+vhdl xil_defaultlib  \
+"../../../bd/design_Tcmffixed/ipshared/e3e1/CMFfixed/solution1/syn/vhdl/CMFtestefixed.vhd" \
+"../../../bd/design_Tcmffixed/ip/design_Tcmffixed_CMFtestefixed_0_0/sim/design_Tcmffixed_CMFtestefixed_0_0.vhd" \
+
+nosort

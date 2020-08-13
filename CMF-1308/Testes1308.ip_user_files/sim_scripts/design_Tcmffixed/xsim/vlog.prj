@@ -1,0 +1,9 @@
+verilog xil_defaultlib  \
+"../../../bd/design_Tcmffixed/ipshared/e3e1/CMFfixed/solution1/impl/verilog/CMFtestefixed.v" \
+"../../../bd/design_Tcmffixed/ip/design_Tcmffixed_xlconstant_0_0/sim/design_Tcmffixed_xlconstant_0_0.v" \
+"../../../bd/design_Tcmffixed/ip/design_Tcmffixed_xlconstant_0_1/sim/design_Tcmffixed_xlconstant_0_1.v" \
+"../../../bd/design_Tcmffixed/sim/design_Tcmffixed.v" \
+
+verilog xil_defaultlib "glbl.v"
+
+nosort

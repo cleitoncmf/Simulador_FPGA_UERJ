@@ -7,12 +7,14 @@
 
 1. **CMFtesteprecision**: Lê um bit e retorna a versão barrada dele
 2. **CMFtestefloat**: testa o uso de variáveis float. Não funcionou
+3. **CMFtestefixed**: Testa variáveis de ponto fixo (faz um soma). Tabém é o primeiro caso que usei C++.
 
 
 ## Lista de Designs no VIVADO
 
 1. **design_TestePrecision**: testa o IP **CMFtesteprecision**
 2. **design_Testefloat**: tá vazio
+3. **design_Tcmffixed**: testa o IP **CMFtestefixed**
 
 
 ## Alguns Comentários
@@ -25,5 +27,9 @@ Até onde entendi, não é possivel usar variáveis do tipo float. O HLS sinteti
 
 * *float-point 2*:
 Depois do teste, encontrei um [video](https://www.xilinx.com/video/hardware/vivado-hls-sw-libraries-in-your-c-system-c-code.html) e o aplication note  [xapp599](https://www.xilinx.com/support/documentation/application_notes/xapp599-floating-point-vivado-hls.pdf) falando sobre o uso de ponto flutuante com o VOVADO HLS. Neste caso, é preciso uma biblioteca, já instalada, para fazer isso. Ou seja, não é tão direto quanto o caso que fiz no ip **CMFtestefloat**.
+
+
+* *fixed point*:
+  Para gerar variáveis de ponto fixo, temos que usar a biblioteca *ap_fixed*, como mostrado em **CMFtestefixed**.  Tem um exemplo, como mencionado, na página 81 do [manual](https://www.xilinx.com/support/documentation/sw_manuals/xilinx2017_4/ug902-vivado-high-level-synthesis.pdf), mas é preciso ficar atento. A linha <code>ap_fixed<18,6,AP_RND > my_type;</code> está definido uma variável chamada *my_type*, não um tipo de variável. Para definir um dipo, devemos usar <code>typedef ap_fixed<18,6,AP_RND > my_type;</code>.
 
 

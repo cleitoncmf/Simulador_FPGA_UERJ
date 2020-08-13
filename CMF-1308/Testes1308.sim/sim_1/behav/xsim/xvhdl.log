@@ -1,4 +1,4 @@
-INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/cleit/Documents/GitHub/Simulador_FPGA_UERJ/CMF-1308/Testes1308.ip_user_files/bd/design_TestePrecision/ipshared/ce9f/CMFtesteprecision/solution1/syn/vhdl/CMFtestePrecision.vhd" into library xil_defaultlib
-INFO: [VRFC 10-3107] analyzing entity 'CMFtestePrecision'
-INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/cleit/Documents/GitHub/Simulador_FPGA_UERJ/CMF-1308/Testes1308.ip_user_files/bd/design_TestePrecision/ip/design_TestePrecision_CMFtestePrecision_0_0/sim/design_TestePrecision_CMFtestePrecision_0_0.vhd" into library xil_defaultlib
-INFO: [VRFC 10-3107] analyzing entity 'design_TestePrecision_CMFtestePrecision_0_0'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/cleit/Documents/GitHub/Simulador_FPGA_UERJ/CMF-1308/Testes1308.ip_user_files/bd/design_Tcmffixed/ipshared/e3e1/CMFfixed/solution1/syn/vhdl/CMFtestefixed.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'CMFtestefixed'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/cleit/Documents/GitHub/Simulador_FPGA_UERJ/CMF-1308/Testes1308.ip_user_files/bd/design_Tcmffixed/ip/design_Tcmffixed_CMFtestefixed_0_0/sim/design_Tcmffixed_CMFtestefixed_0_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'design_Tcmffixed_CMFtestefixed_0_0'

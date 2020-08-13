@@ -1,0 +1,5 @@
+<annotationInfo>
+<annotationInfo>
+<item  id="9" filename="CMFtestefixed.cpp" linenumber="8" name="agg_result_V" contextFuncName="CMFtestefixed" moduleName="CMFtestefixed" rtlName="ap_return" latency="0" BRAM="-1" DSP="-1" FF="0" LUT="25" fileDirectory="C:\Users\cleit\Documents\GitHub\Simulador_FPGA_UERJ\CMF-1308\HLS-fixed"><\/item>
+<\/annotationInfo>
+</annotationInfo>
