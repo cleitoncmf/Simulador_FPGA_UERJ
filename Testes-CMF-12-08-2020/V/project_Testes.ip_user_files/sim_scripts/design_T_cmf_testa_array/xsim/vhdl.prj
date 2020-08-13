@@ -1,0 +1,5 @@
+vhdl xil_defaultlib  \
+"../../../bd/design_T_cmf_testa_array/ipshared/181f/CMF_testa_array/solution1/syn/vhdl/CMF_testa_array.vhd" \
+"../../../bd/design_T_cmf_testa_array/ip/design_T_cmf_testa_array_CMF_testa_array_0_0/sim/design_T_cmf_testa_array_CMF_testa_array_0_0.vhd" \
+
+nosort

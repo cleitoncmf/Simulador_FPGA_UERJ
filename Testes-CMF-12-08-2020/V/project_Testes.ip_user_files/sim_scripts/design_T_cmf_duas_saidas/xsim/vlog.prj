@@ -1,0 +1,8 @@
+verilog xil_defaultlib  \
+"../../../bd/design_T_cmf_duas_saidas/ipshared/fa27/CMF_duas_saidas/solution1/impl/ip/hdl/verilog/CMF_duas_saidas.v" \
+"../../../bd/design_T_cmf_duas_saidas/ip/design_T_cmf_duas_saidas_xlconstant_0_0/sim/design_T_cmf_duas_saidas_xlconstant_0_0.v" \
+"../../../bd/design_T_cmf_duas_saidas/sim/design_T_cmf_duas_saidas.v" \
+
+verilog xil_defaultlib "glbl.v"
+
+nosort

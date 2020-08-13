@@ -1,0 +1,9 @@
+verilog xil_defaultlib  \
+"../../../bd/design_T_cmf_testa_array/ip/design_T_cmf_testa_array_sim_clk_gen_0_0/sim/design_T_cmf_testa_array_sim_clk_gen_0_0.v" \
+"../../../bd/design_T_cmf_testa_array/sim/design_T_cmf_testa_array.v" \
+"../../../bd/design_T_cmf_testa_array/ip/design_T_cmf_testa_array_xlconstant_0_0/sim/design_T_cmf_testa_array_xlconstant_0_0.v" \
+"../../../bd/design_T_cmf_testa_array/ipshared/181f/CMF_testa_array/solution1/impl/verilog/CMF_testa_array.v" \
+
+verilog xil_defaultlib "glbl.v"
+
+nosort

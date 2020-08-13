@@ -1,0 +1,5 @@
+vhdl xil_defaultlib  \
+"../../../bd/design_T_cmf_duas_saidas/ipshared/fa27/CMF_duas_saidas/solution1/impl/ip/hdl/vhdl/CMF_duas_saidas.vhd" \
+"../../../bd/design_T_cmf_duas_saidas/ip/design_T_cmf_duas_saidas_CMF_duas_saidas_0_0/sim/design_T_cmf_duas_saidas_CMF_duas_saidas_0_0.vhd" \
+
+nosort

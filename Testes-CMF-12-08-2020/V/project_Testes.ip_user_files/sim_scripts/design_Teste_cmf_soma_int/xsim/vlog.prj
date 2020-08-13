@@ -1,0 +1,10 @@
+verilog xil_defaultlib  \
+"../../../bd/design_Teste_cmf_soma_int/ipshared/0af8/CMF_soma_int/solution1/impl/verilog/CMF_soma_int.v" \
+"../../../bd/design_Teste_cmf_soma_int/ip/design_Teste_cmf_soma_int_xlconstant_0_0/sim/design_Teste_cmf_soma_int_xlconstant_0_0.v" \
+"../../../bd/design_Teste_cmf_soma_int/ip/design_Teste_cmf_soma_int_xlconstant_0_1/sim/design_Teste_cmf_soma_int_xlconstant_0_1.v" \
+"../../../bd/design_Teste_cmf_soma_int/ip/design_Teste_cmf_soma_int_sim_clk_gen_0_0/sim/design_Teste_cmf_soma_int_sim_clk_gen_0_0.v" \
+"../../../bd/design_Teste_cmf_soma_int/sim/design_Teste_cmf_soma_int.v" \
+
+verilog xil_defaultlib "glbl.v"
+
+nosort

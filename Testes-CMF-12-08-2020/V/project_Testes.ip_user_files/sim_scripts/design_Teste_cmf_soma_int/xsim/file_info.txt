@@ -1,0 +1,8 @@
+CMF_soma_int.vhd,vhdl,xil_defaultlib,../../../bd/design_Teste_cmf_soma_int/ipshared/0af8/CMF_soma_int/solution1/syn/vhdl/CMF_soma_int.vhd,
+CMF_soma_int.v,verilog,xil_defaultlib,../../../bd/design_Teste_cmf_soma_int/ipshared/0af8/CMF_soma_int/solution1/impl/verilog/CMF_soma_int.v,
+design_Teste_cmf_soma_int_CMF_soma_int_0_0.vhd,vhdl,xil_defaultlib,../../../bd/design_Teste_cmf_soma_int/ip/design_Teste_cmf_soma_int_CMF_soma_int_0_0/sim/design_Teste_cmf_soma_int_CMF_soma_int_0_0.vhd,
+design_Teste_cmf_soma_int_xlconstant_0_0.v,verilog,xil_defaultlib,../../../bd/design_Teste_cmf_soma_int/ip/design_Teste_cmf_soma_int_xlconstant_0_0/sim/design_Teste_cmf_soma_int_xlconstant_0_0.v,
+design_Teste_cmf_soma_int_xlconstant_0_1.v,verilog,xil_defaultlib,../../../bd/design_Teste_cmf_soma_int/ip/design_Teste_cmf_soma_int_xlconstant_0_1/sim/design_Teste_cmf_soma_int_xlconstant_0_1.v,
+design_Teste_cmf_soma_int_sim_clk_gen_0_0.v,verilog,xil_defaultlib,../../../bd/design_Teste_cmf_soma_int/ip/design_Teste_cmf_soma_int_sim_clk_gen_0_0/sim/design_Teste_cmf_soma_int_sim_clk_gen_0_0.v,
+design_Teste_cmf_soma_int.v,verilog,xil_defaultlib,../../../bd/design_Teste_cmf_soma_int/sim/design_Teste_cmf_soma_int.v,
+glbl.v,Verilog,xil_defaultlib,glbl.v
