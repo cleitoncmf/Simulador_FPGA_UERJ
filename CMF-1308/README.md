@@ -32,4 +32,9 @@ Depois do teste, encontrei um [video](https://www.xilinx.com/video/hardware/viva
 * *fixed point*:
   Para gerar variáveis de ponto fixo, temos que usar a biblioteca *ap_fixed*, como mostrado em **CMFtestefixed**.  Tem um exemplo, como mencionado, na página 81 do [manual](https://www.xilinx.com/support/documentation/sw_manuals/xilinx2017_4/ug902-vivado-high-level-synthesis.pdf), mas é preciso ficar atento. A linha <code>ap_fixed<18,6,AP_RND > my_type;</code> está definido uma variável chamada *my_type*, não um tipo de variável. Para definir um dipo, devemos usar <code>typedef ap_fixed<18,6,AP_RND > my_type;</code>.
 
+ 
+
+* *Problema na geração de um IP (resolvido)*:
+  Em um momento, o vivado não conseguiu gerar o IP. Pensei que o problema era com a biblioteca *ap_fixed*, mas ao reiniciar o vivado, tudo funcionou devidamente.
+
 
