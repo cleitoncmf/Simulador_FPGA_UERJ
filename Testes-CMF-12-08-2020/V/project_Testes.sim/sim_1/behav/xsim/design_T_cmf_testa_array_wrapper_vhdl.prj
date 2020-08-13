@@ -1,0 +1,11 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../project_Testes.ip_user_files/bd/design_Teste_cmf_soma_int/ipshared/0af8/CMF_soma_int/solution1/syn/vhdl/CMF_soma_int.vhd" \
+"../../../../project_Testes.ip_user_files/bd/design_Teste_cmf_soma_int/ipshared/0af8/CMF_soma_int/solution1/impl/vhdl/CMF_soma_int.vhd" \
+"../../../../project_Testes.ip_user_files/bd/design_Teste_cmf_soma_int/ip/design_Teste_cmf_soma_int_CMF_soma_int_0_0/sim/design_Teste_cmf_soma_int_CMF_soma_int_0_0.vhd" \
+"../../../../project_Testes.ip_user_files/bd/design_T_cmf_testa_array/ipshared/181f/CMF_testa_array/solution1/syn/vhdl/CMF_testa_array.vhd" \
+"../../../../project_Testes.ip_user_files/bd/design_T_cmf_testa_array/ipshared/181f/CMF_testa_array/solution1/impl/vhdl/CMF_testa_array.vhd" \
+"../../../../project_Testes.ip_user_files/bd/design_T_cmf_testa_array/ip/design_T_cmf_testa_array_CMF_testa_array_0_0/sim/design_T_cmf_testa_array_CMF_testa_array_0_0.vhd" \
+
+# Do not sort compile order
+nosort

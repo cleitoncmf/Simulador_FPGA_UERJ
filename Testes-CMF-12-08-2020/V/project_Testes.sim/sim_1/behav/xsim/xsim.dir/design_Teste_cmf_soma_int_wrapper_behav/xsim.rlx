@@ -1,0 +1,12 @@
+
+{ 
+    crc :  3150192161097970607  , 
+    ccp_crc :  0  , 
+    cmdline : " -wto 460669a5856742b5a85aec46da3adb20 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L xlconstant_v1_1_5 -L sim_clk_gen_v1_0_2 -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot design_Teste_cmf_soma_int_wrapper_behav xil_defaultlib.design_Teste_cmf_soma_int_wrapper xil_defaultlib.glbl" , 
+    buildDate : "Dec  7 2018" , 
+    buildTime : "00:33:28" , 
+    linkCmd : "C:\\Xilinx\\Vivado\\2018.3\\data\\..\\tps\\mingw\\6.2.0\\win64.o\\nt\\bin\\gcc.exe -Wa,-W  -O -Wl,--stack,104857600 -o \"xsim.dir/design_Teste_cmf_soma_int_wrapper_behav/xsimk.exe\"   \"xsim.dir/design_Teste_cmf_soma_int_wrapper_behav/obj/xsim_0.win64.obj\" \"xsim.dir/design_Teste_cmf_soma_int_wrapper_behav/obj/xsim_1.win64.obj\" -L\"C:\\Xilinx\\Vivado\\2018.3\\lib\\win64.o\" -lrdi_simulator_kernel  -lrdi_simbridge_kernel" , 
+    aggregate_nets : 
+    [ 
+    ] 
+} 

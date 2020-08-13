@@ -1,0 +1,10 @@
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/cleit/Desktop/Testes-CMF-12-08-2020/VIVADO-testes/project_Testes/project_Testes.ip_user_files/bd/design_Teste_cmf_soma_int/ipshared/0af8/CMF_soma_int/solution1/syn/vhdl/CMF_soma_int.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'CMF_soma_int'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/cleit/Desktop/Testes-CMF-12-08-2020/VIVADO-testes/project_Testes/project_Testes.ip_user_files/bd/design_T_cmf_duas_saidas/ipshared/fa27/CMF_duas_saidas/solution1/impl/ip/hdl/vhdl/CMF_duas_saidas.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'CMF_duas_saidas'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/cleit/Desktop/Testes-CMF-12-08-2020/VIVADO-testes/project_Testes/project_Testes.ip_user_files/bd/design_T_cmf_duas_saidas/ipshared/fa27/CMF_duas_saidas/solution1/impl/vhdl/CMF_duas_saidas.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'CMF_duas_saidas'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/cleit/Desktop/Testes-CMF-12-08-2020/VIVADO-testes/project_Testes/project_Testes.ip_user_files/bd/design_T_cmf_duas_saidas/ipshared/fa27/CMF_duas_saidas/solution1/syn/vhdl/CMF_duas_saidas.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'CMF_duas_saidas'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/cleit/Desktop/Testes-CMF-12-08-2020/VIVADO-testes/project_Testes/project_Testes.ip_user_files/bd/design_T_cmf_duas_saidas/ip/design_T_cmf_duas_saidas_CMF_duas_saidas_0_0/sim/design_T_cmf_duas_saidas_CMF_duas_saidas_0_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'design_T_cmf_duas_saidas_CMF_duas_saidas_0_0'

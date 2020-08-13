@@ -1,0 +1,27 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../project_Testes.ip_user_files/bd/design_Teste_cmf_soma_int/ipshared/0af8/CMF_soma_int/solution1/impl/verilog/CMF_soma_int.v" \
+"../../../../project_Testes.ip_user_files/bd/design_Teste_cmf_soma_int/ipshared/0af8/CMF_soma_int/solution1/syn/verilog/CMF_soma_int.v" \
+"../../../../project_Testes.ip_user_files/bd/design_Teste_cmf_soma_int/ip/design_Teste_cmf_soma_int_xlconstant_0_0/sim/design_Teste_cmf_soma_int_xlconstant_0_0.v" \
+"../../../../project_Testes.ip_user_files/bd/design_Teste_cmf_soma_int/ip/design_Teste_cmf_soma_int_xlconstant_0_1/sim/design_Teste_cmf_soma_int_xlconstant_0_1.v" \
+"../../../../project_Testes.ip_user_files/bd/design_Teste_cmf_soma_int/ip/design_Teste_cmf_soma_int_sim_clk_gen_0_0/sim/design_Teste_cmf_soma_int_sim_clk_gen_0_0.v" \
+"../../../../project_Testes.ip_user_files/bd/design_Teste_cmf_soma_int/sim/design_Teste_cmf_soma_int.v" \
+"../../../../project_Testes.ip_user_files/bd/design_T_cmf_testa_array/ip/design_T_cmf_testa_array_sim_clk_gen_0_0/sim/design_T_cmf_testa_array_sim_clk_gen_0_0.v" \
+"../../../../project_Testes.ip_user_files/bd/design_T_cmf_testa_array/sim/design_T_cmf_testa_array.v" \
+"../../../../project_Testes.ip_user_files/bd/design_T_cmf_testa_array/ip/design_T_cmf_testa_array_xlconstant_0_0/sim/design_T_cmf_testa_array_xlconstant_0_0.v" \
+"../../../../project_Testes.ip_user_files/bd/design_T_cmf_testa_array/ipshared/181f/CMF_testa_array/solution1/impl/verilog/CMF_testa_array.v" \
+"../../../../project_Testes.ip_user_files/bd/design_T_cmf_testa_array/ipshared/181f/CMF_testa_array/solution1/syn/verilog/CMF_testa_array.v" \
+"../../../../project_Testes.srcs/sources_1/imports/hdl/design_Teste_cmf_soma_int_wrapper.v" \
+"../../../../project_Testes.srcs/sources_1/imports/hdl/design_T_cmf_testa_array_wrapper.v" \
+"../../../../project_Testes.ip_user_files/bd/design_T_cmf_duas_saidas/ipshared/fa27/CMF_duas_saidas/solution1/impl/ip/hdl/verilog/CMF_duas_saidas.v" \
+"../../../../project_Testes.ip_user_files/bd/design_T_cmf_duas_saidas/ipshared/fa27/CMF_duas_saidas/solution1/impl/verilog/CMF_duas_saidas.v" \
+"../../../../project_Testes.ip_user_files/bd/design_T_cmf_duas_saidas/ipshared/fa27/CMF_duas_saidas/solution1/syn/verilog/CMF_duas_saidas.v" \
+"../../../../project_Testes.ip_user_files/bd/design_T_cmf_duas_saidas/ip/design_T_cmf_duas_saidas_xlconstant_0_0/sim/design_T_cmf_duas_saidas_xlconstant_0_0.v" \
+"../../../../project_Testes.ip_user_files/bd/design_T_cmf_duas_saidas/sim/design_T_cmf_duas_saidas.v" \
+"../../../../project_Testes.srcs/sources_1/imports/hdl/design_T_cmf_duas_saidas_wrapper.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

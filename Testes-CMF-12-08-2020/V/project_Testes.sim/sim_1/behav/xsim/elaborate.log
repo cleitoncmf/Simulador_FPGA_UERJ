@@ -1,0 +1,21 @@
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 460669a5856742b5a85aec46da3adb20 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L xlconstant_v1_1_5 -L sim_clk_gen_v1_0_2 -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot design_T_cmf_duas_saidas_wrapper_behav xil_defaultlib.design_T_cmf_duas_saidas_wrapper xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling architecture behav of entity xil_defaultlib.CMF_duas_saidas [cmf_duas_saidas_default]
+Compiling architecture design_t_cmf_duas_saidas_cmf_duas_saidas_0_0_arch of entity xil_defaultlib.design_T_cmf_duas_saidas_CMF_duas_saidas_0_0 [design_t_cmf_duas_saidas_cmf_dua...]
+Compiling module xlconstant_v1_1_5.xlconstant_v1_1_5_xlconstant(CON...
+Compiling module xil_defaultlib.design_T_cmf_duas_saidas_xlconst...
+Compiling module xil_defaultlib.design_T_cmf_duas_saidas
+Compiling module xil_defaultlib.design_T_cmf_duas_saidas_wrapper
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot design_T_cmf_duas_saidas_wrapper_behav
