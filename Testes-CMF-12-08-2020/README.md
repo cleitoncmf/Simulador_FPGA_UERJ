@@ -45,7 +45,7 @@ Na linha 4 do código c, defini um vetor com 5 valores pré estabelescidos (10,2
 
 * *IPs com  multiplas saídas*:
 As multiplas saídas são obtidas usandos [ponteiros](https://www.youtube.com/watch?v=D5QvQmes198). Compare o código com o IP gerado.
-![Duas saídas](figuras/duas_saidas.png)
+![Duas saídas](figuras/Duas_saidas.png)
 
 
 * *MF_testa_array_2*:
