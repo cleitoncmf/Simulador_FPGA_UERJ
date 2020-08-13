@@ -1,0 +1,45 @@
+INFO: [HLS 200-10] Running 'C:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/vivado_hls.exe'
+INFO: [HLS 200-10] For user 'cleit' on host 'desktop-5mp17pp' (Windows NT_amd64 version 6.2) on Wed Aug 12 16:19:46 -0300 2020
+INFO: [HLS 200-10] In directory 'C:/Users/cleit/Desktop/Testes-CMF-12-08-2020/HLS-CMF_testa_array'
+INFO: [HLS 200-10] Opening project 'C:/Users/cleit/Desktop/Testes-CMF-12-08-2020/HLS-CMF_testa_array/CMF_testa_array'.
+INFO: [HLS 200-10] Adding design file 'CMF_testa_array.c' to the project
+INFO: [HLS 200-10] Adding design file 'CMF_testa_array.h' to the project
+INFO: [HLS 200-10] Opening solution 'C:/Users/cleit/Desktop/Testes-CMF-12-08-2020/HLS-CMF_testa_array/CMF_testa_array/solution1'.
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xa7a12tcsg325-1q'
+INFO: [SCHED 204-61] Option 'relax_ii_for_timing' is enabled, will increase II to preserve clock frequency constraints.
+INFO: [HLS 200-10] Analyzing design file 'CMF_testa_array.c' ... 
+INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:00:00 ; elapsed = 00:00:26 . Memory (MB): peak = 101.012 ; gain = 16.402
+INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:00:00 ; elapsed = 00:00:26 . Memory (MB): peak = 101.012 ; gain = 16.402
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:00:01 ; elapsed = 00:00:30 . Memory (MB): peak = 102.195 ; gain = 17.586
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability Time (s): cpu = 00:00:01 ; elapsed = 00:00:30 . Memory (MB): peak = 102.449 ; gain = 17.840
+INFO: [HLS 200-111] Finished Pre-synthesis Time (s): cpu = 00:00:01 ; elapsed = 00:00:31 . Memory (MB): peak = 123.238 ; gain = 38.629
+INFO: [HLS 200-111] Finished Architecture Synthesis Time (s): cpu = 00:00:01 ; elapsed = 00:00:32 . Memory (MB): peak = 123.238 ; gain = 38.629
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'CMF_testa_array' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'CMF_testa_array' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 34.459 seconds; current allocated memory: 73.974 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.86 seconds; current allocated memory: 74.051 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'CMF_testa_array' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-500] Setting interface mode on function 'CMF_testa_array' to 'ap_ctrl_hs'.
+WARNING: [RTGEN 206-101] Register 'k' is power-on initialization.
+INFO: [RTGEN 206-100] Finished creating RTL model for 'CMF_testa_array'.
+INFO: [HLS 200-111]  Elapsed time: 0.787 seconds; current allocated memory: 74.201 MB.
+INFO: [HLS 200-111] Finished generating all RTL models Time (s): cpu = 00:00:02 ; elapsed = 00:00:44 . Memory (MB): peak = 123.238 ; gain = 38.629
+INFO: [SYSC 207-301] Generating SystemC RTL for CMF_testa_array.
+INFO: [VHDL 208-304] Generating VHDL RTL for CMF_testa_array.
+INFO: [VLOG 209-307] Generating Verilog RTL for CMF_testa_array.
+INFO: [HLS 200-112] Total elapsed time: 44.706 seconds; peak allocated memory: 74.201 MB.
