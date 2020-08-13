@@ -3,6 +3,8 @@
 
 Segui uma abordagem parecida para todos os casos descritos aqui. Primeiro defini uma função C e sintetizei usando o HLS. Na sequência, gerei um IP, já no vidado, para realizar simulações.
 
+**Importante:** A pasta **V** contem os arquivos do VIVADO. Usei um nome curso assim porque o windows dá erro quando *nomes de arquivo* com mais de [260](https://stackoverflow.com/questions/22575662/filename-too-long-in-git-for-windows#:~:text=Git%20has%20a%20limit%20of,260%20characters%20for%20a%20filename.&text=You%20can%20circumvent%20this%20by,on%20Windows%20or%20set%20core.) caracteres são usados. Como o nome de um arquivo engloba também o caminho das pastas, tive que economizar no nome desta pasta.
+
 
 ## Lista de IPs desenvolvidos
 
@@ -45,7 +47,7 @@ Na linha 4 do código c, defini um vetor com 5 valores pré estabelescidos (10,2
 
 * *IPs com  multiplas saídas*:
 As multiplas saídas são obtidas usandos [ponteiros](https://www.youtube.com/watch?v=D5QvQmes198). Compare o código com o IP gerado.
-![Duas saídas](figuras/duas_saidas.png)
+![Duas saídas](figuras/Duas_saidas.png)
 
 
 * *MF_testa_array_2*:
