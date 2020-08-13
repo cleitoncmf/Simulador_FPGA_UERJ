@@ -1,7 +1,7 @@
 {
 	"version": "1.0",
 	"modules": {
-		"design_Teste_cmf_soma_int": {
+		"design_T_cmf_duas_saidas": {
 			"proto_instances": {
 			}
 		}
