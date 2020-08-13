@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<xd:acceleratorMap xmlns:xd="http://www.xilinx.com/xidane" xd:functionName="CMF_duas_saidas" xd:componentRef="CMF_duas_saidas" xd:initiationInterval="1" xd:clockPeriod="10.000" xd:sequential="false" xd:hostMachine="64" xd:reset="control">
-  <xd:controlReg xd:name="control" xd:interfaceRef="ap_ctrl" xd:busTypeRef="acc_handshake" xd:type="acc_handshake"/>
-  <xd:arg xd:name="*(Saida1)" xd:originalName="Saida1" xd:direction="out" xd:interfaceRef="Saida1" xd:busTypeRef="register" xd:handshakeRef="ap_vld" xd:dataWidth="32" xd:firstOut="0"/>
-  <xd:arg xd:name="*(Saida2)" xd:originalName="Saida2" xd:direction="out" xd:interfaceRef="Saida2" xd:busTypeRef="register" xd:handshakeRef="ap_vld" xd:dataWidth="32" xd:firstOut="0"/>
-  <xd:arg xd:name="Entrada" xd:originalName="Entrada" xd:direction="in" xd:interfaceRef="Entrada" xd:busTypeRef="register" xd:handshakeRef="ap_none" xd:dataWidth="32" xd:firstOut="0"/>
-  <xd:latencyEstimates xd:best-case="0" xd:worst-case="0" xd:average-case="0"/>
-  <xd:resourceEstimates xd:LUT="78" xd:FF="0" xd:BRAM="0" xd:DSP="0"/>
-</xd:acceleratorMap>
