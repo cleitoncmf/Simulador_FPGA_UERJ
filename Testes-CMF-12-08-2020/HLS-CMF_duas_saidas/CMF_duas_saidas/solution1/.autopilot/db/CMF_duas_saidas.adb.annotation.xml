@@ -1,0 +1,6 @@
+<annotationInfo>
+<annotationInfo>
+<item  id="9" filename="CMF_duas_saidas.c" linenumber="12" name="Saida1_assign" contextFuncName="CMF_duas_saidas" moduleName="CMF_duas_saidas" rtlName="Saida1" latency="0" BRAM="-1" DSP="-1" FF="0" LUT="39" fileDirectory="C:\Users\cleit\Desktop\Testes-CMF-12-08-2020\HLS-CMF_duas_saidas"><\/item>
+<item  id="11" filename="CMF_duas_saidas.c" linenumber="13" name="Saida2_assign" contextFuncName="CMF_duas_saidas" moduleName="CMF_duas_saidas" rtlName="Saida2" latency="0" BRAM="-1" DSP="-1" FF="0" LUT="39" fileDirectory="C:\Users\cleit\Desktop\Testes-CMF-12-08-2020\HLS-CMF_duas_saidas"><\/item>
+<\/annotationInfo>
+</annotationInfo>
