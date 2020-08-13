@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<vivadoHLSLog:LogRoot xmlns:vivadoHLSLog="www.xilinx.com/vivadoHLSLog">
+  <errorLogs>
+    <logs>
+      <synLog/>
+      <simLog/>
+      <mgLog/>
+      <packageLog/>
+      <csimLog/>
+    </logs>
+  </errorLogs>
+  <warningLogs>
+    <logs>
+      <synLog>
+        <logs message="WARNING: [HLS 200-40] CMFtestefloat.c:1:10: fatal error: 'CMFtestePrecision.h' file not found&#xD;&#xA;#include &quot;CMFtestePrecision.h&quot;&#xD;&#xA;         ^&#xD;&#xA;1 error generated.&#xD;&#xA;C preprocessor failed.&#xD;&#xA;    while executing&#xD;&#xA;&quot;source C:/Users/cleit/Documents/GitHub/Simulador_FPGA_UERJ/CMF-1308/HLS-float/CMFtestefloat/solution1/csynth.tcl&quot;&#xD;&#xA;    invoked from within&#xD;&#xA;&quot;hls::main C:/Users/cleit/Documents/GitHub/Simulador_FPGA_UERJ/CMF-1308/HLS-float/CMFtestefloat/solution1/csynth.tcl&quot;&#xD;&#xA;    (&quot;uplevel&quot; body line 1)&#xD;&#xA;    invoked from within&#xD;&#xA;&quot;uplevel 1 hls::main {*}$args&quot;&#xD;&#xA;    (procedure &quot;hls_proc&quot; line 5)&#xD;&#xA;    invoked from within&#xD;&#xA;&quot;hls_proc $argv&quot;&#xD;&#xA;" projectName="CMFtestefloat" solutionName="solution1" date="2020-08-13T10:39:07.459-0300" type="Warning"/>
+      </synLog>
+      <simLog/>
+      <mgLog/>
+      <packageLog/>
+      <csimLog/>
+    </logs>
+  </warningLogs>
+</vivadoHLSLog:LogRoot>

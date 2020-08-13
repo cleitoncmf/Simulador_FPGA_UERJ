@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
+  <source>
+    <originFiles name="CMFtestefloat.c" path="C:\Users\cleit\Documents\GitHub\Simulador_FPGA_UERJ\CMF-1308\HLS-float\CMFtestefloat.c"/>
+    <originFiles name="CMFtestefloat.h" path="C:\Users\cleit\Documents\GitHub\Simulador_FPGA_UERJ\CMF-1308\HLS-float\CMFtestefloat.h"/>
+  </source>
+  <testbench/>
+</autopilotfilemapping:AutoPilotFileMapping>
