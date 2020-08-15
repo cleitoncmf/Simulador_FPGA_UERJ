@@ -1,0 +1,73 @@
+<InterfaceSummary>
+<RtlPorts>
+<name>EntradaA1_V</name>
+<CType>
+<TypeName>ap_fixed 18 6 5 0 0</TypeName>
+<TypeWidth>18</TypeWidth>
+<PhysicalWidth>18</PhysicalWidth>
+</CType>
+<CFractionWidth>12</CFractionWidth>
+<InvalidType>0</InvalidType>
+</RtlPorts>
+<RtlPorts>
+<name>EntradaA2_V</name>
+<CType>
+<TypeName>ap_fixed 18 6 5 0 0</TypeName>
+<TypeWidth>18</TypeWidth>
+<PhysicalWidth>18</PhysicalWidth>
+</CType>
+<CFractionWidth>12</CFractionWidth>
+<InvalidType>0</InvalidType>
+</RtlPorts>
+<RtlPorts>
+<name>EntradaB1_V</name>
+<CType>
+<TypeName>ap_fixed 9 3 5 0 0</TypeName>
+<TypeWidth>9</TypeWidth>
+<PhysicalWidth>9</PhysicalWidth>
+</CType>
+<CFractionWidth>6</CFractionWidth>
+<InvalidType>0</InvalidType>
+</RtlPorts>
+<RtlPorts>
+<name>EntradaB2_V</name>
+<CType>
+<TypeName>ap_fixed 9 3 5 0 0</TypeName>
+<TypeWidth>9</TypeWidth>
+<PhysicalWidth>9</PhysicalWidth>
+</CType>
+<CFractionWidth>6</CFractionWidth>
+<InvalidType>0</InvalidType>
+</RtlPorts>
+<RtlPorts>
+<name>SaidaA1_V</name>
+<CType>
+<TypeName>ap_fixed 18 6 5 0 0</TypeName>
+<TypeWidth>18</TypeWidth>
+<PhysicalWidth>18</PhysicalWidth>
+</CType>
+<CFractionWidth>12</CFractionWidth>
+<InvalidType>0</InvalidType>
+</RtlPorts>
+<RtlPorts>
+<name>SaidaA2_V</name>
+<CType>
+<TypeName>ap_fixed 18 6 5 0 0</TypeName>
+<TypeWidth>18</TypeWidth>
+<PhysicalWidth>18</PhysicalWidth>
+</CType>
+<CFractionWidth>12</CFractionWidth>
+<InvalidType>0</InvalidType>
+</RtlPorts>
+<RtlPorts>
+<name>SaidaB1_V</name>
+<CType>
+<TypeName>ap_fixed 9 3 5 0 0</TypeName>
+<TypeWidth>9</TypeWidth>
+<PhysicalWidth>9</PhysicalWidth>
+</CType>
+<CFractionWidth>6</CFractionWidth>
+<InvalidType>0</InvalidType>
+</RtlPorts>
+</InterfaceSummary>
+

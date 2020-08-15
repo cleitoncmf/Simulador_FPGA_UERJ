@@ -1,0 +1,33 @@
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 024d065cb01642d39404fef4ea327bed --incr --debug typical --relax --mt 2 -L xil_defaultlib -L sim_clk_gen_v1_0_2 -L xlconstant_v1_1_5 -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot designCMFfixMult_wrapper_behav xil_defaultlib.designCMFfixMult_wrapper xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling architecture behav of entity xil_defaultlib.CMFfixMult_mul_mubkb_DSP48_0 [cmffixmult_mul_mubkb_dsp48_0_def...]
+Compiling architecture arch of entity xil_defaultlib.CMFfixMult_mul_mubkb [\CMFfixMult_mul_mubkb(id=1,num_s...]
+Compiling architecture behav of entity xil_defaultlib.CMFfixMult [cmffixmult_default]
+Compiling architecture designcmffixmult_cmffixmult_0_0_arch of entity xil_defaultlib.designCMFfixMult_CMFfixMult_0_0 [designcmffixmult_cmffixmult_0_0_...]
+Compiling module sim_clk_gen_v1_0_2.sim_clk_gen(CLOCK_PERIOD=10)
+Compiling module xil_defaultlib.designCMFfixMult_sim_clk_gen_0_0
+Compiling module xlconstant_v1_1_5.xlconstant_v1_1_5_xlconstant(CON...
+Compiling module xil_defaultlib.designCMFfixMult_xlconstant_0_0
+Compiling module xlconstant_v1_1_5.xlconstant_v1_1_5_xlconstant(CON...
+Compiling module xil_defaultlib.designCMFfixMult_xlconstant_0_1
+Compiling module xlconstant_v1_1_5.xlconstant_v1_1_5_xlconstant(CON...
+Compiling module xil_defaultlib.designCMFfixMult_xlconstant_0_2
+Compiling module xlconstant_v1_1_5.xlconstant_v1_1_5_xlconstant(CON...
+Compiling module xil_defaultlib.designCMFfixMult_xlconstant_0_3
+Compiling module xlconstant_v1_1_5.xlconstant_v1_1_5_xlconstant(CON...
+Compiling module xil_defaultlib.designCMFfixMult_xlconstant_0_4
+Compiling module xil_defaultlib.designCMFfixMult
+Compiling module xil_defaultlib.designCMFfixMult_wrapper
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot designCMFfixMult_wrapper_behav

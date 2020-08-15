@@ -1,0 +1,55 @@
+INFO: [HLS 200-10] Running 'C:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/vivado_hls.exe'
+INFO: [HLS 200-10] For user 'cleit' on host 'desktop-5mp17pp' (Windows NT_amd64 version 6.2) on Sat Aug 15 12:43:23 -0300 2020
+INFO: [HLS 200-10] In directory 'C:/Users/cleit/Documents/GitHub/Simulador_FPGA_UERJ/CMF-1508/HLS-CMF-FixMult'
+INFO: [HLS 200-10] Opening project 'C:/Users/cleit/Documents/GitHub/Simulador_FPGA_UERJ/CMF-1508/HLS-CMF-FixMult/CMF-fixMult'.
+INFO: [HLS 200-10] Adding design file 'CMFfixmult.cpp' to the project
+INFO: [HLS 200-10] Adding design file 'CMFfixmult.h' to the project
+INFO: [HLS 200-10] Opening solution 'C:/Users/cleit/Documents/GitHub/Simulador_FPGA_UERJ/CMF-1508/HLS-CMF-FixMult/CMF-fixMult/solution1'.
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xa7a12tcsg325-1q'
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [SCHED 204-61] Option 'relax_ii_for_timing' is enabled, will increase II to preserve clock frequency constraints.
+INFO: [HLS 200-10] Analyzing design file 'CMFfixmult.cpp' ... 
+INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:00:01 ; elapsed = 00:01:57 . Memory (MB): peak = 101.797 ; gain = 17.039
+INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:00:01 ; elapsed = 00:01:57 . Memory (MB): peak = 101.797 ; gain = 17.039
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:00:01 ; elapsed = 00:02:09 . Memory (MB): peak = 108.168 ; gain = 23.410
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability Time (s): cpu = 00:00:01 ; elapsed = 00:02:11 . Memory (MB): peak = 111.801 ; gain = 27.043
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock to (CMFfixmult.cpp:17:1) in function 'CMFfixMult'... converting 9 basic blocks.
+INFO: [HLS 200-111] Finished Pre-synthesis Time (s): cpu = 00:00:01 ; elapsed = 00:02:14 . Memory (MB): peak = 135.031 ; gain = 50.273
+INFO: [HLS 200-111] Finished Architecture Synthesis Time (s): cpu = 00:00:02 ; elapsed = 00:02:15 . Memory (MB): peak = 135.820 ; gain = 51.063
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'CMFfixMult' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'CMFfixMult' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 137.505 seconds; current allocated memory: 86.515 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 1.432 seconds; current allocated memory: 86.726 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'CMFfixMult' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-500] Setting interface mode on port 'CMFfixMult/EntradaA1_V' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'CMFfixMult/EntradaA2_V' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'CMFfixMult/EntradaB1_V' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'CMFfixMult/EntradaB2_V' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'CMFfixMult/SaidaA1_V' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'CMFfixMult/SaidaA2_V' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'CMFfixMult/SaidaB1_V' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'CMFfixMult' to 'ap_ctrl_hs'.
+INFO: [SYN 201-210] Renamed object name 'CMFfixMult_mul_mul_18s_18s_36_1_1' to 'CMFfixMult_mul_mubkb' due to the length limit 20
+INFO: [RTGEN 206-100] Generating core module 'CMFfixMult_mul_mubkb': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'CMFfixMult'.
+INFO: [HLS 200-111]  Elapsed time: 1.49 seconds; current allocated memory: 87.157 MB.
+INFO: [HLS 200-111] Finished generating all RTL models Time (s): cpu = 00:00:03 ; elapsed = 00:02:30 . Memory (MB): peak = 136.090 ; gain = 51.332
+INFO: [SYSC 207-301] Generating SystemC RTL for CMFfixMult.
+INFO: [VHDL 208-304] Generating VHDL RTL for CMFfixMult.
+INFO: [VLOG 209-307] Generating Verilog RTL for CMFfixMult.
+INFO: [HLS 200-112] Total elapsed time: 150.273 seconds; peak allocated memory: 87.157 MB.

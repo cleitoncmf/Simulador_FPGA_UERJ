@@ -1,0 +1,14 @@
+verilog xil_defaultlib  \
+"../../../bd/designCMFfixMult/ipshared/38bf/CMF-fixMult/solution1/impl/verilog/CMFfixMult_mul_mubkb.v" \
+"../../../bd/designCMFfixMult/ipshared/38bf/CMF-fixMult/solution1/impl/verilog/CMFfixMult.v" \
+"../../../bd/designCMFfixMult/ip/designCMFfixMult_sim_clk_gen_0_0/sim/designCMFfixMult_sim_clk_gen_0_0.v" \
+"../../../bd/designCMFfixMult/ip/designCMFfixMult_xlconstant_0_0/sim/designCMFfixMult_xlconstant_0_0.v" \
+"../../../bd/designCMFfixMult/ip/designCMFfixMult_xlconstant_0_1/sim/designCMFfixMult_xlconstant_0_1.v" \
+"../../../bd/designCMFfixMult/ip/designCMFfixMult_xlconstant_0_2/sim/designCMFfixMult_xlconstant_0_2.v" \
+"../../../bd/designCMFfixMult/ip/designCMFfixMult_xlconstant_0_3/sim/designCMFfixMult_xlconstant_0_3.v" \
+"../../../bd/designCMFfixMult/ip/designCMFfixMult_xlconstant_0_4/sim/designCMFfixMult_xlconstant_0_4.v" \
+"../../../bd/designCMFfixMult/sim/designCMFfixMult.v" \
+
+verilog xil_defaultlib "glbl.v"
+
+nosort

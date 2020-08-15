@@ -1,0 +1,30 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/cleit/Documents/GitHub/Simulador_FPGA_UERJ/CMF-1508/prj_CMF1508.ip_user_files/bd/designCMFfixMult/ipshared/38bf/CMF-fixMult/solution1/impl/verilog/CMFfixMult_mul_mubkb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CMFfixMult_mul_mubkb_DSP48_0
+INFO: [VRFC 10-311] analyzing module CMFfixMult_mul_mubkb
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/cleit/Documents/GitHub/Simulador_FPGA_UERJ/CMF-1508/prj_CMF1508.ip_user_files/bd/designCMFfixMult/ipshared/38bf/CMF-fixMult/solution1/impl/verilog/CMFfixMult.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CMFfixMult
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/cleit/Documents/GitHub/Simulador_FPGA_UERJ/CMF-1508/prj_CMF1508.ip_user_files/bd/designCMFfixMult/ip/designCMFfixMult_sim_clk_gen_0_0/sim/designCMFfixMult_sim_clk_gen_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module designCMFfixMult_sim_clk_gen_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/cleit/Documents/GitHub/Simulador_FPGA_UERJ/CMF-1508/prj_CMF1508.ip_user_files/bd/designCMFfixMult/ip/designCMFfixMult_xlconstant_0_0/sim/designCMFfixMult_xlconstant_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module designCMFfixMult_xlconstant_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/cleit/Documents/GitHub/Simulador_FPGA_UERJ/CMF-1508/prj_CMF1508.ip_user_files/bd/designCMFfixMult/ip/designCMFfixMult_xlconstant_0_1/sim/designCMFfixMult_xlconstant_0_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module designCMFfixMult_xlconstant_0_1
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/cleit/Documents/GitHub/Simulador_FPGA_UERJ/CMF-1508/prj_CMF1508.ip_user_files/bd/designCMFfixMult/ip/designCMFfixMult_xlconstant_0_2/sim/designCMFfixMult_xlconstant_0_2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module designCMFfixMult_xlconstant_0_2
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/cleit/Documents/GitHub/Simulador_FPGA_UERJ/CMF-1508/prj_CMF1508.ip_user_files/bd/designCMFfixMult/ip/designCMFfixMult_xlconstant_0_3/sim/designCMFfixMult_xlconstant_0_3.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module designCMFfixMult_xlconstant_0_3
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/cleit/Documents/GitHub/Simulador_FPGA_UERJ/CMF-1508/prj_CMF1508.ip_user_files/bd/designCMFfixMult/ip/designCMFfixMult_xlconstant_0_4/sim/designCMFfixMult_xlconstant_0_4.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module designCMFfixMult_xlconstant_0_4
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/cleit/Documents/GitHub/Simulador_FPGA_UERJ/CMF-1508/prj_CMF1508.ip_user_files/bd/designCMFfixMult/sim/designCMFfixMult.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module designCMFfixMult
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/cleit/Documents/GitHub/Simulador_FPGA_UERJ/CMF-1508/prj_CMF1508.srcs/sources_1/imports/hdl/designCMFfixMult_wrapper.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module designCMFfixMult_wrapper
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/cleit/Documents/GitHub/Simulador_FPGA_UERJ/CMF-1508/prj_CMF1508.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/cleit/Documents/GitHub/Simulador_FPGA_UERJ/CMF-1508/prj_CMF1508.ip_user_files/bd/designCMFfixMult/ipshared/38bf/CMF-fixMult/solution1/syn/vhdl/CMFfixMult_mul_mubkb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'CMFfixMult_mul_mubkb_DSP48_0'
+INFO: [VRFC 10-3107] analyzing entity 'CMFfixMult_mul_mubkb'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/cleit/Documents/GitHub/Simulador_FPGA_UERJ/CMF-1508/prj_CMF1508.ip_user_files/bd/designCMFfixMult/ipshared/38bf/CMF-fixMult/solution1/syn/vhdl/CMFfixMult.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'CMFfixMult'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/cleit/Documents/GitHub/Simulador_FPGA_UERJ/CMF-1508/prj_CMF1508.ip_user_files/bd/designCMFfixMult/ip/designCMFfixMult_CMFfixMult_0_0/sim/designCMFfixMult_CMFfixMult_0_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'designCMFfixMult_CMFfixMult_0_0'

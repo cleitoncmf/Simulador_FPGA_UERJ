@@ -1,0 +1,6 @@
+vhdl xil_defaultlib  \
+"../../../bd/designCMFfixMult/ipshared/38bf/CMF-fixMult/solution1/syn/vhdl/CMFfixMult_mul_mubkb.vhd" \
+"../../../bd/designCMFfixMult/ipshared/38bf/CMF-fixMult/solution1/syn/vhdl/CMFfixMult.vhd" \
+"../../../bd/designCMFfixMult/ip/designCMFfixMult_CMFfixMult_0_0/sim/designCMFfixMult_CMFfixMult_0_0.vhd" \
+
+nosort

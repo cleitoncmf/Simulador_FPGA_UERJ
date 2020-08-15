@@ -1,0 +1,171 @@
+
+
+================================================================
+== Vivado HLS Report for 'CMFfixMult'
+================================================================
+* Date:           Sat Aug 15 12:45:44 2020
+
+* Version:        2018.3 (Build 2405991 on Thu Dec 06 23:56:15 MST 2018)
+* Project:        CMF-fixMult
+* Solution:       solution1
+* Product family: aartix7
+* Target device:  xa7a12tcsg325-1q
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing (ns): 
+    * Summary: 
+    +--------+-------+----------+------------+
+    |  Clock | Target| Estimated| Uncertainty|
+    +--------+-------+----------+------------+
+    |ap_clk  |  10.00|     7.180|        1.25|
+    +--------+-------+----------+------------+
+
++ Latency (clock cycles): 
+    * Summary: 
+    +-----+-----+-----+-----+---------+
+    |  Latency  |  Interval | Pipeline|
+    | min | max | min | max |   Type  |
+    +-----+-----+-----+-----+---------+
+    |    1|    1|    1|    1|   none  |
+    +-----+-----+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        N/A
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++-----------------+---------+-------+-------+------+
+|       Name      | BRAM_18K| DSP48E|   FF  |  LUT |
++-----------------+---------+-------+-------+------+
+|DSP              |        -|      1|      -|     -|
+|Expression       |        -|      0|      0|   318|
+|FIFO             |        -|      -|      -|     -|
+|Instance         |        -|      -|      -|     -|
+|Memory           |        -|      -|      -|     -|
+|Multiplexer      |        -|      -|      -|    15|
+|Register         |        -|      -|     39|     -|
++-----------------+---------+-------+-------+------+
+|Total            |        0|      1|     39|   333|
++-----------------+---------+-------+-------+------+
+|Available        |       40|     40|  16000|  8000|
++-----------------+---------+-------+-------+------+
+|Utilization (%)  |        0|      2|   ~0  |     4|
++-----------------+---------+-------+-------+------+
+
++ Detail: 
+    * Instance: 
+    N/A
+
+    * DSP48: 
+    +-------------------------+----------------------+-----------+
+    |         Instance        |        Module        | Expression|
+    +-------------------------+----------------------+-----------+
+    |CMFfixMult_mul_mubkb_U1  |CMFfixMult_mul_mubkb  |  i0 * i1  |
+    +-------------------------+----------------------+-----------+
+
+    * Memory: 
+    N/A
+
+    * FIFO: 
+    N/A
+
+    * Expression: 
+    +-------------------------------+----------+-------+---+----+------------+------------+
+    |         Variable Name         | Operation| DSP48E| FF| LUT| Bitwidth P0| Bitwidth P1|
+    +-------------------------------+----------+-------+---+----+------------+------------+
+    |r_V_5_fu_167_p2                |     *    |      0|  0|  51|           9|           9|
+    |overflow_1_fu_228_p2           |    and   |      0|  0|   8|           1|           1|
+    |overflow_fu_273_p2             |    and   |      0|  0|   8|           1|           1|
+    |underflow_1_fu_252_p2          |    and   |      0|  0|   8|           1|           1|
+    |underflow_fu_295_p2            |    and   |      0|  0|   8|           1|           1|
+    |p_not1_fu_284_p2               |   icmp   |      0|  0|  11|           6|           2|
+    |p_not2_fu_210_p2               |   icmp   |      0|  0|   9|           3|           1|
+    |p_not3_fu_240_p2               |   icmp   |      0|  0|   9|           3|           2|
+    |p_not_fu_258_p2                |   icmp   |      0|  0|  11|           6|           1|
+    |brmerge1_fu_289_p2             |    or    |      0|  0|   8|           1|           1|
+    |brmerge2_fu_300_p2             |    or    |      0|  0|   8|           1|           1|
+    |brmerge3_fu_312_p2             |    or    |      0|  0|   8|           1|           1|
+    |brmerge4_fu_216_p2             |    or    |      0|  0|   8|           1|           1|
+    |brmerge5_fu_246_p2             |    or    |      0|  0|   8|           1|           1|
+    |brmerge6_fu_341_p2             |    or    |      0|  0|   8|           1|           1|
+    |brmerge7_fu_350_p2             |    or    |      0|  0|   8|           1|           1|
+    |brmerge_fu_263_p2              |    or    |      0|  0|   8|           1|           1|
+    |SaidaA1_V                      |  select  |      0|  0|  18|           1|          18|
+    |SaidaB1_V                      |  select  |      0|  0|   9|           1|           9|
+    |p_5_fu_362_p3                  |  select  |      0|  0|  10|           1|          10|
+    |p_mux1_fu_355_p3               |  select  |      0|  0|   9|           1|           8|
+    |p_mux_fu_318_p3                |  select  |      0|  0|  18|           1|          17|
+    |p_s_fu_325_p3                  |  select  |      0|  0|  19|           1|          19|
+    |newsignbit_i_i_i_i1_fu_234_p2  |    xor   |      0|  0|   8|           1|           2|
+    |newsignbit_i_i_i_i_fu_279_p2   |    xor   |      0|  0|   8|           1|           2|
+    |p_342_not_fu_306_p2            |    xor   |      0|  0|   8|           1|           2|
+    |p_344_not_fu_345_p2            |    xor   |      0|  0|   8|           1|           2|
+    |tmp_4_fu_268_p2                |    xor   |      0|  0|   8|           1|           2|
+    |tmp_s_fu_222_p2                |    xor   |      0|  0|   8|           1|           2|
+    +-------------------------------+----------+-------+---+----+------------+------------+
+    |Total                          |          |      0|  0| 318|          51|         120|
+    +-------------------------------+----------+-------+---+----+------------+------------+
+
+    * Multiplexer: 
+    +-----------+----+-----------+-----+-----------+
+    |    Name   | LUT| Input Size| Bits| Total Bits|
+    +-----------+----+-----------+-----+-----------+
+    |ap_NS_fsm  |  15|          3|    1|          3|
+    +-----------+----+-----------+-----+-----------+
+    |Total      |  15|          3|    1|          3|
+    +-----------+----+-----------+-----+-----------+
+
+    * Register: 
+    +---------------------+----+----+-----+-----------+
+    |         Name        | FF | LUT| Bits| Const Bits|
+    +---------------------+----+----+-----+-----------+
+    |ap_CS_fsm            |   2|   0|    2|          0|
+    |overflow_1_reg_417   |   1|   0|    1|          0|
+    |p_Result_1_reg_399   |   1|   0|    1|          0|
+    |p_Result_2_reg_405   |   6|   0|    6|          0|
+    |p_Result_s_reg_387   |   1|   0|    1|          0|
+    |p_Val2_1_reg_393     |  18|   0|   18|          0|
+    |p_Val2_3_reg_411     |   9|   0|    9|          0|
+    |underflow_1_reg_423  |   1|   0|    1|          0|
+    +---------------------+----+----+-----+-----------+
+    |Total                |  39|   0|   39|          0|
+    +---------------------+----+----+-----+-----------+
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
++------------------+-----+-----+------------+--------------+--------------+
+|     RTL Ports    | Dir | Bits|  Protocol  | Source Object|    C Type    |
++------------------+-----+-----+------------+--------------+--------------+
+|ap_clk            |  in |    1| ap_ctrl_hs |  CMFfixMult  | return value |
+|ap_rst            |  in |    1| ap_ctrl_hs |  CMFfixMult  | return value |
+|ap_start          |  in |    1| ap_ctrl_hs |  CMFfixMult  | return value |
+|ap_done           | out |    1| ap_ctrl_hs |  CMFfixMult  | return value |
+|ap_idle           | out |    1| ap_ctrl_hs |  CMFfixMult  | return value |
+|ap_ready          | out |    1| ap_ctrl_hs |  CMFfixMult  | return value |
+|EntradaA1_V       |  in |   18|   ap_none  |  EntradaA1_V |    scalar    |
+|EntradaA2_V       |  in |   18|   ap_none  |  EntradaA2_V |    scalar    |
+|EntradaB1_V       |  in |    9|   ap_none  |  EntradaB1_V |    scalar    |
+|EntradaB2_V       |  in |    9|   ap_none  |  EntradaB2_V |    scalar    |
+|SaidaA1_V         | out |   18|   ap_vld   |   SaidaA1_V  |    pointer   |
+|SaidaA1_V_ap_vld  | out |    1|   ap_vld   |   SaidaA1_V  |    pointer   |
+|SaidaA2_V         | out |   18|   ap_vld   |   SaidaA2_V  |    pointer   |
+|SaidaA2_V_ap_vld  | out |    1|   ap_vld   |   SaidaA2_V  |    pointer   |
+|SaidaB1_V         | out |    9|   ap_vld   |   SaidaB1_V  |    pointer   |
+|SaidaB1_V_ap_vld  | out |    1|   ap_vld   |   SaidaB1_V  |    pointer   |
++------------------+-----+-----+------------+--------------+--------------+
+

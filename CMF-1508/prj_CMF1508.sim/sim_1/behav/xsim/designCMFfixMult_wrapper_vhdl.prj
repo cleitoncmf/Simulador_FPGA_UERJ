@@ -1,0 +1,8 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../prj_CMF1508.ip_user_files/bd/designCMFfixMult/ipshared/38bf/CMF-fixMult/solution1/syn/vhdl/CMFfixMult_mul_mubkb.vhd" \
+"../../../../prj_CMF1508.ip_user_files/bd/designCMFfixMult/ipshared/38bf/CMF-fixMult/solution1/syn/vhdl/CMFfixMult.vhd" \
+"../../../../prj_CMF1508.ip_user_files/bd/designCMFfixMult/ip/designCMFfixMult_CMFfixMult_0_0/sim/designCMFfixMult_CMFfixMult_0_0.vhd" \
+
+# Do not sort compile order
+nosort
