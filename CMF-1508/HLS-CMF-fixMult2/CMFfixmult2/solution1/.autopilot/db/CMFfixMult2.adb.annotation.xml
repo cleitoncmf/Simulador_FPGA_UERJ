@@ -1,0 +1,6 @@
+<annotationInfo>
+<annotationInfo>
+<item  id="16" filename="CMFfixmult2.cpp" linenumber="14" name="r_V" contextFuncName="CMFfixMult2" moduleName="CMFfixMult2" rtlName="CMFfixMult2_mul_mbkb_U1" latency="0" BRAM="-1" DSP="-1" FF="-1" LUT="-1" fileDirectory="C:\Users\cleit\Documents\GitHub\Simulador_FPGA_UERJ\CMF-1508\HLS-CMF-fixMult2"><\/item>
+<item  id="17" filename="CMFfixmult2.cpp" linenumber="14" name="tmp_3" contextFuncName="CMFfixMult2" moduleName="CMFfixMult2" rtlName="SaidaA2_V" latency="0" BRAM="-1" DSP="-1" FF="-1" LUT="-1" fileDirectory="C:\Users\cleit\Documents\GitHub\Simulador_FPGA_UERJ\CMF-1508\HLS-CMF-fixMult2"><\/item>
+<\/annotationInfo>
+</annotationInfo>

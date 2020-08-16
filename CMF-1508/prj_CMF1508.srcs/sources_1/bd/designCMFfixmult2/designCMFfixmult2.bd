@@ -1,0 +1,77 @@
+{
+  "design": {
+    "design_info": {
+      "boundary_crc": "0x0",
+      "device": "xc7z020clg484-1",
+      "name": "designCMFfixmult2",
+      "synth_flow_mode": "Hierarchical",
+      "tool_version": "2018.3",
+      "validated": "true"
+    },
+    "design_tree": {
+      "sim_clk_gen_0": "",
+      "xlconstant_0": "",
+      "xlconstant_1": "",
+      "xlconstant_2": "",
+      "CMFfixMult2_0": ""
+    },
+    "components": {
+      "sim_clk_gen_0": {
+        "vlnv": "xilinx.com:ip:sim_clk_gen:1.0",
+        "xci_name": "designCMFfixmult2_sim_clk_gen_0_0"
+      },
+      "xlconstant_0": {
+        "vlnv": "xilinx.com:ip:xlconstant:1.1",
+        "xci_name": "designCMFfixmult2_xlconstant_0_0"
+      },
+      "xlconstant_1": {
+        "vlnv": "xilinx.com:ip:xlconstant:1.1",
+        "xci_name": "designCMFfixmult2_xlconstant_1_0",
+        "parameters": {
+          "CONST_VAL": {
+            "value": "256"
+          },
+          "CONST_WIDTH": {
+            "value": "18"
+          }
+        }
+      },
+      "xlconstant_2": {
+        "vlnv": "xilinx.com:ip:xlconstant:1.1",
+        "xci_name": "designCMFfixmult2_xlconstant_1_1",
+        "parameters": {
+          "CONST_VAL": {
+            "value": "18"
+          },
+          "CONST_WIDTH": {
+            "value": "18"
+          }
+        }
+      },
+      "CMFfixMult2_0": {
+        "vlnv": "xilinx.com:user:CMFfixMult2:1.0",
+        "xci_name": "designCMFfixmult2_CMFfixMult2_0_1"
+      }
+    },
+    "nets": {
+      "xlconstant_0_dout": {
+        "ports": [
+          "xlconstant_0/dout",
+          "CMFfixMult2_0/ap_start"
+        ]
+      },
+      "xlconstant_1_dout": {
+        "ports": [
+          "xlconstant_1/dout",
+          "CMFfixMult2_0/EntradaA1_V"
+        ]
+      },
+      "xlconstant_2_dout": {
+        "ports": [
+          "xlconstant_2/dout",
+          "CMFfixMult2_0/EntradaA2_V"
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,16 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../prj_CMF1508.ip_user_files/bd/designCMFfixmult2/ip/designCMFfixmult2_sim_clk_gen_0_0/sim/designCMFfixmult2_sim_clk_gen_0_0.v" \
+"../../../../prj_CMF1508.ip_user_files/bd/designCMFfixmult2/ip/designCMFfixmult2_xlconstant_0_0/sim/designCMFfixmult2_xlconstant_0_0.v" \
+"../../../../prj_CMF1508.ip_user_files/bd/designCMFfixmult2/ip/designCMFfixmult2_xlconstant_1_0/sim/designCMFfixmult2_xlconstant_1_0.v" \
+"../../../../prj_CMF1508.ip_user_files/bd/designCMFfixmult2/ip/designCMFfixmult2_xlconstant_1_1/sim/designCMFfixmult2_xlconstant_1_1.v" \
+"../../../../prj_CMF1508.ip_user_files/bd/designCMFfixmult2/sim/designCMFfixmult2.v" \
+"../../../../prj_CMF1508.ip_user_files/bd/designCMFfixmult2/ipshared/0894/CMFfixmult2/solution1/impl/verilog/CMFfixMult2_mul_mbkb.v" \
+"../../../../prj_CMF1508.ip_user_files/bd/designCMFfixmult2/ipshared/0894/CMFfixmult2/solution1/impl/verilog/CMFfixMult2.v" \
+"../../../../prj_CMF1508.srcs/sources_1/imports/hdl/designCMFfixmult2_wrapper.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

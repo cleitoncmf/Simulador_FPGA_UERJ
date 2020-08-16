@@ -1,0 +1,345 @@
+<stg><name>CMFfixMult2</name>
+
+
+<trans_list>
+</trans_list>
+
+
+
+<state_list>
+
+<state id="1" st_id="1">
+
+<operation id="2" st_id="1" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="6" bw="0" op_0_bw="0" op_1_bw="18">
+<![CDATA[
+_ZN8ap_fixedILi18ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi36ELi12ELb1ELS0_5ELS1_3ELi0EEERK13ap_fixed_baseIXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit:0  call void (...)* @_ssdm_op_SpecBitsMap(i18 %EntradaA1_V), !map !63
+
+]]></Node>
+<StgValue><ssdm name=""/></StgValue>
+</operation>
+
+<operation id="3" st_id="1" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="7" bw="0" op_0_bw="0" op_1_bw="18">
+<![CDATA[
+_ZN8ap_fixedILi18ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi36ELi12ELb1ELS0_5ELS1_3ELi0EEERK13ap_fixed_baseIXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit:1  call void (...)* @_ssdm_op_SpecBitsMap(i18 %EntradaA2_V), !map !69
+
+]]></Node>
+<StgValue><ssdm name=""/></StgValue>
+</operation>
+
+<operation id="4" st_id="1" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="8" bw="0" op_0_bw="0" op_1_bw="18">
+<![CDATA[
+_ZN8ap_fixedILi18ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi36ELi12ELb1ELS0_5ELS1_3ELi0EEERK13ap_fixed_baseIXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit:2  call void (...)* @_ssdm_op_SpecBitsMap(i18* %SaidaA1_V), !map !73
+
+]]></Node>
+<StgValue><ssdm name=""/></StgValue>
+</operation>
+
+<operation id="5" st_id="1" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="9" bw="0" op_0_bw="0" op_1_bw="18">
+<![CDATA[
+_ZN8ap_fixedILi18ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi36ELi12ELb1ELS0_5ELS1_3ELi0EEERK13ap_fixed_baseIXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit:3  call void (...)* @_ssdm_op_SpecBitsMap(i18* %SaidaA2_V), !map !79
+
+]]></Node>
+<StgValue><ssdm name=""/></StgValue>
+</operation>
+
+<operation id="6" st_id="1" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="10" bw="0" op_0_bw="0" op_1_bw="9">
+<![CDATA[
+_ZN8ap_fixedILi18ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi36ELi12ELb1ELS0_5ELS1_3ELi0EEERK13ap_fixed_baseIXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit:4  call void (...)* @_ssdm_op_SpecBitsMap(i9* %SaidaB1_V), !map !83
+
+]]></Node>
+<StgValue><ssdm name=""/></StgValue>
+</operation>
+
+<operation id="7" st_id="1" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="11" bw="0" op_0_bw="0" op_1_bw="0">
+<![CDATA[
+_ZN8ap_fixedILi18ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi36ELi12ELb1ELS0_5ELS1_3ELi0EEERK13ap_fixed_baseIXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit:5  call void (...)* @_ssdm_op_SpecTopModule([12 x i8]* @CMFfixMult2_str) nounwind
+
+]]></Node>
+<StgValue><ssdm name=""/></StgValue>
+</operation>
+
+<operation id="8" st_id="1" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="12" bw="18" op_0_bw="18" op_1_bw="18">
+<![CDATA[
+_ZN8ap_fixedILi18ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi36ELi12ELb1ELS0_5ELS1_3ELi0EEERK13ap_fixed_baseIXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit:6  %EntradaA2_V_read = call i18 @_ssdm_op_Read.ap_auto.i18(i18 %EntradaA2_V)
+
+]]></Node>
+<StgValue><ssdm name="EntradaA2_V_read"/></StgValue>
+</operation>
+
+<operation id="9" st_id="1" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="13" bw="18" op_0_bw="18" op_1_bw="18">
+<![CDATA[
+_ZN8ap_fixedILi18ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi36ELi12ELb1ELS0_5ELS1_3ELi0EEERK13ap_fixed_baseIXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit:7  %EntradaA1_V_read = call i18 @_ssdm_op_Read.ap_auto.i18(i18 %EntradaA1_V)
+
+]]></Node>
+<StgValue><ssdm name="EntradaA1_V_read"/></StgValue>
+</operation>
+
+<operation id="10" st_id="1" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="14" bw="30" op_0_bw="18">
+<![CDATA[
+_ZN8ap_fixedILi18ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi36ELi12ELb1ELS0_5ELS1_3ELi0EEERK13ap_fixed_baseIXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit:8  %r_V_cast = sext i18 %EntradaA1_V_read to i30
+
+]]></Node>
+<StgValue><ssdm name="r_V_cast"/></StgValue>
+</operation>
+
+<operation id="11" st_id="1" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="15" bw="30" op_0_bw="18">
+<![CDATA[
+_ZN8ap_fixedILi18ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi36ELi12ELb1ELS0_5ELS1_3ELi0EEERK13ap_fixed_baseIXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit:9  %tmp_cast = sext i18 %EntradaA2_V_read to i30
+
+]]></Node>
+<StgValue><ssdm name="tmp_cast"/></StgValue>
+</operation>
+
+<operation id="12" st_id="1" stage="1" lat="1">
+<core>DSP48</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="16" bw="30" op_0_bw="30" op_1_bw="30">
+<![CDATA[
+_ZN8ap_fixedILi18ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi36ELi12ELb1ELS0_5ELS1_3ELi0EEERK13ap_fixed_baseIXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit:10  %r_V = mul i30 %tmp_cast, %r_V_cast
+
+]]></Node>
+<StgValue><ssdm name="r_V"/></StgValue>
+</operation>
+
+<operation id="13" st_id="1" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="17" bw="18" op_0_bw="18" op_1_bw="30" op_2_bw="32" op_3_bw="32">
+<![CDATA[
+_ZN8ap_fixedILi18ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi36ELi12ELb1ELS0_5ELS1_3ELi0EEERK13ap_fixed_baseIXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit:11  %tmp_3 = call i18 @_ssdm_op_PartSelect.i18.i30.i32.i32(i30 %r_V, i32 12, i32 29)
+
+]]></Node>
+<StgValue><ssdm name="tmp_3"/></StgValue>
+</operation>
+
+<operation id="14" st_id="1" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="18" bw="0" op_0_bw="0" op_1_bw="18" op_2_bw="18">
+<![CDATA[
+_ZN8ap_fixedILi18ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi36ELi12ELb1ELS0_5ELS1_3ELi0EEERK13ap_fixed_baseIXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit:12  call void @_ssdm_op_Write.ap_auto.i18P(i18* %SaidaA1_V, i18 %tmp_3)
+
+]]></Node>
+<StgValue><ssdm name=""/></StgValue>
+</operation>
+
+<operation id="15" st_id="1" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="19" bw="0" op_0_bw="0" op_1_bw="18" op_2_bw="18">
+<![CDATA[
+_ZN8ap_fixedILi18ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi36ELi12ELb1ELS0_5ELS1_3ELi0EEERK13ap_fixed_baseIXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit:13  call void @_ssdm_op_Write.ap_auto.i18P(i18* %SaidaA2_V, i18 %tmp_3)
+
+]]></Node>
+<StgValue><ssdm name=""/></StgValue>
+</operation>
+
+<operation id="16" st_id="1" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="20" bw="0" op_0_bw="0" op_1_bw="9" op_2_bw="9">
+<![CDATA[
+_ZN8ap_fixedILi18ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi36ELi12ELb1ELS0_5ELS1_3ELi0EEERK13ap_fixed_baseIXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit:14  call void @_ssdm_op_Write.ap_auto.i9P(i9* %SaidaB1_V, i9 -159)
+
+]]></Node>
+<StgValue><ssdm name=""/></StgValue>
+</operation>
+
+<operation id="17" st_id="1" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="21" bw="0">
+<![CDATA[
+_ZN8ap_fixedILi18ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EEC1ILi36ELi12ELb1ELS0_5ELS1_3ELi0EEERK13ap_fixed_baseIXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit:15  ret void
+
+]]></Node>
+<StgValue><ssdm name=""/></StgValue>
+</operation>
+</state>
+</state_list>
+
+
+<ports>
+<port id="18" name="EntradaA1_V" dir="0" iftype="0">
+<core>NULL</core><StgValue><ssdm name="EntradaA1_V"/></StgValue>
+</port>
+<port id="19" name="EntradaA2_V" dir="0" iftype="0">
+<core>NULL</core><StgValue><ssdm name="EntradaA2_V"/></StgValue>
+</port>
+<port id="20" name="SaidaA1_V" dir="1" iftype="0">
+<core>NULL</core><StgValue><ssdm name="SaidaA1_V"/></StgValue>
+</port>
+<port id="21" name="SaidaA2_V" dir="1" iftype="0">
+<core>NULL</core><StgValue><ssdm name="SaidaA2_V"/></StgValue>
+</port>
+<port id="22" name="SaidaB1_V" dir="1" iftype="0">
+<core>NULL</core><StgValue><ssdm name="SaidaB1_V"/></StgValue>
+</port>
+</ports>
+
+
+<dataflows>
+<dataflow id="24" from="_ssdm_op_SpecBitsMap" to="StgValue_2" fromId="23" toId="2">
+</dataflow>
+<dataflow id="25" from="EntradaA1_V" to="StgValue_2" fromId="18" toId="2">
+</dataflow>
+<dataflow id="26" from="_ssdm_op_SpecBitsMap" to="StgValue_3" fromId="23" toId="3">
+</dataflow>
+<dataflow id="27" from="EntradaA2_V" to="StgValue_3" fromId="19" toId="3">
+</dataflow>
+<dataflow id="28" from="_ssdm_op_SpecBitsMap" to="StgValue_4" fromId="23" toId="4">
+</dataflow>
+<dataflow id="29" from="SaidaA1_V" to="StgValue_4" fromId="20" toId="4">
+</dataflow>
+<dataflow id="30" from="_ssdm_op_SpecBitsMap" to="StgValue_5" fromId="23" toId="5">
+</dataflow>
+<dataflow id="31" from="SaidaA2_V" to="StgValue_5" fromId="21" toId="5">
+</dataflow>
+<dataflow id="32" from="_ssdm_op_SpecBitsMap" to="StgValue_6" fromId="23" toId="6">
+</dataflow>
+<dataflow id="33" from="SaidaB1_V" to="StgValue_6" fromId="22" toId="6">
+</dataflow>
+<dataflow id="35" from="_ssdm_op_SpecTopModule" to="StgValue_7" fromId="34" toId="7">
+</dataflow>
+<dataflow id="37" from="CMFfixMult2_str" to="StgValue_7" fromId="36" toId="7">
+</dataflow>
+<dataflow id="39" from="_ssdm_op_Read.ap_auto.i18" to="EntradaA2_V_read" fromId="38" toId="8">
+</dataflow>
+<dataflow id="40" from="EntradaA2_V" to="EntradaA2_V_read" fromId="19" toId="8">
+</dataflow>
+<dataflow id="41" from="_ssdm_op_Read.ap_auto.i18" to="EntradaA1_V_read" fromId="38" toId="9">
+</dataflow>
+<dataflow id="42" from="EntradaA1_V" to="EntradaA1_V_read" fromId="18" toId="9">
+</dataflow>
+<dataflow id="43" from="EntradaA1_V_read" to="r_V_cast" fromId="9" toId="10">
+</dataflow>
+<dataflow id="44" from="EntradaA2_V_read" to="tmp_cast" fromId="8" toId="11">
+</dataflow>
+<dataflow id="45" from="tmp_cast" to="r_V" fromId="11" toId="12">
+</dataflow>
+<dataflow id="46" from="r_V_cast" to="r_V" fromId="10" toId="12">
+</dataflow>
+<dataflow id="48" from="_ssdm_op_PartSelect.i18.i30.i32.i32" to="tmp_3" fromId="47" toId="13">
+</dataflow>
+<dataflow id="49" from="r_V" to="tmp_3" fromId="12" toId="13">
+</dataflow>
+<dataflow id="51" from="StgValue_50" to="tmp_3" fromId="50" toId="13">
+</dataflow>
+<dataflow id="53" from="StgValue_52" to="tmp_3" fromId="52" toId="13">
+</dataflow>
+<dataflow id="55" from="_ssdm_op_Write.ap_auto.i18P" to="StgValue_14" fromId="54" toId="14">
+</dataflow>
+<dataflow id="56" from="SaidaA1_V" to="StgValue_14" fromId="20" toId="14">
+</dataflow>
+<dataflow id="57" from="tmp_3" to="StgValue_14" fromId="13" toId="14">
+</dataflow>
+<dataflow id="58" from="_ssdm_op_Write.ap_auto.i18P" to="StgValue_15" fromId="54" toId="15">
+</dataflow>
+<dataflow id="59" from="SaidaA2_V" to="StgValue_15" fromId="21" toId="15">
+</dataflow>
+<dataflow id="60" from="tmp_3" to="StgValue_15" fromId="13" toId="15">
+</dataflow>
+<dataflow id="62" from="_ssdm_op_Write.ap_auto.i9P" to="StgValue_16" fromId="61" toId="16">
+</dataflow>
+<dataflow id="63" from="SaidaB1_V" to="StgValue_16" fromId="22" toId="16">
+</dataflow>
+<dataflow id="65" from="StgValue_64" to="StgValue_16" fromId="64" toId="16">
+</dataflow>
+</dataflows>
+
+
+</stg>

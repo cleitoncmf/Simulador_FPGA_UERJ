@@ -1,0 +1,4 @@
+Running: xsim.dir/designCMFfixmult2_wrapper_behav/xsimk.exe -simmode gui -wdb designCMFfixmult2_wrapper_behav.wdb -simrunnum 0 -socket 57257
+Design successfully loaded
+Design Loading Memory Usage: 5268 KB (Peak: 5268 KB)
+Design Loading CPU Usage: 46 ms
