@@ -51,8 +51,6 @@
                                 								
                                 <option id="gnu.cpp.compiler.option.include.paths.456421780" name="Include paths (-I)" superClass="gnu.cpp.compiler.option.include.paths" useByScannerDiscovery="false" valueType="includePath">
                                     									
-                                    <listOptionValue builtIn="false" value="C:/Users/cleit/Documents/GitHub/Simulador_FPGA_UERJ/CMF-1708/HLS-teste2"/>
-                                    									
                                     <listOptionValue builtIn="false" value="C:/Xilinx/Vivado/2018.3/include"/>
                                     									
                                     <listOptionValue builtIn="false" value="C:/Xilinx/Vivado/2018.3/win64/tools/auto_cc/include"/>
@@ -86,8 +84,6 @@
                                 <option id="gnu.c.compiler.exe.debug.option.debugging.level.594865424" name="Debug Level" superClass="gnu.c.compiler.exe.debug.option.debugging.level" useByScannerDiscovery="false" value="gnu.c.debugging.level.max" valueType="enumerated"/>
                                 								
                                 <option id="gnu.c.compiler.option.include.paths.1166132028" name="Include paths (-I)" superClass="gnu.c.compiler.option.include.paths" useByScannerDiscovery="false" valueType="includePath">
-                                    									
-                                    <listOptionValue builtIn="false" value="C:/Users/cleit/Documents/GitHub/Simulador_FPGA_UERJ/CMF-1708/HLS-teste2"/>
                                     									
                                     <listOptionValue builtIn="false" value="C:/Xilinx/Vivado/2018.3/include"/>
                                     									
@@ -223,8 +219,6 @@
                                 								
                                 <option id="gnu.cpp.compiler.option.include.paths.1468643576" name="Include paths (-I)" superClass="gnu.cpp.compiler.option.include.paths" useByScannerDiscovery="false" valueType="includePath">
                                     									
-                                    <listOptionValue builtIn="false" value="C:/Users/cleit/Documents/GitHub/Simulador_FPGA_UERJ/CMF-1708/HLS-teste2"/>
-                                    									
                                     <listOptionValue builtIn="false" value="C:/Xilinx/Vivado/2018.3/include"/>
                                     									
                                     <listOptionValue builtIn="false" value="C:/Xilinx/Vivado/2018.3/win64/tools/auto_cc/include"/>
@@ -248,8 +242,6 @@
                                 <option id="gnu.c.compiler.exe.release.option.debugging.level.1350795921" name="Debug Level" superClass="gnu.c.compiler.exe.release.option.debugging.level" useByScannerDiscovery="false" value="gnu.c.debugging.level.none" valueType="enumerated"/>
                                 								
                                 <option id="gnu.c.compiler.option.include.paths.891679310" name="Include paths (-I)" superClass="gnu.c.compiler.option.include.paths" useByScannerDiscovery="false" valueType="includePath">
-                                    									
-                                    <listOptionValue builtIn="false" value="C:/Users/cleit/Documents/GitHub/Simulador_FPGA_UERJ/CMF-1708/HLS-teste2"/>
                                     									
                                     <listOptionValue builtIn="false" value="C:/Xilinx/Vivado/2018.3/include"/>
                                     									
