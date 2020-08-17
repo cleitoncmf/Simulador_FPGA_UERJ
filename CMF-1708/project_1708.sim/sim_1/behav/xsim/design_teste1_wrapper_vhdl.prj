@@ -1,0 +1,7 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../project_1708.ip_user_files/bd/design_teste1/ipshared/fdc7/CMFteste1/solution1/syn/vhdl/CMFteste1.vhd" \
+"../../../../project_1708.ip_user_files/bd/design_teste1/ip/design_teste1_CMFteste1_0_0/sim/design_teste1_CMFteste1_0_0.vhd" \
+
+# Do not sort compile order
+nosort

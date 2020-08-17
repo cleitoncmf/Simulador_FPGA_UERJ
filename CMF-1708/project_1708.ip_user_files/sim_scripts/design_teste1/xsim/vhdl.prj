@@ -1,0 +1,5 @@
+vhdl xil_defaultlib  \
+"../../../bd/design_teste1/ipshared/fdc7/CMFteste1/solution1/syn/vhdl/CMFteste1.vhd" \
+"../../../bd/design_teste1/ip/design_teste1_CMFteste1_0_0/sim/design_teste1_CMFteste1_0_0.vhd" \
+
+nosort

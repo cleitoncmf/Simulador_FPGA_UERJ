@@ -5,8 +5,8 @@
 ############################################################
 open_project CMFfixmult2
 set_top CMFfixMult2
-add_files CMFfixmult2.cpp
 add_files CMFfixmult2.h
+add_files CMFfixmult2.cpp
 open_solution "solution1"
 set_part {xa7a12tcsg325-1q}
 create_clock -period 10 -name default

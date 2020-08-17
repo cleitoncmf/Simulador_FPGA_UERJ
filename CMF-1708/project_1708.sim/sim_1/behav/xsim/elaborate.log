@@ -1,0 +1,23 @@
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 31e583e21d1943358def068804137ce7 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L sim_clk_gen_v1_0_2 -L xlconstant_v1_1_5 -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot designteste2_wrapper_behav xil_defaultlib.designteste2_wrapper xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling architecture behav of entity xil_defaultlib.CMFteste2 [cmfteste2_default]
+Compiling architecture designteste2_cmfteste2_0_0_arch of entity xil_defaultlib.designteste2_CMFteste2_0_0 [designteste2_cmfteste2_0_0_defau...]
+Compiling module sim_clk_gen_v1_0_2.sim_clk_gen(CLOCK_PERIOD=10,RESE...
+Compiling module xil_defaultlib.designteste2_sim_clk_gen_0_0
+Compiling module xlconstant_v1_1_5.xlconstant_v1_1_5_xlconstant(CON...
+Compiling module xil_defaultlib.designteste2_xlconstant_0_0
+Compiling module xil_defaultlib.designteste2
+Compiling module xil_defaultlib.designteste2_wrapper
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot designteste2_wrapper_behav

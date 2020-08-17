@@ -54,12 +54,6 @@
       }
     },
     "nets": {
-      "xlconstant_0_dout": {
-        "ports": [
-          "xlconstant_0/dout",
-          "CMFfixMult2_0/ap_start"
-        ]
-      },
       "xlconstant_1_dout": {
         "ports": [
           "xlconstant_1/dout",
@@ -70,6 +64,12 @@
         "ports": [
           "xlconstant_2/dout",
           "CMFfixMult2_0/EntradaA2_V"
+        ]
+      },
+      "xlconstant_0_dout": {
+        "ports": [
+          "xlconstant_0/dout",
+          "CMFfixMult2_0/ap_start"
         ]
       }
     }

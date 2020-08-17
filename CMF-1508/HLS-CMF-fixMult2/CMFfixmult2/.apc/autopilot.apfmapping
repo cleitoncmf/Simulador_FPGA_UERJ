@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
   <source>
-    <originFiles name="CMFfixmult2.cpp" path="C:\Users\cleit\Documents\GitHub\Simulador_FPGA_UERJ\CMF-1508\HLS-CMF-fixMult2\CMFfixmult2.cpp"/>
     <originFiles name="CMFfixmult2.h" path="C:\Users\cleit\Documents\GitHub\Simulador_FPGA_UERJ\CMF-1508\HLS-CMF-fixMult2\CMFfixmult2.h"/>
+    <originFiles name="CMFfixmult2.cpp" path="C:\Users\cleit\Documents\GitHub\Simulador_FPGA_UERJ\CMF-1508\HLS-CMF-fixMult2\CMFfixmult2.cpp"/>
   </source>
   <testbench/>
 </autopilotfilemapping:AutoPilotFileMapping>

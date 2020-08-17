@@ -1,0 +1,47 @@
+INFO: [HLS 200-10] Running 'C:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/vivado_hls.exe'
+INFO: [HLS 200-10] For user 'cleit' on host 'desktop-5mp17pp' (Windows NT_amd64 version 6.2) on Mon Aug 17 15:32:20 -0300 2020
+INFO: [HLS 200-10] In directory 'C:/Users/cleit/Documents/GitHub/Simulador_FPGA_UERJ/CMF-1708/HLS-teste2'
+INFO: [HLS 200-10] Opening project 'C:/Users/cleit/Documents/GitHub/Simulador_FPGA_UERJ/CMF-1708/HLS-teste2/CMFteste2'.
+INFO: [HLS 200-10] Adding design file 'cmfteste2.cpp' to the project
+INFO: [HLS 200-10] Adding design file 'cmfteste2.h' to the project
+INFO: [HLS 200-10] Opening solution 'C:/Users/cleit/Documents/GitHub/Simulador_FPGA_UERJ/CMF-1708/HLS-teste2/CMFteste2/solution1'.
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xa7a12tcsg325-1q'
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [SCHED 204-61] Option 'relax_ii_for_timing' is enabled, will increase II to preserve clock frequency constraints.
+INFO: [HLS 200-10] Analyzing design file 'cmfteste2.cpp' ... 
+INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:00:01 ; elapsed = 00:01:02 . Memory (MB): peak = 101.680 ; gain = 16.301
+INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:00:01 ; elapsed = 00:01:03 . Memory (MB): peak = 101.680 ; gain = 16.301
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:00:01 ; elapsed = 00:01:20 . Memory (MB): peak = 106.250 ; gain = 20.871
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability Time (s): cpu = 00:00:01 ; elapsed = 00:01:22 . Memory (MB): peak = 108.410 ; gain = 23.031
+INFO: [HLS 200-111] Finished Pre-synthesis Time (s): cpu = 00:00:01 ; elapsed = 00:01:25 . Memory (MB): peak = 131.559 ; gain = 46.180
+INFO: [HLS 200-111] Finished Architecture Synthesis Time (s): cpu = 00:00:01 ; elapsed = 00:01:26 . Memory (MB): peak = 131.820 ; gain = 46.441
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'CMFteste2' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'CMFteste2' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 88.255 seconds; current allocated memory: 82.411 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 1.775 seconds; current allocated memory: 82.468 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'CMFteste2' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-500] Setting interface mode on port 'CMFteste2/Saida_V' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'CMFteste2' to 'ap_ctrl_hs'.
+WARNING: [RTGEN 206-101] Register 'N_V' is power-on initialization.
+INFO: [RTGEN 206-100] Finished creating RTL model for 'CMFteste2'.
+INFO: [HLS 200-111]  Elapsed time: 2.638 seconds; current allocated memory: 82.577 MB.
+INFO: [HLS 200-111] Finished generating all RTL models Time (s): cpu = 00:00:02 ; elapsed = 00:01:39 . Memory (MB): peak = 131.820 ; gain = 46.441
+INFO: [SYSC 207-301] Generating SystemC RTL for CMFteste2.
+INFO: [VHDL 208-304] Generating VHDL RTL for CMFteste2.
+INFO: [VLOG 209-307] Generating Verilog RTL for CMFteste2.
+INFO: [HLS 200-112] Total elapsed time: 99.405 seconds; peak allocated memory: 82.577 MB.

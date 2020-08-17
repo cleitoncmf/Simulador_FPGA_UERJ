@@ -1,0 +1,11 @@
+<annotationInfo>
+<annotationInfo>
+<item  id="13" filename="CMFteste1.cpp" linenumber="8" name="tmp_cast" contextFuncName="CMFteste1" moduleName="CMFteste1" rtlName="tmp_cast_fu_66_p1" latency="0" BRAM="-1" DSP="-1" FF="-1" LUT="-1" fileDirectory="C:\Users\cleit\Documents\GitHub\Simulador_FPGA_UERJ\CMF-1708\HLS-Teste1"><\/item>
+<item  id="14" filename="CMFteste1.cpp" linenumber="8" name="r_V" contextFuncName="CMFteste1" moduleName="CMFteste1" rtlName="r_V_fu_69_p2" latency="0" BRAM="-1" DSP="4" FF="0" LUT="21" fileDirectory="C:\Users\cleit\Documents\GitHub\Simulador_FPGA_UERJ\CMF-1708\HLS-Teste1"><\/item>
+<item  id="15" filename="CMFteste1.cpp" linenumber="8" name="tmp_2" contextFuncName="CMFteste1" moduleName="CMFteste1" rtlName="Saida1_V" latency="0" BRAM="-1" DSP="-1" FF="-1" LUT="-1" fileDirectory="C:\Users\cleit\Documents\GitHub\Simulador_FPGA_UERJ\CMF-1708\HLS-Teste1"><\/item>
+<item  id="17" filename="CMFteste1.cpp" linenumber="9" name="lhs_V" contextFuncName="CMFteste1" moduleName="CMFteste1" rtlName="lhs_V_fu_52_p1" latency="0" BRAM="-1" DSP="-1" FF="-1" LUT="-1" fileDirectory="C:\Users\cleit\Documents\GitHub\Simulador_FPGA_UERJ\CMF-1708\HLS-Teste1"><\/item>
+<item  id="18" filename="CMFteste1.cpp" linenumber="9" name="ret_V" contextFuncName="CMFteste1" moduleName="CMFteste1" rtlName="ret_V_fu_56_p2" latency="0" BRAM="-1" DSP="-1" FF="0" LUT="40" fileDirectory="C:\Users\cleit\Documents\GitHub\Simulador_FPGA_UERJ\CMF-1708\HLS-Teste1"><\/item>
+<item  id="20" filename="CMFteste1.cpp" linenumber="9" name="r_V_1" contextFuncName="CMFteste1" moduleName="CMFteste1" rtlName="r_V_1_fu_89_p2" latency="0" BRAM="-1" DSP="4" FF="0" LUT="22" fileDirectory="C:\Users\cleit\Documents\GitHub\Simulador_FPGA_UERJ\CMF-1708\HLS-Teste1"><\/item>
+<item  id="21" filename="CMFteste1.cpp" linenumber="9" name="tmp_9" contextFuncName="CMFteste1" moduleName="CMFteste1" rtlName="Saida2_V" latency="0" BRAM="-1" DSP="-1" FF="-1" LUT="-1" fileDirectory="C:\Users\cleit\Documents\GitHub\Simulador_FPGA_UERJ\CMF-1708\HLS-Teste1"><\/item>
+<\/annotationInfo>
+</annotationInfo>

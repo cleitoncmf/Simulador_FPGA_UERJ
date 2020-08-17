@@ -1,0 +1,14 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/cleit/Documents/GitHub/Simulador_FPGA_UERJ/CMF-1708/project_1708.ip_user_files/bd/designteste2/ipshared/45d1/CMFteste2/solution1/impl/verilog/CMFteste2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CMFteste2
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/cleit/Documents/GitHub/Simulador_FPGA_UERJ/CMF-1708/project_1708.ip_user_files/bd/designteste2/ip/designteste2_sim_clk_gen_0_0/sim/designteste2_sim_clk_gen_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module designteste2_sim_clk_gen_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/cleit/Documents/GitHub/Simulador_FPGA_UERJ/CMF-1708/project_1708.ip_user_files/bd/designteste2/ip/designteste2_xlconstant_0_0/sim/designteste2_xlconstant_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module designteste2_xlconstant_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/cleit/Documents/GitHub/Simulador_FPGA_UERJ/CMF-1708/project_1708.ip_user_files/bd/designteste2/sim/designteste2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module designteste2
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/cleit/Documents/GitHub/Simulador_FPGA_UERJ/CMF-1708/project_1708.srcs/sources_1/imports/hdl/designteste2_wrapper.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module designteste2_wrapper
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/cleit/Documents/GitHub/Simulador_FPGA_UERJ/CMF-1708/project_1708.ip_user_files/bd/designteste2/ipshared/45d1/CMFteste2/solution1/syn/vhdl/CMFteste2.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'CMFteste2'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/cleit/Documents/GitHub/Simulador_FPGA_UERJ/CMF-1708/project_1708.ip_user_files/bd/designteste2/ip/designteste2_CMFteste2_0_0/sim/designteste2_CMFteste2_0_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'designteste2_CMFteste2_0_0'

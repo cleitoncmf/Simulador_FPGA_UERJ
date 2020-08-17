@@ -9,8 +9,8 @@ preplace inst CMFfixMult2_0 -pg 1 -lvl 2 -y 260 -defaultsOSRD
 preplace inst sim_clk_gen_0 -pg 1 -lvl 2 -y 70 -defaultsOSRD
 preplace netloc xlconstant_1_dout 1 1 1 NJ
 preplace netloc xlconstant_2_dout 1 1 1 170J
-preplace netloc xlconstant_0_dout 1 1 1 170J
+preplace netloc xlconstant_0_dout 1 1 1 170
 levelinfo -pg 1 0 90 320 480 -top 0 -bot 420
 "
 }
-
+0
