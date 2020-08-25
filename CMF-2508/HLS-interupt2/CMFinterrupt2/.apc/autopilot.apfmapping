@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
+  <source>
+    <originFiles name="CMFinterrupt2.h" path="C:\Users\cleit\Documents\GitHub\Simulador_FPGA_UERJ\CMF-2508\HLS-interupt2\CMFinterrupt2.h"/>
+    <originFiles name="CMFinterrupt2.c" path="C:\Users\cleit\Documents\GitHub\Simulador_FPGA_UERJ\CMF-2508\HLS-interupt2\CMFinterrupt2.c"/>
+  </source>
+  <testbench/>
+</autopilotfilemapping:AutoPilotFileMapping>

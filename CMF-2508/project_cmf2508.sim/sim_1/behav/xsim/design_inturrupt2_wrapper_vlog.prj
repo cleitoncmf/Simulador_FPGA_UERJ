@@ -1,0 +1,14 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../project_cmf2508.ip_user_files/bd/design_inturrupt2/ipshared/7ff0/CMFinterrupt2/solution1/impl/verilog/CMFinterrupt2.v" \
+"../../../../project_cmf2508.ip_user_files/bd/design_inturrupt2/ip/design_inturrupt2_sim_clk_gen_0_0/sim/design_inturrupt2_sim_clk_gen_0_0.v" \
+"../../../../project_cmf2508.ip_user_files/bd/design_inturrupt2/ip/design_inturrupt2_sim_clk_gen_0_1/sim/design_inturrupt2_sim_clk_gen_0_1.v" \
+"../../../../project_cmf2508.ip_user_files/bd/design_inturrupt2/ip/design_inturrupt2_xlconstant_0_0/sim/design_inturrupt2_xlconstant_0_0.v" \
+"../../../../project_cmf2508.ip_user_files/bd/design_inturrupt2/sim/design_inturrupt2.v" \
+"../../../../project_cmf2508.srcs/sources_1/imports/hdl/design_inturrupt2_wrapper.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

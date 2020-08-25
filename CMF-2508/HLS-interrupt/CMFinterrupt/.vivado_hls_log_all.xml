@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<vivadoHLSLog:LogRoot xmlns:vivadoHLSLog="www.xilinx.com/vivadoHLSLog">
+  <errorLogs>
+    <logs>
+      <synLog/>
+      <simLog/>
+      <mgLog/>
+      <packageLog/>
+      <csimLog/>
+    </logs>
+  </errorLogs>
+  <warningLogs>
+    <logs>
+      <synLog>
+        <logs message="WARNING: [RTGEN 206-101] Port 'CMFinterrupt/Saida' has no fanin or fanout and is left dangling.&#xD;&#xA;               Please use C simulation to confirm this function argument can be read from or written to." projectName="CMFinterrupt" solutionName="solution1" date="2020-08-25T16:52:54.235-0300" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Register 'clk' is power-on initialization." projectName="CMFinterrupt" solutionName="solution1" date="2020-08-25T16:52:54.212-0300" type="Warning"/>
+        <logs message="WARNING: [SYNCHK 200-77] The top function 'CMFinterrupt' (CMFinterrupt.c:4) has no outputs. Possible cause(s) are: (1) Output parameters are passed by value; (2) intended outputs (parameters or global variables) are never written; (3) there are infinite loops." projectName="CMFinterrupt" solutionName="solution1" date="2020-08-25T16:52:50.616-0300" type="Warning"/>
+        <logs message="WARNING: [HLS 200-40] In file included from CMFinterrupt.c:1:&#xD;&#xA;CMFinterrupt.c:15:9: warning: expression result unused [-Wunused-value]&#xD;&#xA;        *Saida++;&#xD;&#xA;        ^~~~~~~~&#xD;&#xA;1 warning generated." projectName="CMFinterrupt" solutionName="solution1" date="2020-08-25T16:52:47.625-0300" type="Warning"/>
+      </synLog>
+      <simLog/>
+      <mgLog/>
+      <packageLog/>
+      <csimLog/>
+    </logs>
+  </warningLogs>
+</vivadoHLSLog:LogRoot>

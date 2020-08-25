@@ -1,0 +1,5 @@
+vhdl xil_defaultlib  \
+"../../../bd/design_interrupt/ipshared/b2b0/CMFinterrupt/solution1/syn/vhdl/CMFinterrupt.vhd" \
+"../../../bd/design_interrupt/ip/design_interrupt_CMFinterrupt_0_0/sim/design_interrupt_CMFinterrupt_0_0.vhd" \
+
+nosort

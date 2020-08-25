@@ -1,0 +1,4 @@
+Running: xsim.dir/design_inturrupt2_wrapper_behav/xsimk.exe -simmode gui -wdb design_inturrupt2_wrapper_behav.wdb -simrunnum 0 -socket 57286
+Design successfully loaded
+Design Loading Memory Usage: 5792 KB (Peak: 5792 KB)
+Design Loading CPU Usage: 15 ms

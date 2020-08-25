@@ -1,0 +1,7 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../project_cmf2508.ip_user_files/bd/design_interrupt/ipshared/b2b0/CMFinterrupt/solution1/syn/vhdl/CMFinterrupt.vhd" \
+"../../../../project_cmf2508.ip_user_files/bd/design_interrupt/ip/design_interrupt_CMFinterrupt_0_0/sim/design_interrupt_CMFinterrupt_0_0.vhd" \
+
+# Do not sort compile order
+nosort

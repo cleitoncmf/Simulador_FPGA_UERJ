@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<vivadoHLSLog:LogRoot xmlns:vivadoHLSLog="www.xilinx.com/vivadoHLSLog">
+  <errorLogs>
+    <logs>
+      <synLog/>
+      <simLog/>
+      <mgLog/>
+      <packageLog/>
+      <csimLog/>
+    </logs>
+  </errorLogs>
+  <warningLogs>
+    <logs>
+      <synLog>
+        <logs message="WARNING: [RTGEN 206-101] Register 'aux_saida2' is power-on initialization." projectName="CMFinterrupt2" solutionName="solution1" date="2020-08-25T18:01:47.768-0300" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Register 'aux_sinc' is power-on initialization." projectName="CMFinterrupt2" solutionName="solution1" date="2020-08-25T18:01:47.731-0300" type="Warning"/>
+      </synLog>
+      <simLog/>
+      <mgLog/>
+      <packageLog/>
+      <csimLog/>
+    </logs>
+  </warningLogs>
+</vivadoHLSLog:LogRoot>

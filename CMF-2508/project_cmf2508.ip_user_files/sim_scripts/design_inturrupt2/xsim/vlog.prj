@@ -1,0 +1,10 @@
+verilog xil_defaultlib  \
+"../../../bd/design_inturrupt2/ipshared/7ff0/CMFinterrupt2/solution1/impl/verilog/CMFinterrupt2.v" \
+"../../../bd/design_inturrupt2/ip/design_inturrupt2_sim_clk_gen_0_0/sim/design_inturrupt2_sim_clk_gen_0_0.v" \
+"../../../bd/design_inturrupt2/ip/design_inturrupt2_sim_clk_gen_0_1/sim/design_inturrupt2_sim_clk_gen_0_1.v" \
+"../../../bd/design_inturrupt2/ip/design_inturrupt2_xlconstant_0_0/sim/design_inturrupt2_xlconstant_0_0.v" \
+"../../../bd/design_inturrupt2/sim/design_inturrupt2.v" \
+
+verilog xil_defaultlib "glbl.v"
+
+nosort

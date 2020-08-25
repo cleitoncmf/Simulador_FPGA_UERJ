@@ -1,0 +1,115 @@
+
+
+================================================================
+== Vivado HLS Report for 'CMFinterrupt'
+================================================================
+* Date:           Tue Aug 25 16:52:53 2020
+
+* Version:        2018.3 (Build 2405991 on Thu Dec 06 23:56:15 MST 2018)
+* Project:        CMFinterrupt
+* Solution:       solution1
+* Product family: aartix7
+* Target device:  xa7a12tcsg325-1q
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing (ns): 
+    * Summary: 
+    +--------+-------+----------+------------+
+    |  Clock | Target| Estimated| Uncertainty|
+    +--------+-------+----------+------------+
+    |ap_clk  |  10.00|     0.942|        1.25|
+    +--------+-------+----------+------------+
+
++ Latency (clock cycles): 
+    * Summary: 
+    +-----+-----+-----+-----+---------+
+    |  Latency  |  Interval | Pipeline|
+    | min | max | min | max |   Type  |
+    +-----+-----+-----+-----+---------+
+    |    0|    0|    0|    0|   none  |
+    +-----+-----+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        N/A
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 1
+ResetActiveHigh: 1
+IsCombinational: 0
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 0
+HasVarLatency: 0
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 1
+* Pipeline : 0
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 0.94>
+ST_1 : Operation 2 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i1 %Sinc) nounwind, !map !7"   --->   Operation 2 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 3 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i32* %Saida) nounwind, !map !13"   --->   Operation 3 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 4 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecTopModule([13 x i8]* @CMFinterrupt_str) nounwind"   --->   Operation 4 'spectopmodule' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 5 [1/1] (0.00ns)   --->   "%Sinc_read = call i1 @_ssdm_op_Read.ap_auto.i1(i1 %Sinc) nounwind" [CMFinterrupt.c:4]   --->   Operation 5 'read' 'Sinc_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 6 [1/1] (0.00ns)   --->   "%clk_load = load i1* @clk, align 1" [CMFinterrupt.c:10]   --->   Operation 6 'load' 'clk_load' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 7 [1/1] (0.94ns)   --->   "%tmp = xor i1 %clk_load, %Sinc_read" [CMFinterrupt.c:10]   --->   Operation 7 'xor' 'tmp' <Predicate = true> <Delay = 0.94> <Core = "LogicGate">   --->   Core 27 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.94> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 8 [1/1] (0.00ns)   --->   "br i1 %tmp, label %1, label %._crit_edge" [CMFinterrupt.c:10]   --->   Operation 8 'br' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 9 [1/1] (0.00ns)   --->   "store i1 %Sinc_read, i1* @clk, align 1" [CMFinterrupt.c:13]   --->   Operation 9 'store' <Predicate = (tmp)> <Delay = 0.00>
+ST_1 : Operation 10 [1/1] (0.00ns)   --->   "br label %._crit_edge" [CMFinterrupt.c:16]   --->   Operation 10 'br' <Predicate = (tmp)> <Delay = 0.00>
+ST_1 : Operation 11 [1/1] (0.00ns)   --->   "ret void" [CMFinterrupt.c:21]   --->   Operation 11 'ret' <Predicate = true> <Delay = 0.00>
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 10ns, clock uncertainty: 1.25ns.
+
+ <State 1>: 0.942ns
+The critical path consists of the following:
+	wire read on port 'Sinc' (CMFinterrupt.c:4) [7]  (0 ns)
+	'xor' operation ('tmp', CMFinterrupt.c:10) [9]  (0.942 ns)
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A
