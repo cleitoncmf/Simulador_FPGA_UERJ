@@ -1,0 +1,216 @@
+==============================================================
+File generated on Tue Aug 25 22:11:03 -0300 2020
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2018.3 (64-bit)
+SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xa7a12tcsg325-1q'
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [SCHED 204-61] Option 'relax_ii_for_timing' is enabled, will increase II to preserve clock frequency constraints.
+INFO: [HLS 200-10] Analyzing design file 'CMFRL1.cpp' ... 
+INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:00:01 ; elapsed = 00:01:53 . Memory (MB): peak = 101.953 ; gain = 19.598
+INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:00:01 ; elapsed = 00:01:53 . Memory (MB): peak = 101.953 ; gain = 19.598
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:00:01 ; elapsed = 00:02:02 . Memory (MB): peak = 138.199 ; gain = 55.844
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability Time (s): cpu = 00:00:02 ; elapsed = 00:02:04 . Memory (MB): peak = 165.102 ; gain = 82.746
+INFO: [HLS 200-111] Finished Pre-synthesis Time (s): cpu = 00:00:02 ; elapsed = 00:02:07 . Memory (MB): peak = 211.316 ; gain = 128.961
+INFO: [HLS 200-111] Finished Architecture Synthesis Time (s): cpu = 00:00:02 ; elapsed = 00:02:08 . Memory (MB): peak = 219.797 ; gain = 137.441
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'CMFRL1' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'CMFRL1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 129.071 seconds; current allocated memory: 165.231 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 3.3 seconds; current allocated memory: 165.347 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'CMFRL1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-500] Setting interface mode on port 'CMFRL1/sinc_V' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'CMFRL1/i_RL' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'CMFRL1' to 'ap_ctrl_hs'.
+WARNING: [RTGEN 206-101] Register 'aux_sinc_V' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'i_kp1' is power-on initialization.
+INFO: [SYN 201-210] Renamed object name 'CMFRL1_faddfsub_32ns_32ns_32_5_full_dsp_1' to 'CMFRL1_faddfsub_3bkb' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'CMFRL1_fmul_32ns_32ns_32_4_max_dsp_1' to 'CMFRL1_fmul_32ns_cud' due to the length limit 20
+INFO: [RTGEN 206-100] Generating core module 'CMFRL1_faddfsub_3bkb': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'CMFRL1_fmul_32ns_cud': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'CMFRL1'.
+INFO: [HLS 200-111]  Elapsed time: 3.961 seconds; current allocated memory: 165.609 MB.
+INFO: [HLS 200-111] Finished generating all RTL models Time (s): cpu = 00:00:04 ; elapsed = 00:02:33 . Memory (MB): peak = 219.797 ; gain = 137.441
+INFO: [SYSC 207-301] Generating SystemC RTL for CMFRL1.
+INFO: [VHDL 208-304] Generating VHDL RTL for CMFRL1.
+INFO: [VLOG 209-307] Generating Verilog RTL for CMFRL1.
+INFO: [HLS 200-112] Total elapsed time: 153.356 seconds; peak allocated memory: 165.609 MB.
+==============================================================
+File generated on Tue Aug 25 22:43:03 -0300 2020
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2018.3 (64-bit)
+SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xa7a12tcsg325-1q'
+INFO: [SCHED 204-61] Option 'relax_ii_for_timing' is enabled, will increase II to preserve clock frequency constraints.
+INFO: [HLS 200-10] Analyzing design file 'CMFRL1.cpp' ... 
+INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:00:01 ; elapsed = 00:00:54 . Memory (MB): peak = 102.023 ; gain = 19.648
+INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:00:01 ; elapsed = 00:00:54 . Memory (MB): peak = 102.023 ; gain = 19.648
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:00:02 ; elapsed = 00:01:04 . Memory (MB): peak = 138.313 ; gain = 55.938
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability Time (s): cpu = 00:00:02 ; elapsed = 00:01:06 . Memory (MB): peak = 165.281 ; gain = 82.906
+INFO: [HLS 200-111] Finished Pre-synthesis Time (s): cpu = 00:00:02 ; elapsed = 00:01:07 . Memory (MB): peak = 212.316 ; gain = 129.941
+INFO: [HLS 200-111] Finished Architecture Synthesis Time (s): cpu = 00:00:03 ; elapsed = 00:01:08 . Memory (MB): peak = 220.273 ; gain = 137.898
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'CMFRL1' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'CMFRL1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 70.904 seconds; current allocated memory: 165.271 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 1.782 seconds; current allocated memory: 165.404 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'CMFRL1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-500] Setting interface mode on port 'CMFRL1/sinc_V' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'CMFRL1/i_RL' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'CMFRL1/teste1' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'CMFRL1/teste2_V' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'CMFRL1' to 'ap_ctrl_hs'.
+WARNING: [RTGEN 206-101] Register 'aux_sinc_V' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'i_kp1' is power-on initialization.
+INFO: [SYN 201-210] Renamed object name 'CMFRL1_faddfsub_32ns_32ns_32_5_full_dsp_1' to 'CMFRL1_faddfsub_3bkb' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'CMFRL1_fmul_32ns_32ns_32_4_max_dsp_1' to 'CMFRL1_fmul_32ns_cud' due to the length limit 20
+INFO: [RTGEN 206-100] Generating core module 'CMFRL1_faddfsub_3bkb': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'CMFRL1_fmul_32ns_cud': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'CMFRL1'.
+INFO: [HLS 200-111]  Elapsed time: 1.921 seconds; current allocated memory: 165.713 MB.
+INFO: [HLS 200-111] Finished generating all RTL models Time (s): cpu = 00:00:04 ; elapsed = 00:01:26 . Memory (MB): peak = 220.273 ; gain = 137.898
+INFO: [SYSC 207-301] Generating SystemC RTL for CMFRL1.
+INFO: [VHDL 208-304] Generating VHDL RTL for CMFRL1.
+INFO: [VLOG 209-307] Generating Verilog RTL for CMFRL1.
+INFO: [HLS 200-112] Total elapsed time: 85.895 seconds; peak allocated memory: 165.713 MB.
+==============================================================
+File generated on Tue Aug 25 22:59:32 -0300 2020
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2018.3 (64-bit)
+SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xa7a12tcsg325-1q'
+INFO: [SCHED 204-61] Option 'relax_ii_for_timing' is enabled, will increase II to preserve clock frequency constraints.
+INFO: [HLS 200-10] Analyzing design file 'CMFRL1.cpp' ... 
+INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:00:01 ; elapsed = 00:00:58 . Memory (MB): peak = 102.027 ; gain = 17.371
+INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:00:01 ; elapsed = 00:00:58 . Memory (MB): peak = 102.027 ; gain = 17.371
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:00:01 ; elapsed = 00:01:12 . Memory (MB): peak = 138.195 ; gain = 53.539
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability Time (s): cpu = 00:00:01 ; elapsed = 00:01:20 . Memory (MB): peak = 165.680 ; gain = 81.023
+INFO: [HLS 200-111] Finished Pre-synthesis Time (s): cpu = 00:00:02 ; elapsed = 00:01:27 . Memory (MB): peak = 211.734 ; gain = 127.078
+INFO: [HLS 200-111] Finished Architecture Synthesis Time (s): cpu = 00:00:02 ; elapsed = 00:01:30 . Memory (MB): peak = 219.953 ; gain = 135.297
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'CMFRL1' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'CMFRL1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 97.484 seconds; current allocated memory: 165.263 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 2.38 seconds; current allocated memory: 165.395 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'CMFRL1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-500] Setting interface mode on port 'CMFRL1/sinc_V' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'CMFRL1/i_RL' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'CMFRL1/teste1' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'CMFRL1/teste2_V' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'CMFRL1' to 'ap_ctrl_hs'.
+WARNING: [RTGEN 206-101] Register 'aux_sinc_V' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'i_kp1' is power-on initialization.
+INFO: [SYN 201-210] Renamed object name 'CMFRL1_faddfsub_32ns_32ns_32_5_full_dsp_1' to 'CMFRL1_faddfsub_3bkb' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'CMFRL1_fmul_32ns_32ns_32_4_max_dsp_1' to 'CMFRL1_fmul_32ns_cud' due to the length limit 20
+INFO: [RTGEN 206-100] Generating core module 'CMFRL1_faddfsub_3bkb': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'CMFRL1_fmul_32ns_cud': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'CMFRL1'.
+INFO: [HLS 200-111]  Elapsed time: 3.968 seconds; current allocated memory: 165.703 MB.
+INFO: [HLS 200-111] Finished generating all RTL models Time (s): cpu = 00:00:03 ; elapsed = 00:01:55 . Memory (MB): peak = 219.953 ; gain = 135.297
+INFO: [SYSC 207-301] Generating SystemC RTL for CMFRL1.
+INFO: [VHDL 208-304] Generating VHDL RTL for CMFRL1.
+INFO: [VLOG 209-307] Generating Verilog RTL for CMFRL1.
+INFO: [HLS 200-112] Total elapsed time: 115.711 seconds; peak allocated memory: 165.703 MB.
+==============================================================
+File generated on Tue Aug 25 23:16:45 -0300 2020
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2018.3 (64-bit)
+SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xa7a12tcsg325-1q'
+INFO: [SCHED 204-61] Option 'relax_ii_for_timing' is enabled, will increase II to preserve clock frequency constraints.
+INFO: [HLS 200-10] Analyzing design file 'CMFRL1.cpp' ... 
+INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:00:01 ; elapsed = 00:01:44 . Memory (MB): peak = 102.352 ; gain = 17.539
+INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:00:01 ; elapsed = 00:01:49 . Memory (MB): peak = 102.352 ; gain = 17.539
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:00:01 ; elapsed = 00:02:19 . Memory (MB): peak = 138.688 ; gain = 53.875
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability Time (s): cpu = 00:00:02 ; elapsed = 00:02:26 . Memory (MB): peak = 165.344 ; gain = 80.531
+INFO: [HLS 200-111] Finished Pre-synthesis Time (s): cpu = 00:00:02 ; elapsed = 00:02:33 . Memory (MB): peak = 212.121 ; gain = 127.309
+INFO: [HLS 200-111] Finished Architecture Synthesis Time (s): cpu = 00:00:03 ; elapsed = 00:02:35 . Memory (MB): peak = 220.078 ; gain = 135.266
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'CMFRL1' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'CMFRL1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 163.478 seconds; current allocated memory: 165.298 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 3.685 seconds; current allocated memory: 165.424 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'CMFRL1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-500] Setting interface mode on port 'CMFRL1/sinc_V' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'CMFRL1/i_RL' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'CMFRL1/teste1' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'CMFRL1/teste2_V' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'CMFRL1' to 'ap_ctrl_hs'.
+WARNING: [RTGEN 206-101] Register 'aux_sinc_V' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'i_kp1' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'i_k' is power-on initialization.
+INFO: [SYN 201-210] Renamed object name 'CMFRL1_fadd_32ns_32ns_32_5_full_dsp_1' to 'CMFRL1_fadd_32ns_bkb' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'CMFRL1_fmul_32ns_32ns_32_4_max_dsp_1' to 'CMFRL1_fmul_32ns_cud' due to the length limit 20
+INFO: [RTGEN 206-100] Generating core module 'CMFRL1_fadd_32ns_bkb': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'CMFRL1_fmul_32ns_cud': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'CMFRL1'.
+INFO: [HLS 200-111]  Elapsed time: 3.33 seconds; current allocated memory: 165.701 MB.
+INFO: [HLS 200-111] Finished generating all RTL models Time (s): cpu = 00:00:04 ; elapsed = 00:03:04 . Memory (MB): peak = 220.078 ; gain = 135.266
+INFO: [SYSC 207-301] Generating SystemC RTL for CMFRL1.
+INFO: [VHDL 208-304] Generating VHDL RTL for CMFRL1.
+INFO: [VLOG 209-307] Generating Verilog RTL for CMFRL1.
+INFO: [HLS 200-112] Total elapsed time: 184.316 seconds; peak allocated memory: 165.701 MB.

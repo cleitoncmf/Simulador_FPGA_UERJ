@@ -1,0 +1,13 @@
+verilog xil_defaultlib  \
+"../../../bd/design_RL1/ip/design_RL1_sim_clk_gen_0_0/sim/design_RL1_sim_clk_gen_0_0.v" \
+"../../../bd/design_RL1/ip/design_RL1_sim_clk_gen_0_1/sim/design_RL1_sim_clk_gen_0_1.v" \
+"../../../bd/design_RL1/ip/design_RL1_xlconstant_0_0/sim/design_RL1_xlconstant_0_0.v" \
+"../../../bd/design_RL1/sim/design_RL1.v" \
+"../../../bd/design_RL1/ipshared/ffb4/CMFRL1/solution1/impl/verilog/CMFRL1_fmul_32ns_cud.v" \
+"../../../bd/design_RL1/ipshared/ffb4/CMFRL1/solution1/impl/verilog/CMFRL1_fadd_32ns_bkb.v" \
+"../../../bd/design_RL1/ipshared/ffb4/CMFRL1/solution1/impl/verilog/CMFRL1.v" \
+"../../../bd/design_RL1/ipshared/ffb4/CMFRL1/solution1/syn/verilog/CMFRL1_fadd_32ns_bkb.v" \
+
+verilog xil_defaultlib "glbl.v"
+
+nosort

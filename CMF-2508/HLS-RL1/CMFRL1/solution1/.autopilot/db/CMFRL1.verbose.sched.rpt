@@ -1,0 +1,218 @@
+
+
+================================================================
+== Vivado HLS Report for 'CMFRL1'
+================================================================
+* Date:           Tue Aug 25 23:19:23 2020
+
+* Version:        2018.3 (Build 2405991 on Thu Dec 06 23:56:15 MST 2018)
+* Project:        CMFRL1
+* Solution:       solution1
+* Product family: aartix7
+* Target device:  xa7a12tcsg325-1q
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing (ns): 
+    * Summary: 
+    +--------+-------+----------+------------+
+    |  Clock | Target| Estimated| Uncertainty|
+    +--------+-------+----------+------------+
+    |ap_clk  |  10.00|     7.177|        1.25|
+    +--------+-------+----------+------------+
+
++ Latency (clock cycles): 
+    * Summary: 
+    +-----+-----+-----+-----+---------+
+    |  Latency  |  Interval | Pipeline|
+    | min | max | min | max |   Type  |
+    +-----+-----+-----+-----+---------+
+    |    1|    9|    1|    9|   none  |
+    +-----+-----+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        N/A
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 1
+ResetActiveHigh: 1
+IsCombinational: 0
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 0
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 10
+* Pipeline : 0
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 
+	2  / (tmp)
+	10  / (!tmp)
+2 --> 
+	3  / true
+3 --> 
+	4  / true
+4 --> 
+	5  / true
+5 --> 
+	6  / true
+6 --> 
+	7  / true
+7 --> 
+	8  / true
+8 --> 
+	9  / true
+9 --> 
+	10  / true
+10 --> 
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 5.64>
+ST_1 : Operation 11 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i1 %sinc_V), !map !21"   --->   Operation 11 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 12 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(float* %i_RL), !map !27"   --->   Operation 12 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 13 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(float* %teste1), !map !33"   --->   Operation 13 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 14 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i1* %teste2_V), !map !37"   --->   Operation 14 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 15 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecTopModule([7 x i8]* @CMFRL1_str) nounwind"   --->   Operation 15 'spectopmodule' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 16 [1/1] (0.00ns)   --->   "%sinc_V_read = call i1 @_ssdm_op_Read.ap_auto.i1(i1 %sinc_V)" [CMFRL1.cpp:6]   --->   Operation 16 'read' 'sinc_V_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 17 [1/1] (0.00ns)   --->   "%aux_sinc_V_load = load i1* @aux_sinc_V, align 1" [CMFRL1.cpp:14]   --->   Operation 17 'load' 'aux_sinc_V_load' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 18 [1/1] (0.94ns)   --->   "%tmp = xor i1 %aux_sinc_V_load, %sinc_V_read" [CMFRL1.cpp:14]   --->   Operation 18 'xor' 'tmp' <Predicate = true> <Delay = 0.94> <Core = "LogicGate">   --->   Core 27 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.94> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 19 [1/1] (0.00ns)   --->   "%i_kp1_load = load float* @i_kp1, align 4" [CMFRL1.cpp:20]   --->   Operation 19 'load' 'i_kp1_load' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 20 [1/1] (1.66ns)   --->   "br i1 %tmp, label %0, label %._crit_edge3" [CMFRL1.cpp:14]   --->   Operation 20 'br' <Predicate = true> <Delay = 1.66>
+ST_1 : Operation 21 [1/1] (0.00ns)   --->   "store i1 %sinc_V_read, i1* @aux_sinc_V, align 1" [CMFRL1.cpp:18]   --->   Operation 21 'store' <Predicate = (tmp)> <Delay = 0.00>
+ST_1 : Operation 22 [1/1] (0.00ns)   --->   "store float %i_kp1_load, float* @i_k, align 4" [CMFRL1.cpp:20]   --->   Operation 22 'store' <Predicate = (tmp)> <Delay = 0.00>
+ST_1 : Operation 23 [4/4] (5.64ns)   --->   "%tmp_1 = fmul float %i_kp1_load, 0x3FEFF7CEE0000000" [CMFRL1.cpp:22]   --->   Operation 23 'fmul' 'tmp_1' <Predicate = (tmp)> <Delay = 5.64> <Core = "FMul">   --->   Core 105 'FMul' <Latency = 3> <II = 1> <Delay = 5.64> <FuncUnit> <Opcode : 'fmul'> <InPorts = 2> <OutPorts = 1>
+
+State 2 <SV = 1> <Delay = 5.64>
+ST_2 : Operation 24 [3/4] (5.64ns)   --->   "%tmp_1 = fmul float %i_kp1_load, 0x3FEFF7CEE0000000" [CMFRL1.cpp:22]   --->   Operation 24 'fmul' 'tmp_1' <Predicate = true> <Delay = 5.64> <Core = "FMul">   --->   Core 105 'FMul' <Latency = 3> <II = 1> <Delay = 5.64> <FuncUnit> <Opcode : 'fmul'> <InPorts = 2> <OutPorts = 1>
+
+State 3 <SV = 2> <Delay = 5.64>
+ST_3 : Operation 25 [2/4] (5.64ns)   --->   "%tmp_1 = fmul float %i_kp1_load, 0x3FEFF7CEE0000000" [CMFRL1.cpp:22]   --->   Operation 25 'fmul' 'tmp_1' <Predicate = true> <Delay = 5.64> <Core = "FMul">   --->   Core 105 'FMul' <Latency = 3> <II = 1> <Delay = 5.64> <FuncUnit> <Opcode : 'fmul'> <InPorts = 2> <OutPorts = 1>
+
+State 4 <SV = 3> <Delay = 5.64>
+ST_4 : Operation 26 [1/4] (5.64ns)   --->   "%tmp_1 = fmul float %i_kp1_load, 0x3FEFF7CEE0000000" [CMFRL1.cpp:22]   --->   Operation 26 'fmul' 'tmp_1' <Predicate = true> <Delay = 5.64> <Core = "FMul">   --->   Core 105 'FMul' <Latency = 3> <II = 1> <Delay = 5.64> <FuncUnit> <Opcode : 'fmul'> <InPorts = 2> <OutPorts = 1>
+
+State 5 <SV = 4> <Delay = 7.17>
+ST_5 : Operation 27 [5/5] (7.17ns)   --->   "%tmp_2 = fadd float %tmp_1, 0x3F847AE140000000" [CMFRL1.cpp:22]   --->   Operation 27 'fadd' 'tmp_2' <Predicate = true> <Delay = 7.17> <Core = "FAddSub">   --->   Core 104 'FAddSub' <Latency = 4> <II = 1> <Delay = 7.17> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+
+State 6 <SV = 5> <Delay = 7.17>
+ST_6 : Operation 28 [4/5] (7.17ns)   --->   "%tmp_2 = fadd float %tmp_1, 0x3F847AE140000000" [CMFRL1.cpp:22]   --->   Operation 28 'fadd' 'tmp_2' <Predicate = true> <Delay = 7.17> <Core = "FAddSub">   --->   Core 104 'FAddSub' <Latency = 4> <II = 1> <Delay = 7.17> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+
+State 7 <SV = 6> <Delay = 7.17>
+ST_7 : Operation 29 [3/5] (7.17ns)   --->   "%tmp_2 = fadd float %tmp_1, 0x3F847AE140000000" [CMFRL1.cpp:22]   --->   Operation 29 'fadd' 'tmp_2' <Predicate = true> <Delay = 7.17> <Core = "FAddSub">   --->   Core 104 'FAddSub' <Latency = 4> <II = 1> <Delay = 7.17> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+
+State 8 <SV = 7> <Delay = 7.17>
+ST_8 : Operation 30 [2/5] (7.17ns)   --->   "%tmp_2 = fadd float %tmp_1, 0x3F847AE140000000" [CMFRL1.cpp:22]   --->   Operation 30 'fadd' 'tmp_2' <Predicate = true> <Delay = 7.17> <Core = "FAddSub">   --->   Core 104 'FAddSub' <Latency = 4> <II = 1> <Delay = 7.17> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+
+State 9 <SV = 8> <Delay = 7.17>
+ST_9 : Operation 31 [1/5] (7.17ns)   --->   "%tmp_2 = fadd float %tmp_1, 0x3F847AE140000000" [CMFRL1.cpp:22]   --->   Operation 31 'fadd' 'tmp_2' <Predicate = true> <Delay = 7.17> <Core = "FAddSub">   --->   Core 104 'FAddSub' <Latency = 4> <II = 1> <Delay = 7.17> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+ST_9 : Operation 32 [1/1] (0.00ns)   --->   "store float %tmp_2, float* @i_kp1, align 4" [CMFRL1.cpp:22]   --->   Operation 32 'store' <Predicate = true> <Delay = 0.00>
+
+State 10 <SV = 9> <Delay = 1.66>
+ST_10 : Operation 33 [1/1] (1.66ns)   --->   "br label %._crit_edge3"   --->   Operation 33 'br' <Predicate = (tmp)> <Delay = 1.66>
+ST_10 : Operation 34 [1/1] (0.00ns)   --->   "%i_kp1_loc = phi float [ %tmp_2, %0 ], [ %i_kp1_load, %codeRepl ]" [CMFRL1.cpp:22]   --->   Operation 34 'phi' 'i_kp1_loc' <Predicate = true> <Delay = 0.00>
+ST_10 : Operation 35 [1/1] (0.00ns)   --->   "%tmp_3 = phi i1 [ %sinc_V_read, %0 ], [ %aux_sinc_V_load, %codeRepl ]" [CMFRL1.cpp:6]   --->   Operation 35 'phi' 'tmp_3' <Predicate = true> <Delay = 0.00>
+ST_10 : Operation 36 [1/1] (0.00ns)   --->   "call void @_ssdm_op_Write.ap_auto.floatP(float* %i_RL, float %i_kp1_loc)" [CMFRL1.cpp:26]   --->   Operation 36 'write' <Predicate = true> <Delay = 0.00>
+ST_10 : Operation 37 [1/1] (0.00ns)   --->   "%i_k_load = load float* @i_k, align 4" [CMFRL1.cpp:28]   --->   Operation 37 'load' 'i_k_load' <Predicate = true> <Delay = 0.00>
+ST_10 : Operation 38 [1/1] (0.00ns)   --->   "call void @_ssdm_op_Write.ap_auto.floatP(float* %teste1, float %i_k_load)" [CMFRL1.cpp:28]   --->   Operation 38 'write' <Predicate = true> <Delay = 0.00>
+ST_10 : Operation 39 [1/1] (0.00ns)   --->   "call void @_ssdm_op_Write.ap_auto.i1P(i1* %teste2_V, i1 %tmp_3)" [CMFRL1.cpp:30]   --->   Operation 39 'write' <Predicate = true> <Delay = 0.00>
+ST_10 : Operation 40 [1/1] (0.00ns)   --->   "ret void" [CMFRL1.cpp:32]   --->   Operation 40 'ret' <Predicate = true> <Delay = 0.00>
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 10ns, clock uncertainty: 1.25ns.
+
+ <State 1>: 5.64ns
+The critical path consists of the following:
+	'load' operation ('i_kp1_load', CMFRL1.cpp:20) on static variable 'i_kp1' [16]  (0 ns)
+	'fmul' operation ('tmp_1', CMFRL1.cpp:22) [21]  (5.64 ns)
+
+ <State 2>: 5.64ns
+The critical path consists of the following:
+	'fmul' operation ('tmp_1', CMFRL1.cpp:22) [21]  (5.64 ns)
+
+ <State 3>: 5.64ns
+The critical path consists of the following:
+	'fmul' operation ('tmp_1', CMFRL1.cpp:22) [21]  (5.64 ns)
+
+ <State 4>: 5.64ns
+The critical path consists of the following:
+	'fmul' operation ('tmp_1', CMFRL1.cpp:22) [21]  (5.64 ns)
+
+ <State 5>: 7.18ns
+The critical path consists of the following:
+	'fadd' operation ('tmp_2', CMFRL1.cpp:22) [22]  (7.18 ns)
+
+ <State 6>: 7.18ns
+The critical path consists of the following:
+	'fadd' operation ('tmp_2', CMFRL1.cpp:22) [22]  (7.18 ns)
+
+ <State 7>: 7.18ns
+The critical path consists of the following:
+	'fadd' operation ('tmp_2', CMFRL1.cpp:22) [22]  (7.18 ns)
+
+ <State 8>: 7.18ns
+The critical path consists of the following:
+	'fadd' operation ('tmp_2', CMFRL1.cpp:22) [22]  (7.18 ns)
+
+ <State 9>: 7.18ns
+The critical path consists of the following:
+	'fadd' operation ('tmp_2', CMFRL1.cpp:22) [22]  (7.18 ns)
+
+ <State 10>: 1.66ns
+The critical path consists of the following:
+	multiplexor before 'phi' operation ('i_kp1_loc', CMFRL1.cpp:22) with incoming values : ('i_kp1_load', CMFRL1.cpp:20) ('tmp_2', CMFRL1.cpp:22) [26]  (1.66 ns)
+	'phi' operation ('i_kp1_loc', CMFRL1.cpp:22) with incoming values : ('i_kp1_load', CMFRL1.cpp:20) ('tmp_2', CMFRL1.cpp:22) [26]  (0 ns)
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+	State 2
+	State 3
+	State 4
+	State 5
+	State 6
+	State 7
+	State 8
+	State 9
+	State 10
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

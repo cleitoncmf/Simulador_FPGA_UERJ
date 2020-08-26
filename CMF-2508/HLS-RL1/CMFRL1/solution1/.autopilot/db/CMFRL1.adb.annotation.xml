@@ -1,0 +1,7 @@
+<annotationInfo>
+<annotationInfo>
+<item  id="15" filename="CMFRL1.cpp" linenumber="14" name="tmp" contextFuncName="CMFRL1" moduleName="CMFRL1" rtlName="tmp_fu_91_p2" latency="0" BRAM="-1" DSP="-1" FF="0" LUT="8" fileDirectory="C:\Users\cleit\Documents\GitHub\Simulador_FPGA_UERJ\CMF-2508\HLS-RL1"><\/item>
+<item  id="21" filename="CMFRL1.cpp" linenumber="22" name="tmp_1" contextFuncName="CMFRL1" moduleName="CMFRL1" rtlName="CMFRL1_fmul_32ns_cud_U2" latency="3" BRAM="-1" DSP="-1" FF="-1" LUT="-1" fileDirectory="C:\Users\cleit\Documents\GitHub\Simulador_FPGA_UERJ\CMF-2508\HLS-RL1"><\/item>
+<item  id="22" filename="CMFRL1.cpp" linenumber="22" name="tmp_2" contextFuncName="CMFRL1" moduleName="CMFRL1" rtlName="CMFRL1_fadd_32ns_bkb_U1" latency="4" BRAM="-1" DSP="-1" FF="-1" LUT="-1" fileDirectory="C:\Users\cleit\Documents\GitHub\Simulador_FPGA_UERJ\CMF-2508\HLS-RL1"><\/item>
+<\/annotationInfo>
+</annotationInfo>
