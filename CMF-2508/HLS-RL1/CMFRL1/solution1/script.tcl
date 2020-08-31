@@ -5,8 +5,8 @@
 ############################################################
 open_project CMFRL1
 set_top CMFRL1
-add_files CMFRL1.cpp
 add_files CMFRL1.h
+add_files CMFRL1.cpp
 open_solution "solution1"
 set_part {xa7a12tcsg325-1q}
 create_clock -period 10 -name default

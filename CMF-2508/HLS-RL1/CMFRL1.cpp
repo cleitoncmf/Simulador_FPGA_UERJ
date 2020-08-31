@@ -25,7 +25,7 @@ void CMFRL1(uint1_t sinc, data_t *i_RL, data_t *teste1, uint1_t *teste2){
 
     *i_RL = i_kp1;
 
-    *teste1 = i_k;
+    *teste1 = F(Vi,i_k);
 
     *teste2 = aux_sinc;
 

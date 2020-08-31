@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
+  <source>
+    <originFiles name="teste1008a.h" path="C:\Users\cleit\Documents\GitHub\Simulador_FPGA_UERJ\CMF-1008\teste1008a.h"/>
+    <originFiles name="teste1008a.c" path="C:\Users\cleit\Documents\GitHub\Simulador_FPGA_UERJ\CMF-1008\teste1008a.c"/>
+  </source>
+  <testbench/>
+</autopilotfilemapping:AutoPilotFileMapping>

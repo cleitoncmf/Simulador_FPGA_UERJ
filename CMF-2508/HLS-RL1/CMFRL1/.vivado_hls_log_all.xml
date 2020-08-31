@@ -12,9 +12,9 @@
   <warningLogs>
     <logs>
       <synLog>
-        <logs message="WARNING: [RTGEN 206-101] Register 'i_k' is power-on initialization." projectName="CMFRL1" solutionName="solution1" date="2020-08-25T23:19:30.411-0300" type="Warning"/>
-        <logs message="WARNING: [RTGEN 206-101] Register 'i_kp1' is power-on initialization." projectName="CMFRL1" solutionName="solution1" date="2020-08-25T23:19:29.998-0300" type="Warning"/>
-        <logs message="WARNING: [RTGEN 206-101] Register 'aux_sinc_V' is power-on initialization." projectName="CMFRL1" solutionName="solution1" date="2020-08-25T23:19:29.889-0300" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Register 'i_k' is power-on initialization." projectName="CMFRL1" solutionName="solution1" date="2020-08-31T14:42:59.887-0300" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Register 'i_kp1' is power-on initialization." projectName="CMFRL1" solutionName="solution1" date="2020-08-31T14:42:59.779-0300" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Register 'aux_sinc_V' is power-on initialization." projectName="CMFRL1" solutionName="solution1" date="2020-08-31T14:42:59.699-0300" type="Warning"/>
       </synLog>
       <simLog/>
       <mgLog/>
